@@ -1,3 +1,4 @@
+@charset "UTF-8";
 #navbar {
   background: #1e2029;
   margin-top: -13px;
@@ -6,6 +7,15 @@
 #navbar .navbar .head .logo {
   margin-left: 51px;
   margin-bottom: -10px;
+}
+
+#navbar .navbar .head span {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: #FFBF46;
 }
 
 #navbar .navbar .head .collapse {
@@ -32,75 +42,52 @@ main {
 }
 
 main #products {
-  background-color: black;
   position: relative;
-  padding-bottom: 15px;
+  background-color: black;
 }
 
-main #products img {
-  width: 1350px;
-  opacity: 0.5;
-}
-
-main #products .products-container {
+main #products h3 {
   position: absolute;
-  top: 10%;
-  left: 10%;
-}
-
-main #products .products-container .left-angel {
-  position: absolute;
-  top: 50%;
-  border: 1px dotted white;
-  padding: 10px 16px;
-  border-radius: 26%;
-  color: white;
-}
-
-main #products .products-container .right-angel {
-  position: absolute;
-  top: 50%;
-  left: 88%;
-  border: 1px dotted white;
-  padding: 10px 16px;
-  border-radius: 26%;
-  color: white;
-}
-
-main #products .products-container .products-row .product-carusel {
+  top: 182px;
+  left: 498px;
   text-align: center;
-  margin-left: 280px;
-  margin-top: 121px;
-}
-
-main #products .products-container .products-row .product-carusel h4 {
-  color: white;
-  font-weight: 700;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: bold;
   font-size: 32px;
   line-height: 36px;
+  color: #FFFFFF;
 }
 
-main #products .products-container .products-row .product-carusel p {
-  font-size: 14px;
+main #products p {
+  position: absolute;
+  top: 260px;
+  left: 425px;
+  font-family: Gilroy;
+  font-style: normal;
   font-weight: 500;
-  line-height: 16.98px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: #ffffff;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #FFFFFF;
 }
 
-main #products .products-container .products-row .product-carusel button {
-  margin-top: 24px;
-  padding-left: 18px;
-  padding-right: 18px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  background: #e83838;
-  color: white;
-  font-size: 12px;
+main #products button {
+  position: absolute;
+  top: 63%;
+  left: 48%;
   border: none;
+  padding: 5px 23px;
+  background: #E83838;
   border-radius: 2px;
+  color: ühi;
+  color: white;
+}
+
+main #products .carousel .carousel-inner .carousel-item img {
+  width: 1440px;
+  height: 559px;
+  opacity: 0.5;
 }
 
 main #product-image {
@@ -1539,5 +1526,75 @@ footer #footer .footer-copyright .sosial .items a i {
   letter-spacing: -0.03em;
   color: #1E2029;
   background: #FCF199;
+}
+
+.contact-container .contact-row {
+  padding-top: 131px;
+}
+
+.contact-container .contact-row .contact2 {
+  margin-top: 24px;
+}
+
+.contact-container .contact-row .contact2 .contact-list li {
+  margin-bottom: 24px;
+}
+
+.contact-container .contact-row .contact2 .contact-list li span {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  color: #8E93A6;
+}
+
+.contact-container .contact-row .contact2 .contact-list li p {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -0.03em;
+  color: #FFFFFF;
+  padding-top: 11px;
+}
+
+.contact-container .contact-row .contact2 .contact-list li a {
+  text-decoration: none;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -0.03em;
+  color: #FFFFFF;
+}
+
+.galery-slider {
+  padding-bottom: 10px;
+}
+
+#bahar {
+  position: relative;
+}
+
+#bahar h3 {
+  position: absolute;
+  top: 182px;
+  left: 498px;
+  text-align: center;
+}
+
+#bahar p {
+  position: absolute;
+  top: 260px;
+  left: 347px;
+  text-align: center;
+}
+
+#bahar .carousel .carousel-inner .carousel-item img {
+  width: 1440px;
+  height: 559px;
 }
 /*# sourceMappingURL=style.css.map */

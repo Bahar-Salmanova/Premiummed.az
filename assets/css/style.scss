@@ -9,6 +9,14 @@
         img {
         }
       }
+      span{
+        font-family: Gilroy;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 18px;
+        color: #FFBF46;
+      }
       .collapse {
         margin-right: 51px;
         .navbar-nav {
@@ -33,70 +41,60 @@
 main {
   overflow-x: hidden;
 
-  #products {
-    background-color: black;
-
+  #products{
     position: relative;
-    padding-bottom: 15px;
-    img {
-      width: 1350px;
-      opacity: 0.5;
-    }
-
-    .products-container {
+    background-color: black;
+    h3{
       position: absolute;
-      top: 10%;
-      left: 10%;
-      .left-angel {
-        position: absolute;
-        top: 50%;
-        border: 1px dotted white;
-        padding: 10px 16px;
-        border-radius: 26%;
-        color: white;
-      }
-      .right-angel {
-        position: absolute;
-        top: 50%;
-        left: 88%;
-        border: 1px dotted white;
-        padding: 10px 16px;
-        border-radius: 26%;
-        color: white;
-      }
-      .products-row {
-        .product-carusel {
-          text-align: center;
-          margin-left: 280px;
-          margin-top: 121px;
-          h4 {
-            color: white;
-            font-weight: 700;
-            font-size: 32px;
-            line-height: 36px;
-          }
-          p {
-            font-size: 14px;
-            font-weight: 500;
-            line-height: 16.98px;
-            align-items: center;
-            color: #ffffff;
-          }
-          button {
-            margin-top: 24px;
-            padding-left: 18px;
-            padding-right: 18px;
-            padding-top: 5px;
-            padding-bottom: 5px;
-            background: #e83838;
-            color: white;
-            font-size: 12px;
-            border: none;
-            border-radius: 2px;
+      top: 182px;
+      left: 498px;
+      text-align: center;
+      font-family: Gilroy;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 32px;
+      line-height: 36px;
+      color: #FFFFFF;
+  
+    }
+    p{
+      position: absolute;
+      top: 260px;
+      left: 425px;
+      font-family: Gilroy;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 17px;
+      text-align: center;
+      color: #FFFFFF;
+
+  
+    }
+    button{
+      position: absolute;
+    top: 63%;
+    left: 48%;
+    border: none;
+    padding: 5px 23px;
+    background: #E83838;
+    border-radius: 2px;
+    color: ühi;
+    color: white;
+    }
+    .carousel{
+      .carousel-inner{
+        .carousel-item{
+          img{
+            width: 1440px;
+            height: 559px;
+            opacity: 0.5;
           }
         }
       }
+  
     }
+  
   }
   #product-image {
     background: black;
@@ -1482,5 +1480,91 @@ footer {
               }
           }
       }
-    
+.contact-container{
+  .contact-row{
+    padding-top: 131px;
+    .contact2{
+      margin-top: 24px;
+      .contact-list{
+        li{
+          margin-bottom: 24px;
+          span{
+            font-family: Gilroy;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 16px;
+            color: #8E93A6;
+          }
+          p{
+            font-family: Gilroy;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: -0.03em;
+            color: #FFFFFF;
+            padding-top: 11px;
+          }
+          a{
+            text-decoration: none;
+            font-family: Gilroy;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: -0.03em;
+            color: #FFFFFF;
 
+          }
+        }
+      }
+    }
+    .map{
+      .map-container{
+        
+      }
+    }
+  }
+}   
+//galery// 
+.galery-slider{
+  padding-bottom: 10px;
+  .items{
+    .item{
+      img{
+        
+      }
+    }
+  }
+}
+///bahar// 
+#bahar{
+  position: relative;
+  h3{
+    position: absolute;
+    top: 182px;
+    left: 498px;
+    text-align: center;
+
+  }
+  p{
+    position: absolute;
+    top: 260px;
+    left: 347px;
+    text-align: center;
+
+  }
+  .carousel{
+    .carousel-inner{
+      .carousel-item{
+        img{
+          width: 1440px;
+          height: 559px;
+        }
+      }
+    }
+
+  }
+
+}
