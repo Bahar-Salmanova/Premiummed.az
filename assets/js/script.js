@@ -1,4 +1,19 @@
-
+$('#galery .karusele-row').owlCarousel({
+  items: 1,
+  loop: true,
+  nav:true,
+  responsive: {
+      0: {
+          items: 1
+      },
+      600: {
+          items: 3
+      },
+      1000: {
+          items: 5
+      }
+  }
+});
 
 // Example starter JavaScript for disabling form submissions if there are invalid fields
 (function () {
@@ -20,8 +35,23 @@
         }, false)
       })
   })();
-  
-
+$(' #news2-section2 .karusel').owlCarousel({
+    center:true,
+    items: 3,
+    loop: true,
+    margin:20,
+    responsive: {
+        0: {
+            items: 1
+        },
+        600: {
+            items: 1
+        },
+        1000: {
+            items: 4
+        }
+    }
+  });
 
 $('.owl-carousel').owlCarousel({
     loop:true,
@@ -40,4 +70,5 @@ $('.owl-carousel').owlCarousel({
             items:5
         }
     }
-})
+});
+

@@ -4,7 +4,7 @@
   .navbar {
     .head {
       .logo {
-        margin-left: 51px;
+        margin-left: 85px;
         margin-bottom: -10px;
         img {
         }
@@ -372,6 +372,7 @@ footer {
       position: relative;
       .footer-row {
         padding-top: 71px;
+        margin-left: 22px;
         .big-column1 {
           a {
             img {
@@ -450,7 +451,7 @@ footer {
       background-color: #fafbfb;
       position: absolute;
       top: -1px;
-      left: 17px;
+      left: 52px;
     }
     .footer-copyright {
       padding-bottom: 9px;
@@ -662,7 +663,7 @@ footer {
   nav {
     position: absolute;
     top: 30px;
-    left: 70px;
+    left: 152px;
     .breadcrumb {
       background-color: #1e2029;
       li {
@@ -685,12 +686,13 @@ footer {
   }
   .slider {
     padding-top: 120px;
-    padding-left: 42px;
+    padding-left: 100px;
+    padding-right: 111px;
     .owl-carousel {
       .item {
         margin-right: 35px;
         img {
-          width: 179px;
+          width: 164px;
         }
       }
       .owl-nav {
@@ -714,8 +716,8 @@ footer {
       i {
         z-index: 100;
         position: absolute;
-        top: 38%;
-        left: 49.5%;
+        top: 34%;
+        left: 48.5%;
         font-size: 15px;
         color: #ffffff;
         height: 20px;
@@ -752,55 +754,56 @@ footer {
     }
   }
 }
-#news2-section2 {
-  padding-top: 145px;
-  padding-bottom: 86px;
-  background: #1e2029;
-  .news2-section2-container {
-    .news2-section2-row {
-      .card {
-        border: 1px solid #fcf199;
-        border-top: none;
-        border-bottom: none;
-        border-right: none;
-        background: #1e2029;
-        .card-body {
-          margin-right: 20px;
-          padding-right: 20px;
-          padding-top: 2px;
-          padding-left: 11px;
-          padding-bottom: 2px;
-          h5 {
-            font-family: Gilroy;
-            font-style: normal;
-            font-weight: 500;
-            font-size: 20px;
-            line-height: 28px;
-            letter-spacing: -0.15px;
-            color: #fcf199;
+#news2-section2{
+  background-color:#1E2029;    
+    .karusele{  
+      padding-top: 36px;
+    padding-bottom: 40px;    
+      .karusel{
+        padding-top: 64px;
+        padding-bottom: 64px;
+        margin-left: 10px;
+    
+        .owl-item{
+          border-left: 1px solid #FCF199;
+          margin-left: 0px;
+          .item{  
+            margin-bottom: -13px;
+            h5{
+              font-family: Gilroy;
+              font-style: normal;
+              font-weight: 500;
+              font-size: 20px;
+              line-height: 28px;
+              letter-spacing: -0.15px;
+              color: #FCF199;
+            }
+            a{
+              font-family: Gilroy;
+              font-style: normal;
+              font-weight: 600;
+              font-size: 20px;
+              line-height: 28px;
+              letter-spacing: -0.15px;
+              color: #FFFFFF;
+            }
+            p{
+              font-family: Gilroy;
+              font-style: normal;
+              font-weight: 300;
+              font-size: 14px;
+              line-height: 24px;
+              letter-spacing: 0.25px;
+              color: #FFFFFF;
+              margin-top: 10px;
+            }
+  
           }
-          a {
-            font-family: Gilroy;
-            font-style: normal;
-            font-weight: 600;
-            font-size: 20px;
-            line-height: 28px;
-            letter-spacing: -0.15px;
-            color: #ffffff;
-          }
-          p {
-            font-family: Gilroy;
-            font-style: normal;
-            font-weight: 300;
-            font-size: 14px;
-            line-height: 20px;
-            letter-spacing: -0.25px;
-            color: #ffffff;
-          }
+
         }
+       
       }
-    }
-  }
+    }  
 }
 //aboutus page1//
 #aboutus {
@@ -1350,6 +1353,7 @@ footer {
     }
   }
 }
+//career2// 
 .career2-container {
     padding-top: 164px;
     padding-left: 80px;
@@ -1538,33 +1542,58 @@ footer {
     }
   }
 }
-///bahar// 
-#bahar{
-  position: relative;
-  h3{
-    position: absolute;
-    top: 182px;
-    left: 498px;
-    text-align: center;
-
-  }
-  p{
-    position: absolute;
-    top: 260px;
-    left: 347px;
-    text-align: center;
-
-  }
-  .carousel{
-    .carousel-inner{
-      .carousel-item{
-        img{
-          width: 1440px;
-          height: 559px;
+///galery// 
+#galery{
+  background-color: #1E2029;
+  .galery-container{
+    margin-left: 206px;
+    position: relative;    
+      .galery-row{
+        padding-top: 105px;
+    padding-bottom: 52px;
+        .glry{         
+          .karusele-row{
+            .owl-item{
+             
+              .item{
+                img{
+                  margin-bottom: 23px;
+                  width: 164px;
+                 height: 161px; 
+                }              }           }
+            .owl-nav{
+              display: block;
+              .owl-prev{
+                position: absolute;
+                font-size: 18px;
+                line-height: 20px;
+                display: flex;
+                align-items: center;
+                text-align: center;
+                color: #FFFFFF;
+                top: 45%;
+                left: -45px;
+              }
+              .owl-next{
+                position: absolute;
+                top: 45%;               
+                right: -2.5%;
+                font-size: 18px;
+                line-height: 20px;
+                display: flex;
+                align-items: center;
+                text-align: center;
+                color: #FFFFFF;
+              }
+            }
+          }
         }
       }
-    }
 
+    
+      
+      
+    
+    
   }
-
 }
