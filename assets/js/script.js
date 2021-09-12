@@ -1,3 +1,21 @@
+$('#product-image .karuselerow').owlCarousel({
+    items: 1,
+    loop: true,
+    autoplay:true,
+    nav:true,
+    responsive: {
+        0: {
+            items: 1
+        },
+        600: {
+            items: 3
+        },
+        1000: {
+            items: 1
+        }
+    }
+  });
+
 $('#galery .karusele-row').owlCarousel({
   items: 1,
   loop: true,

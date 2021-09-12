@@ -5,8 +5,12 @@
 }
 
 #navbar .navbar .head .logo {
-  margin-left: 85px;
+  margin-left: 53px;
   margin-bottom: -10px;
+}
+
+#navbar .navbar .head .logo img {
+  width: 93px;
 }
 
 #navbar .navbar .head span {
@@ -91,74 +95,84 @@ main #products .carousel .carousel-inner .carousel-item img {
 }
 
 main #product-image {
-  background: black;
-  padding-top: 61px;
-  padding-left: 163px;
-  padding-bottom: 97px;
+  background-color: #1E2029;
 }
 
-main #product-image .product-image-container h3 {
-  color: white;
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 36px;
-  padding-bottom: 20px;
-  position: relative;
-}
-
-main #product-image .product-image-container h3::after {
-  content: "";
-  width: 706px;
-  height: 1px;
-  background-color: #fcf199;
-  position: absolute;
-  top: 47%;
-  left: 19%;
+main #product-image .product-image-container {
+  margin-left: 26px;
 }
 
 main #product-image .product-image-container .product-image-row1 {
-  margin-bottom: 33px;
+  padding-top: 75px;
 }
 
-main #product-image .product-image-container .product-image-row1 .product-img-col a img {
-  width: 488px;
-  height: 213px;
-  opacity: 0.5;
-  padding-right: 43px;
-}
-
-main #product-image .product-image-container .product-image-row2 .product-desc h4 {
-  color: #fcf199;
+main #product-image .product-image-container .product-image-row1 h3 {
+  margin-left: 91px;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: bold;
   font-size: 32px;
   line-height: 36px;
+  color: #FFFFFF;
 }
 
-main #product-image .product-image-container .product-image-row2 .product-desc p {
+main #product-image .product-image-container .product-image-row1 .product-img-col {
+  margin-left: 79px;
+  margin-top: 26px;
+  margin-bottom: 64px;
+}
+
+main #product-image .product-image-container .product-image-row1 .product-img-col .karuselerow .owl-nav {
   color: white;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 29px;
+  margin-top: -83px;
+  margin-left: 10px;
 }
 
-main #product-image .product-image-container .product-image-row2 .product-desc a i {
-  color: #fcf199;
-  border: 1px solid #fcf199;
-  padding: 5px 8px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border-radius: 76%;
-  margin-right: 25px;
+main #product-image .product-image-container .product-image-row1 .product-img-col .karuselerow .owl-nav .owl-prev {
+  margin-right: 22px;
 }
 
-main #product-image .product-image-container .product-image-row2 .product-desc a .fa-caret-right {
+main #product-image .product-image-container .product-image-row1 .product-img-col .karuselerow .owl-nav .owl-prev span {
+  border: 1px solid white;
+  border-radius: 28px;
+  padding-left: 15px;
+  padding-bottom: 4px;
+  padding-right: 15px;
+}
+
+main #product-image .product-image-container .product-image-row1 .product-img-col .karuselerow .owl-nav .owl-next span {
+  border: 1px solid white;
+  border-radius: 28px;
+  padding-left: 15px;
+  padding-bottom: 4px;
+  padding-right: 15px;
   border-left: none;
   border-bottom: none;
+  border-top: none;
 }
 
-main #product-image .product-image-container .product-image-row2 .product-img-col a img {
-  width: 445px;
-  height: 213px;
-  opacity: 0.5;
+main #product-image .product-image-container .product-image-row1 .product-img-col .karuselerow .item .col img {
+  margin-bottom: 27px;
+}
+
+main #product-image .product-image-container .product-image-row1 .product-img-col .karuselerow .item .col h4 {
+  padding-top: 14px;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 36px;
+  color: #FCF199;
+}
+
+main #product-image .product-image-container .product-image-row1 .product-img-col .karuselerow .item .col p {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
 }
 
 main #about {
@@ -374,8 +388,13 @@ footer #footer .footer-container .footer-row {
   margin-left: 22px;
 }
 
+footer #footer .footer-container .footer-row .big-column1 a {
+  margin-left: -1;
+}
+
 footer #footer .footer-container .footer-row .big-column1 a img {
   padding-bottom: 34px;
+  width: 93px;
 }
 
 footer #footer .footer-container .footer-row .big-column1 p {
@@ -443,7 +462,7 @@ footer #footer .footer-container .footer-row .big-column2 .contact ul .contact-l
 
 footer #footer .footer-container::after {
   content: "";
-  width: 75px;
+  width: 89px;
   height: 3px;
   background-color: #fafbfb;
   position: absolute;
