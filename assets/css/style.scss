@@ -1,4 +1,6 @@
+
 #navbar {
+ 
   background: #1e2029;
   margin-top: -13px;
   .navbar {
@@ -11,7 +13,7 @@
         }
       }
       span{
-        font-family: Gilroy;
+        
         font-style: normal;
         font-weight: normal;
         font-size: 14px;
@@ -21,16 +23,45 @@
       .collapse {
         margin-right: 51px;
         .navbar-nav {
-          margin-top: 11px;
+          margin-top: 17px;
 
           .nav-item {
             .nav-link {
               margin-right: 10px;
+              font-size: 14px;
               color: #ffffff;
               .btn-light {
                 margin-top: -5px;
                 padding-right: 25px;
                 padding-left: 25px;
+              }
+            }
+          }
+          .dropdown{
+            margin-top: 7px;
+            .dropdown-toggle{
+              text-decoration: none;
+              color: #ffffff !important;
+              font-size: 14px;
+              
+            }
+            .dropdown-menu{
+              padding: 10px 24px;
+               
+              li{
+                a{
+                 
+                  font-style: normal;
+                  font-weight: 500;
+                  font-size: 12px;
+                  line-height: 16px;
+                  color: #1E2029;
+                  
+                }
+                a:hover{
+                  color: #F68B39;
+                  text-decoration: none;
+                }
               }
             }
           }
@@ -41,8 +72,10 @@
 }
 main {
   overflow-x: hidden;
-
+ 
   #products{
+    font-family: 'Gilroy';
+
     position: relative;
     background-color: black;
     h3{
@@ -73,6 +106,8 @@ main {
   
     }
     button{
+      font-family: 'Gilroy';
+
       position: absolute;
     top: 63%;
     left: 48%;
@@ -103,11 +138,11 @@ main {
       margin-left: 26px;
       .product-image-row1{
         padding-top: 75px;
+        position: relative;
        
         
         h3{
           margin-left: 91px;
-          font-family: Gilroy;
           font-style: normal;
           font-weight: bold;
           font-size: 32px;
@@ -122,7 +157,10 @@ main {
             .owl-nav{
               color: white;
               font-size: 29px;
-              margin-top: -83px;
+              position: absolute;
+              bottom: 10%;
+              left: -1%;
+              
               margin-left: 10px;
               .owl-prev{
                 margin-right: 22px;
@@ -157,7 +195,8 @@ main {
                 }
                 h4{
                   padding-top: 14px;
-                  font-family: Gilroy;
+                 
+
                   font-style: normal;
                   font-weight: bold;
                   font-size: 32px;
@@ -165,7 +204,8 @@ main {
                   color: #FCF199;
                 }
                 p{
-                  font-family: Gilroy;
+                 
+
                   font-style: normal;
                   font-weight: normal;
                   font-size: 16px;
@@ -254,32 +294,32 @@ main {
           text-align: center;
         }
       }
-      .sponsors-outer {
-        background: white;
-        padding-top: 34px;
-        padding-bottom: 18px;
-        padding-left: 19px;
-        margin-left: -118px;
-        margin-right: -120px;
-        .client-carusel {
-          margin-left: 10px;
-          margin-top: 9px;
-          list-style-type: none;
-          display: flex;
-          justify-content: space-evenly;
-
-          .slide-item {
-            margin-right: 50px;
-            width: 90.61px;
-            height: 36.36px;
-
-            a {
-              img {
-              }
-            }
-          }
+     
+    }
+    .client-slidere{
+      background-color: #ffffff;
+      padding-top: 41px;
+      padding-bottom: 10px;
+      padding-left: 79px;
+      padding-right: 69px;
+      .owl-nav{
+        display: none;
+      }
+      .item{
+        img{
+          
+  
+        }
+        img:hover {
+         
+         
+        }
+        
+        .randox{
+          margin-top: 10px;
         }
       }
+      
     }
   }
 }
@@ -331,11 +371,24 @@ main {
       background: #17181d;
       border-bottom: 1px solid #f4f5fa;
       span {
-        color: #ffffff;
+        
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;        
+        color: #FFFFFF;
+        
       }
       h4 {
         color: #ffffff;
         margin-top: 7px;
+        
+        font-style: normal;
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 36px;
+        color: #FFFFFF;
+
       }
       button {
         margin-top: 31px;
@@ -344,7 +397,10 @@ main {
         border-radius: 5px;
         color: #1e2029;
         font-size: 14px;
-        font-weight: 600;
+        font-weight: 600;        
+        line-height: 18px;
+
+
       }
     }
     .support {
@@ -353,9 +409,22 @@ main {
       padding-bottom: 49px;
       background: #f4f5fa;
       span {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;        
+        color:#1E2029 !important;
+        
       }
       h4 {
         margin-top: 7px;
+        color: #1E2029 !important;
+        margin-top: 7px;        
+        font-style: normal;
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 36px;
+        color: #FFFFFF;
       }
       button {
         margin-top: 31px;
@@ -365,6 +434,7 @@ main {
         font-size: 14px;
         font-weight: 600;
         color: #ffffff;
+        line-height: 18px;
       }
     }
   }
@@ -379,7 +449,7 @@ footer {
       position: relative;
       .footer-row {
         padding-top: 71px;
-        margin-left: 22px;
+        margin-left: -3px;
         .big-column1 {
           a {
             margin-left: -1;
@@ -390,7 +460,7 @@ footer {
           }
 
           p {
-            font-family: Gilroy;
+            font-weight: 400;
             font-style: normal;
             font-weight: normal;
             font-size: 16px;
@@ -412,7 +482,7 @@ footer {
             }
           }
           ul {
-            font-family: Gilroy;
+           
             font-style: normal;
             font-weight: 300;
             font-size: 16px;
@@ -422,12 +492,18 @@ footer {
             margin-left: -39px;
 
             .item {
-              margin-bottom: 16px;
+              margin-bottom: 16px;             
+              font-style: normal;
+              font-weight: 300;
+              font-size: 16px;
+              line-height: 19px;
+              color: #FFFFFF;
+
             }
           }
           .contact {
             h5 {
-              font-family: Gilroy;
+              
               font-style: normal;
               font-weight: 600;
               font-size: 16px;
@@ -436,7 +512,7 @@ footer {
               padding-bottom: 24px;
             }
             ul {
-              font-family: Gilroy;
+              
               font-style: normal;
               font-weight: 300;
               font-size: 16px;
@@ -460,12 +536,13 @@ footer {
       background-color: #fafbfb;
       position: absolute;
       top: -1px;
-      left: 52px;
+      left: 30px;
     }
     .footer-copyright {
       padding-bottom: 9px;
       padding-top: 9px;
       margin-left: 114px;
+      position: relative;
       .inner-container {
         .copyright-text {
           p {
@@ -474,6 +551,17 @@ footer {
             line-height: 16px;
             font-weight: 400;
             margin-bottom: -18px;
+            padding-left: 28px;
+          }
+          p::after{
+            content: "";
+            width: 1144px;
+            height: 1px;
+            background-color: #fafbfb;
+            position: absolute;
+            top: -15px;
+            left: -15px;
+
           }
         }
       }
@@ -509,20 +597,19 @@ footer {
     .breadcrumb {
       position: absolute;
       top: 32px;
-      left: 151px;
+      left: 117px;
       background: none !important;
 
       li {
-        font-family: Gilroy;
+        
         font-style: normal;
         font-weight: 400;
         font-size: 20px;
         line-height: 24px;
-
         color: #fcf199;
 
         a {
-          font-family: Gilroy;
+         
           font-style: normal;
           font-weight: normal;
           font-size: 18px;
@@ -672,18 +759,18 @@ footer {
   nav {
     position: absolute;
     top: 30px;
-    left: 152px;
+    left: 122px;
     .breadcrumb {
       background-color: #1e2029;
       li {
-        font-family: Gilroy;
+       
         font-style: normal;
         font-weight: 600;
         font-size: 20px;
         line-height: 24px;
         color: #fcf199;
         a {
-          font-family: Gilroy;
+         
           font-style: normal;
           font-weight: normal;
           font-size: 20px;
@@ -742,7 +829,6 @@ footer {
       .news2-row-col {
         margin-top: 0px;
         h5 {
-          font-family: Gilroy;
           font-style: normal;
           font-weight: 600;
           font-size: 20px;
@@ -751,7 +837,6 @@ footer {
           padding-bottom: 16px;
         }
         p {
-          font-family: Gilroy;
           font-style: normal;
           font-weight: normal;
           font-size: 14px;
@@ -779,7 +864,7 @@ footer {
           .item{  
             margin-bottom: -13px;
             h5{
-              font-family: Gilroy;
+             
               font-style: normal;
               font-weight: 500;
               font-size: 20px;
@@ -788,7 +873,7 @@ footer {
               color: #FCF199;
             }
             a{
-              font-family: Gilroy;
+             
               font-style: normal;
               font-weight: 600;
               font-size: 20px;
@@ -797,13 +882,13 @@ footer {
               color: #FFFFFF;
             }
             p{
-              font-family: Gilroy;
+              
               font-style: normal;
-              font-weight: 300;
+              font-weight: 400;
               font-size: 14px;
-              line-height: 24px;
-              letter-spacing: 0.25px;
-              color: #FFFFFF;
+              line-height: 20px;
+              letter-spacing: -0.25px;
+              color: #8E93A6;
               margin-top: 10px;
             }
   
@@ -826,7 +911,7 @@ footer {
       ul {
         list-style-type: none;
         li {
-          font-family: Gilroy;
+         
           font-style: normal;
           font-weight: 500;
           font-size: 18px;
@@ -835,7 +920,7 @@ footer {
           padding-bottom: 13px;
         }
         .active {
-          font-family: Gilroy;
+          
           font-style: normal;
           font-weight: bold;
           font-size: 29px;
@@ -852,7 +937,7 @@ footer {
       margin-bottom: 68px;
     }
     p {
-      font-family: Gilroy;
+      padding-top: 18px;
       font-style: normal;
       font-weight: normal;
       font-size: 14px;
@@ -862,6 +947,7 @@ footer {
     }
     .quality {
       position: relative;
+      padding-top: 0px;
     }
     .quality::after {
       content: "";
@@ -938,7 +1024,6 @@ footer {
 
   span {
     position: absolute;
-    font-family: Gilroy;
     font-style: normal;
     font-weight: bold;
     font-size: 32px;
@@ -967,15 +1052,14 @@ footer {
           height: 252px;
         }
         p {
-          font-family: Gilroy;
           font-style: normal;
           font-weight: 600;
           font-size: 16px;
           line-height: 24px;
           color: #ffffff;
+          margin-bottom: 93px;
         }
         h3 {
-          font-family: Gilroy;
           font-style: normal;
           font-weight: bold;
           font-size: 32px;
@@ -990,7 +1074,7 @@ footer {
           font-size: 12px;
           border: none;
           border-radius: 2px;
-          font-family: Gilroy;
+          margin-right: 348px;
           padding: 8px 26px;
           font-style: normal;
           font-weight: 600;
@@ -1006,9 +1090,8 @@ footer {
       border: 1px solid #fcf199;
       padding: 5px 222px;
       position: absolute;
-      bottom: 9%;
+      bottom: 12%;
       right: 101px;
-      font-family: Gilroy;
       font-style: normal;
       font-weight: 600;
       font-size: 16px;
@@ -1016,7 +1099,6 @@ footer {
       text-align: center;
       color: #fcf199;
       i {
-        font-family: Gilroy;
         font-style: normal;
         font-weight: 600;
         font-size: 16px;
@@ -1052,7 +1134,6 @@ footer {
             h6 {
               text-align: center;
               padding-top: 60px;
-              font-family: Gilroy;
               font-style: normal;
               font-weight: 600;
               font-size: 16px;
@@ -1062,7 +1143,6 @@ footer {
             }
             p {
               text-align: center;
-              font-family: Gilroy;
               font-style: normal;
               font-weight: normal;
               font-size: 14px;
@@ -1093,8 +1173,7 @@ footer {
             padding-bottom: 0px;
             padding-top: 0px;
             h5 {
-              padding-bottom: 8px;
-              font-family: Gilroy;
+              padding-bottom: 3px;
               font-style: normal;
               font-weight: 600;
               font-size: 20px;
@@ -1103,8 +1182,7 @@ footer {
               color: #fcf199;
             }
             p {
-              padding-bottom: 8px;
-              font-family: Gilroy;
+              padding-bottom: 3px;
               font-style: normal;
               font-weight: normal;
               font-size: 14px;
@@ -1129,16 +1207,14 @@ footer {
             padding-bottom: 0px;
             padding-top: 0px;
             h5 {
-              font-family: Gilroy;
               font-style: normal;
               font-weight: 600;
               font-size: 20px;
-              line-height: 28px;
+              line-height: 16px;
               letter-spacing: -0.15px;
               color: #fcf199;
             }
             p {
-              font-family: Gilroy;
               font-style: normal;
               font-weight: normal;
               font-size: 14px;
@@ -1160,7 +1236,6 @@ footer {
     padding-bottom: 80px;
     h4 {
       margin-bottom: 20px;
-      font-family: Gilroy;
       font-style: normal;
       font-weight: 500;
       font-size: 32px;
@@ -1169,7 +1244,6 @@ footer {
       color: #ffffff;
     }
     span {
-      font-family: Gilroy;
       font-style: normal;
       font-weight: normal;
       font-size: 16px;
@@ -1184,7 +1258,6 @@ footer {
           .name {
             margin-bottom: 28px;
             label {
-              font-family: Gilroy;
               font-style: normal;
               font-weight: 500;
               font-size: 14px;
@@ -1200,7 +1273,6 @@ footer {
           }
           .surname {
             label {
-              font-family: Gilroy;
               font-style: normal;
               font-weight: 500;
               font-size: 14px;
@@ -1222,7 +1294,6 @@ footer {
               color: #ffffff;
             }
             label {
-              font-family: Gilroy;
               font-style: normal;
               font-weight: 500;
               font-size: 14px;
@@ -1238,7 +1309,6 @@ footer {
           }
           .adres {
             label {
-              font-family: Gilroy;
               font-style: normal;
               font-weight: 500;
               font-size: 14px;
@@ -1260,7 +1330,6 @@ footer {
               color: #ffffff;
             }
             label {
-              font-family: Gilroy;
               font-style: normal;
               font-weight: 500;
               font-size: 14px;
@@ -1281,7 +1350,6 @@ footer {
               border-radius: 3px;
               background-color: #fcf199;
               span {
-                font-family: Gilroy;
                 font-style: normal;
                 font-weight: 600;
                 font-size: 14px;
@@ -1311,7 +1379,7 @@ footer {
                 a {
                   border-left: 1px solid #fcf199;
                   padding-left: 15px;
-                  font-family: Gilroy;
+                  
                   font-style: normal;
                   font-weight: 600;
                   font-size: 20px;
@@ -1321,7 +1389,7 @@ footer {
                   text-decoration: none;
                 }
                 .active {
-                  font-family: Gilroy;
+                 
                   font-style: normal;
                   font-weight: 600;
                   font-size: 20px;
@@ -1333,7 +1401,7 @@ footer {
             }
             .panel-collapse {
               .panel-body {
-                font-family: Gilroy;
+               
                 font-style: normal;
                 font-weight: normal;
                 font-size: 14px;
@@ -1347,7 +1415,7 @@ footer {
                 padding: 5px 36px;
                 margin-top: 9px;
                 background-color: #fcf199;
-                font-family: Gilroy;
+                
                 font-style: normal;
                 font-weight: bold;
                 font-size: 14px;
@@ -1371,7 +1439,6 @@ footer {
     .career2-row {
         margin-left: 168px;
       h3 {
-        font-family: Gilroy;
         font-style: normal;
         font-weight: 500;
         font-size: 32px;
@@ -1380,7 +1447,6 @@ footer {
         color: #FFFFFF;       
       }
       p {
-        font-family: Gilroy;
         font-style: normal;
         font-weight: normal;
         font-size: 16px;
@@ -1403,7 +1469,6 @@ footer {
                 margin-left: 190px;
                       .name{
                         margin-bottom: 31px;
-                        font-family: Gilroy;
                         font-style: normal;
                         font-weight: 500;
                         font-size: 14px;
@@ -1414,7 +1479,6 @@ footer {
                       }
                       .surname{
                         margin-bottom: 31px;
-                        font-family: Gilroy;
                         font-style: normal;
                         font-weight: 500;
                         font-size: 14px;
@@ -1425,7 +1489,6 @@ footer {
                       .email{
                         margin-bottom: 31px;
                         margin-bottom: 31px;
-                        font-family: Gilroy;
                         font-style: normal;
                         font-weight: 500;
                         font-size: 14px;
@@ -1435,7 +1498,6 @@ footer {
                       }
                       .telephone{
                         margin-bottom: 31px;
-                        font-family: Gilroy;
                         font-style: normal;
                         font-weight: 500;
                         font-size: 14px;
@@ -1447,7 +1509,6 @@ footer {
                       .txt{
                         margin-bottom: 31px;
                         margin-bottom: 31px;
-                        font-family: Gilroy;
                         font-style: normal;
                         font-weight: 500;
                         font-size: 14px;
@@ -1458,7 +1519,6 @@ footer {
                       .file{
                         margin-bottom: 31px;
                         margin-bottom: 31px;
-                        font-family: Gilroy;
                         font-style: normal;
                         font-weight: 500;
                         font-size: 14px;
@@ -1476,7 +1536,6 @@ footer {
                         button{
                             padding: 9px 328px;
                             border: none;
-                            font-family: Gilroy;
                             font-style: normal;
                             font-weight: 600;
                             font-size: 14px;
@@ -1607,4 +1666,9 @@ footer {
   }
 }
 //bahar// 
+#bahar{
+ 
+  
+}
+
 

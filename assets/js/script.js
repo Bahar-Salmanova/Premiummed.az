@@ -1,7 +1,24 @@
+$('#client-section .slidere-clients').owlCarousel({
+    items: 1,
+    loop: true,
+   autoplay:true,
+    nav:true,
+    responsive: {
+        0: {
+            items: 1
+        },
+        600: {
+            items: 3
+        },
+        1000: {
+            items: 9
+        }
+    }
+  });
 $('#product-image .karuselerow').owlCarousel({
     items: 1,
     loop: true,
-    autoplay:true,
+   
     nav:true,
     responsive: {
         0: {
@@ -54,9 +71,10 @@ $('#galery .karusele-row').owlCarousel({
       })
   })();
 $(' #news2-section2 .karusel').owlCarousel({
-    center:true,
+   center:true,
     items: 3,
     loop: true,
+    autoplay:true,
     margin:20,
     responsive: {
         0: {
@@ -66,7 +84,7 @@ $(' #news2-section2 .karusel').owlCarousel({
             items: 1
         },
         1000: {
-            items: 4
+            items: 3
         }
     }
   });
