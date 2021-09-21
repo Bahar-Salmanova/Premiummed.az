@@ -1,0 +1,52 @@
+﻿
+@model AboutViewModel
+
+<main>
+    <section id=news-main>
+        <div class="container news-container">
+            <img src="~/image/image.7.png" alt="">
+            <partial name="_breadcrumb" model="@Model.BreadCrumb" />
+        </div>
+    </section>
+    <section id="aboutus">
+        <div class="container aboutus-container">
+            <div class="row aboutus-row">
+                <div class="col-lg-5 missions">
+                    <ul class="list">
+                        <li><a asp-controller="aboutus" asp-action="index">Haqqımızda</a> </li>
+                        <li><a asp-controller="aboutus" asp-action="mission">Misiya</a></li>
+                        <li><a asp-controller="aboutus" asp-action="vision">Vizyon</a></li>
+                        <li><a asp-controller="aboutus" asp-action="quality" class="active">Keyfiyyət Siyasəti</a></li>
+                    </ul>
+
+
+                </div>
+                <div class="col-lg-7 description">
+                    <p class="quality">
+                        • Müştərilərimizin tələblərinə və fəaliyyət göstərdiyimiz sektorda səhiyyə sistemimizin qəbul
+                        etdiyi qaydalara uyğun olaraq, xidməti davamlı olaraq təkmilləşdirmək; Milli və beynəlxalq
+                        qanunlara, standartlara və tənzimləyici tələblərə uyğun hərəkət etmək, <br>
+                        • Davamlılığın və inkişafın təmin edilməsi, keyfiyyətin yalnız komanda işi ilə təmin olunacağına
+                        inanmaq, komanda ruhu və ümumi fikir metodu ilə partnyor müştərilərlə işləmək,<br>
+                        • Müştərilərimizin cari və gələcək ehtiyaclarını qarşılamaq üçün bu sahədə yeniliklərə sərmayə
+                        qoyaraq, keyfiyyətli və təhlükəsiz məhsullarla keyfiyyətli xidmət göstərmək, ilk dəfə və hər dəfə
+                        qeyri -şərtsiz müştəri məmnuniyyətini təmin etmək,<br>
+                        • Qurduğumuz keyfiyyət sistemlərini həyata keçirmək və təkmilləşdirmək üçün özünü
+                        yeniləmək və inkişaf etdirmək, insan resurslarına sərmayə qoyaraq davamlılığı təmin etmək. Bu
+                        sahədə kadrların davamlı inkişafını təmin etmək, təlimlər təşkil etmək,<br>
+                        • Sağlamlıq sektorundakı yenilikləri daim izləmək, bazar payını və məhsul çeşidini artırmaq,
+                        optimal səmərəliliyi və gəlirliliyi təmin etmək, sektorun liderləri arasında olmaq və
+                        rəqiblərimizdən öndə olmaq,<br>
+                        • Şirkət işçiləri üçün sağlam və təhlükəsiz iş mühiti təmin etmək, təlim, ünsiyyət və motivasiya
+                        imkanlarını artıraraq korporativ mənsubiyyət hissini gücləndirmək,<br>
+                        • Şirkətimizin fəaliyyətindən təsirlənən bütün insanların (işçilər, müvəqqəti işçilər,
+                        subpodratçılar, ziyarətçilər, müştərilər və iş yerindəki hər hansı bir şəxs) sağlamlığına və
+                        təhlükəsizliyinə təsir edən amilləri və şərtləri qiymətləndirmək və lazımi tədbirləri görmək,<br>
+                        • Ətraf mühit haqqında məlumatlılıq yaratmaq, onun qorunmasına və inkişafına töhfə vermək.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+

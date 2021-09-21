@@ -1,2 +1,0 @@
-# Premiummed.az
-Premiummed clinic

@@ -1,0 +1,60 @@
+﻿
+
+@model ProductOrderViewModel
+<main>
+    <section id=news-main>
+        <div class="container news-container">
+            <img src="~/image/image 5 (1).png" style="opacity: 0.3;width: 1440px;
+                height: 364px; background: white;" alt="">
+            <partial name="_breadcrumb" model="Model.BreadCrumb" />
+        </div>
+    </section>
+    <section id="productorder">
+        <div class="container productorder-container">
+            <h4>Sifarişiniz</h4>
+            <span>Zəhmət olmasa sifarişinizin təsdiqlənməsi üçün lazım olan məlumatları xanalara doldurun.</span>
+            <div class="row productorder-row ">
+                <div class="col-lg-8 order-form">
+                    <form method="post" asp-action="Order" class="row ">
+                        <div class="col-md-6 name form-group">
+                            <label asp-for="@Model.ProductOrder.Name"></label>
+                            <input type="text" asp-for="@Model.ProductOrder.Name" class="form-control" required="">
+                            <span asp-validation-for="@Model.ProductOrder.Name" class="text-danger"></span>
+                        </div>
+                        <br>
+                        <div class="col-md-6 surname form-group">
+                            <label asp-for="@Model.ProductOrder.Surname">Soyad</label>
+                            <input type="text" asp-for="@Model.ProductOrder.Surname" class="form-control" required="">
+                            <span asp-validation-for="@Model.ProductOrder.Surname" class="text-danger"></span>
+                        </div>
+                        <br>
+                        <div class="col-md-6 telephone form-group">
+                            <label asp-for="@Model.ProductOrder.Telephone">Əlaqə nömrəsi</label>
+                            <input type="text" asp-for="@Model.ProductOrder.Telephone" class="form-control" placeholder="+994" required="">
+                            <span asp-validation-for="@Model.ProductOrder.Telephone" class="text-danger"></span>
+                        </div>
+                        <div class="col-md-6 adres form-group">
+                            <label asp-for="@Model.ProductOrder.Adres">Çatdırılma ünvanı</label>
+                            <input type="text" asp-for="@Model.ProductOrder.Adres" class="form-control" placeholder="Ünvanınız">
+                            <span asp-validation-for="@Model.ProductOrder.Adres" class="text-danger"></span>
+                        </div>
+                        <div class="col-12 note form-group">
+                            <label asp-for="@Model.ProductOrder.Message">Qeyd(İstəyə bağlı)</label>
+                            <input type="text" asp-for="@Model.ProductOrder.Message" class="form-control" placeholder="Qeydiniz">
+                        </div>
+                        <div class="col-12 send form-group">
+                            <div class="form-group">
+                                <button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="btn-title">Sifariş et</span></button>
+                            </div>
+                        </div>
+
+
+                    </form>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+</main>
+

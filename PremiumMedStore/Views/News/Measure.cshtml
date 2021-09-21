@@ -1,0 +1,41 @@
+﻿@model MeasureViewModel
+<main>
+    <section id=news-main>
+        <div class="container news-container">
+            <img src="~/image/main-news.png" alt="">
+            <partial name="_breadcrumb" model="Model.BreadCrumb" />
+        </div>
+    </section>
+    <section id=news-page3>
+        <div class="container news-page3-container">
+            <div class="row news-page3-row">
+                <div class="col-lg-4 new-measure">
+                    <a asp-controller="news" asp-action="index"><h5>Xəbərlər</h5></a>
+                    <a asp-controller="news" asp-action="measure">  <h3>Tədbirlər</h3></a>
+                </div>
+                <div class="col-lg-8 roller-news">
+
+                    @foreach (var item in Model.Measures)
+                    {
+                        <div class="col-lg-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5>@item.Date</h5>
+                                    <a asp-controller="news" asp-action="singlemeasure" asp-route-id="@item.Id" class="card-title">@item.Title</a>
+                                    <p class="card-text">
+                                        @item.Desc
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    }
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+</main>

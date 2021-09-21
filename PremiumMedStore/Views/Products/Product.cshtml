@@ -1,0 +1,137 @@
+﻿
+@model ProductViewModel
+<main>
+    <section id=news-main>
+        <div class="container news-container">
+            <img src="~/image/fusion-medical-animation-EAgGqOiDDMg-unsplash 1.png" style="opacity: 0.3;"
+                 alt="">
+            <partial name="_breadcrumb" model="Model.BreadCrumb" />
+        </div>
+    </section>
+    <section id=product2>
+
+        <div class="container product2-container">
+            <span>Covid-19</span>
+            <div class="row product2-row">
+                <div class="col-lg-6 item">
+                    <img src="~/@Model.Product.Photo1" alt="">
+                </div>
+                <div class="col-lg-6 item">
+                    <img src="~/@Model.Product.Photo2" alt="">
+                </div>
+                <div class="col-lg-6 item">
+                    <h3>@Model.Product.Name</h3>
+                    <p>
+                        COVID-19 Ab tests use a patient blood sample to detect SARS-CoV-2 virus-specific antibodies
+                        COVID-19 virus-specific antibodies are produced when infected with the virus. The presence
+                        of this antibody may show the infection in progress or the past infection with active
+                        immunity. The COVID-19 Ab test detects the specific antibody to provide information on the
+                        patients’ immunity against the SARS-CoV-2 virus.
+                    </p>
+                    <button type="button"><a asp-controller="products" asp-action="order" asp-route-id="@Model.Product.Id">Sifariş et</a> </button>
+                </div>
+                <div class="col-lg-6 item">
+                    <img src="~/@Model.Product.Photo3" alt="">
+                </div>
+            </div>
+
+            <button type="submit"><a href="~/@Model.Product.ProductLink" download="Link"><i class="fas fa-download"></i>   Broşuru yüklə </a></button>
+
+
+        </div>
+    </section>
+    <section id="test-decs">
+        <div class="container test-decs-container">
+            <div class="row test-decs-row">
+                <div class="col-lg-3 item">
+                    <div class="card" style="width: 262px;height: 202px;">
+                        <div class="card-body">
+                            <div class="icon">
+                                <img src="~/image/transfusion 1.svg" alt="">
+                            </div>
+
+                            <h6 class="card-subtitle mb-2 text-muted">Sample Types</h6>
+                            <p class="card-text"> Whole blood, plasma, serum</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 item">
+                    <div class="card" style="width: 262px;height: 222px;">
+                        <div class="card-body">
+                            <div class="icon">
+                                <img src="~/image/reload 1.svg" alt="">
+                            </div>
+                            <h6 class="card-subtitle mb-2 text-muted">Reaction Time</h6>
+                            <p class="card-text">
+                                10 minutes
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 item">
+                    <div class="card" style="width: 262px;height: 242px;">
+                        <div class="card-body">
+                            <div class="icon">
+                                <img src="~/image/find 1.svg" alt="">
+                            </div>
+                            <h6 class="card-subtitle mb-2 text-muted">Detection Range</h6>
+                            <p class="card-text">
+                                AFIAS (0 – 40 COI) <br>
+                                ichroma™ (0 – 100 COI)
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 item">
+                    <div class="card" style="width: 262px;height: 282px;">
+                        <div class="card-body">
+                            <div class="icon">
+                                <img src="~/image/virus 1.svg" alt="">
+                            </div>
+
+                            <h6 class="card-subtitle mb-2 text-muted">Indication</h6>
+                            <p class="card-text">
+                                COVID-19 prevalence history, COVID-19-related <br> multisystem
+                                inflammatory syndrome, Plasma donor screening
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="diagnosis">
+        <div class="container diagnosis-container">
+            <div class="row diagnosis-row">
+                <div class="col-lg-6 anvisa">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Diagnosis diseases</h5>
+                            <p>SARS-CoV-2 infection(COVID-19)</p>
+                            <img src="~/image/image 36.png" alt=""> <br>
+                            <img src="~/image/image 37.png" alt="">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 m-field">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">In Your Medical Field</h5>
+                            <p class="card-text">
+                                The confirmation of COVID-19 infection requires tests on PCR, which
+                                takes hours and days. Such a test is not practical in sites where a speedy diagnosis
+                                is a priority issue. COVID-19 Ab tests provide information on the patients’
+                                immunity, helping medical professionals with the proper treatment planning with no
+                                PCR test.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
