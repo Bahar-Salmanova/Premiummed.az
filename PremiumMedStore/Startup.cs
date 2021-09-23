@@ -6,6 +6,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using PremiumMedStore.Data;
+using PremiumMedStore.Helpers;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -28,6 +29,8 @@ namespace PremiumMedStore
             services.AddControllersWithViews();
             services.AddDbContext<PremiumDbContext>(options =>
           options.UseSqlServer(Configuration.GetConnectionString("Default")));
+
+            services.AddSingleton<IFileManager, FileManager>();
 
 
         }
@@ -55,8 +58,13 @@ namespace PremiumMedStore
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
+                  name: "areas",
+                  pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
+
+                endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
+
             });
         }
     }

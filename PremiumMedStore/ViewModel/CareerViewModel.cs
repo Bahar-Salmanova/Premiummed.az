@@ -10,5 +10,8 @@ namespace PremiumMedStore.ViewModel
     {
         public BreadCrumbViewModel BreadCrumb { get; set; }
         public List<Vacancy>  Vacancy { get; set; }
+        public VacancyForm VacancyForm { get; set; }
+        public Settings Settings { get; set; }
+        public int Id { get; set; }
     }
 }

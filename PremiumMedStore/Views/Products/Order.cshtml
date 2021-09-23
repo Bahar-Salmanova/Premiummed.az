@@ -1,10 +1,9 @@
 ﻿
-
 @model ProductOrderViewModel
 <main>
     <section id=news-main>
         <div class="container news-container">
-            <img src="~/image/image 5 (1).png" style="opacity: 0.3;width: 1440px;
+            <img src="~/Uploads/image 5 (1).png" style="opacity: 0.3;width: 1440px;
                 height: 364px; background: white;" alt="">
             <partial name="_breadcrumb" model="Model.BreadCrumb" />
         </div>
@@ -15,7 +14,8 @@
             <span>Zəhmət olmasa sifarişinizin təsdiqlənməsi üçün lazım olan məlumatları xanalara doldurun.</span>
             <div class="row productorder-row ">
                 <div class="col-lg-8 order-form">
-                    <form method="post" asp-action="Order" class="row ">
+                    <form method="post" asp-action="Order" class="row "  enctype="multipart/form-data">
+                        <input type="hidden" asp-for="ProductOrder.ProductId" value="@Model.Id"/>
                         <div class="col-md-6 name form-group">
                             <label asp-for="@Model.ProductOrder.Name"></label>
                             <input type="text" asp-for="@Model.ProductOrder.Name" class="form-control" required="">

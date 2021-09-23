@@ -1,12 +1,9 @@
-﻿
-@{
-    ViewData["Title"] = "CareerApply";
-}
+﻿@model CareerViewModel
 
 <main>
     <section id="news2">
         <div class="div">
-            <partial name="_breadcrumb" />
+            <partial name="_breadcrumb" model="Model.BreadCrumb" />
         </div>
 
         <div class="container career2-container">
@@ -31,38 +28,49 @@
         <div class="container vacancy-form-container">
             <div class="row vacancy-form-row">
                 <div class="col-lg-8 apply">
-                    <form class="row g-3 needs-validation" novalidate>
-                        <div class="col-md-6 name">
-                            <label for="validationCustom01" class="form-label ">Ad</label>
-                            <input type="name" class="form-control" id="validationCustom01" required>
+                    <form asp-action="careerapply" method="post" enctype="multipart/form-data" class="row g-3 needs-validation" novalidate>
+                        <input type="hidden" asp-for="VacancyForm.VacancyId" value="@Model.Id" />
+                        <div class="col-md-6 name form-group">
+                            <label asp-for="@Model.VacancyForm.Name" class="control-label ">Ad</label>
+                            <input asp-for="@Model.VacancyForm.Name" class="form-control" required>
+                            <span asp-validation-for="@Model.VacancyForm.Name" class="text-danger"></span>
+
                             <div class="invalid-feedback">Zəhmət olmasa adınızı düzgün qeyd edin</div>
                         </div>
-                        <div class="col-md-6 surname">
-                            <label for="validationCustom02" class="form-label ">Soyad</label>
-                            <input type="text" class="form-control" id="validationCustom02" required>
+
+
+                        <div class="col-md-6 surname form-group">
+                            <label asp-for="@Model.VacancyForm.Surname" class="control-label"></label>
+                            <input asp-for="@Model.VacancyForm.Surname" class="form-control" />
+                            <span asp-validation-for="@Model.VacancyForm.Surname" class="text-danger"></span>
                             <div class="invalid-feedback">Zəhmət olmasa soyadınızı düzgün qeyd edin</div>
 
                         </div>
-                        <div class="col-md-6 email">
-                            <label for="floatingInput">Email address</label>
-                            <input type="email" class="form-control" id="floatingInput"
-                                   placeholder="Elektron poçtunuz" required>
+                        <div class="col-md-6 email form-group">
+                            <label asp-for="@Model.VacancyForm.Email">Email address</label>
+                            <input asp-for="@Model.VacancyForm.Email" placeholder="Elektron poçtunuz" required>
+                            <span asp-validation-for="@Model.VacancyForm.Email" class="text-danger"></span>
                             <div class="invalid-feedback">Zəhmət olmasa email ünvanınızı düzgün qeyd edin</div>
                         </div>
-                        <div class="col-md-6 telephone">
-                            <label for="validationCustom03" class="form-label ">Əlaqə nömrəsi</label>
-                            <input type="text" class="form-control" id="validationCustom03" placeholder="+994" required>
+                        <div class="col-md-6 telephone form-group">
+                            <label asp-for="@Model.VacancyForm.Telephone" class="form-label ">Əlaqə nömrəsi</label>
+                            <input asp-for="@Model.VacancyForm.Telephone" class="form-control" placeholder="+994" required>
+                            <span asp-validation-for="@Model.VacancyForm.Telephone" class="text-danger"></span>
                             <div class="invalid-feedback">Zəhmət olmasa əlaqə nömrəsini düzgün qeyd edin</div>
                         </div>
-                        <div class="col-12 txt">
-                            <label for="exampleFormControlTextarea1" class="form-label">Müraciət mətni</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        <div class="col-12 txt form-group">
+                            <label asp-for="@Model.VacancyForm.Text" class="form-label">Müraciət mətni</label>
+                            <textarea asp-for="@Model.VacancyForm.Text" class="form-control" rows="3"></textarea>
+                            <span asp-validation-for="@Model.VacancyForm.Text" class="text-danger"></span>
+
                         </div>
-                        <div class="col-lg-12 file">
-                            <input type="file" class="form-control" required>
+                        <div class="col-lg-12 file form-group">
+                            <input asp-for="@Model.VacancyForm.Upload" type="file" class="form-control" required>
+                            <span asp-validation-for="@Model.VacancyForm.Upload" class="text-danger"></span>
                             <div class="invalid-feedback">Fayl yukleyin</div>
 
                         </div>
+
                         <div class="col-12 bton">
                             <button class="btn btn-primary" type="submit">Göndər</button>
                         </div>

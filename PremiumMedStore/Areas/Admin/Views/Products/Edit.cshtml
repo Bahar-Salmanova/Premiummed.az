@@ -1,0 +1,66 @@
+﻿@model PremiumMedStore.Models.Products
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Products</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Photo" class="control-label"></label>
+                <input asp-for="Photo" class="form-control" />
+                <span asp-validation-for="Photo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Photo1" class="control-label"></label>
+                <input asp-for="Photo1" class="form-control" />
+                <span asp-validation-for="Photo1" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Photo2" class="control-label"></label>
+                <input asp-for="Photo2" class="form-control" />
+                <span asp-validation-for="Photo2" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Photo3" class="control-label"></label>
+                <input asp-for="Photo3" class="form-control" />
+                <span asp-validation-for="Photo3" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ProductAbout" class="control-label"></label>
+                <input asp-for="ProductAbout" class="form-control" />
+                <span asp-validation-for="ProductAbout" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FullAbout" class="control-label"></label>
+                <input asp-for="FullAbout" class="form-control" />
+                <span asp-validation-for="FullAbout" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ProductLink" class="control-label"></label>
+                <input asp-for="ProductLink" class="form-control" />
+                <span asp-validation-for="ProductLink" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+

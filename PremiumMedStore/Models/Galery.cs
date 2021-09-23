@@ -14,6 +14,14 @@ namespace PremiumMedStore.Models
 
         [MaxLength(300)]
         public string Photo { get; set; }
+
+        [MaxLength(300)]
+        public string Photo1 { get; set; }
+
+        [MaxLength(300)]
+        public string Photo2 { get; set; }
+
+
         [NotMapped]
         public IFormFile Upload { get; set; }
     }

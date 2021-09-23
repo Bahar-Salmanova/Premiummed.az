@@ -15,6 +15,9 @@ namespace PremiumMedStore.Models
 
         [MaxLength(1000)]
         public string Desc { get; set; }
+        public string Link { get; set; }
+
+        public string LinkName { get; set; }
 
         public ICollection<VacancyForm> VacancyForms { get; set; }
     }

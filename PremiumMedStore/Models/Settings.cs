@@ -15,6 +15,8 @@ namespace PremiumMedStore.Models
         [MaxLength(50)]
         public string Telephone { get; set; }
 
+        public string Telephone2 { get; set; }
+
         [MaxLength(500)]
         public string Adress { get; set; }
 

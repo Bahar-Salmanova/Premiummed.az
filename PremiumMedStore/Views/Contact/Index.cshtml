@@ -1,12 +1,10 @@
 ﻿
-@{
-    ViewData["Title"] = "Index";
-}
+@model ContactViewModel
 
 <main>
     <section id="news2">
         <div class="div">
-            <partial name="_breadcrumb" />
+            <partial name="_breadcrumb" model="Model.BreadCrumb" />
         </div>
         <div class="container contact-container">
             <div class="row contact-row">
@@ -14,18 +12,18 @@
                     <ul class="contact-list">
                         <li>
                             <span>ÜNVAN</span>
-                            <p>AZ1000, Bakı, Ü. Hacıbəyli küç., 84</p>
+                            <p>@Model.Setting.Adress</p>
                         </li>
                         <li>
                             <span>MAIL ÜNVANI</span><br>
-                            <a href="">info@premiummed.az</a>
+                            <a href="info@premiummed.az">@Model.Setting.Email</a>
                         </li>
                         <li>
                             <span>ƏLAQƏ NÖMRƏSİ</span>
                             <p>
-                                +994 (55) 850 11 15 <br>
+                                @Model.Setting.Telephone <br>
 
-                                +994 (55) 850 11 16
+                               @Model.Setting.Telephone2
                             </p>
                         </li>
                     </ul>

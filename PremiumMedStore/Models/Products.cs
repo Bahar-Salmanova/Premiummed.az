@@ -34,6 +34,10 @@ namespace PremiumMedStore.Models
         [MaxLength(100)]
         public string ProductAbout { get; set; }
 
+
+        [MaxLength(1000)]
+        public string FullAbout { get; set; }
+
         [MaxLength(200)]
         public string ProductLink { get; set; }
 

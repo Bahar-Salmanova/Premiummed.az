@@ -39,21 +39,19 @@ namespace PremiumMedStore.Controllers
         {
             ProductOrderViewModel model = new ProductOrderViewModel
             {
-               
-
-                ProductOrder = _context.ProductOrders.FirstOrDefault(),
+              ProductOrders=_context.ProductOrders.Include(p=>p.Product).ToList(),
+                
                 BreadCrumb = new BreadCrumbViewModel
                 {
                     Title = "Ana Səhifə",
                     Links = "Məhsullar"
-                }
+                },
+                Id = id
             };
             return View(model);
         }
-
-
         [HttpPost]
-        [Route("/{action}")]
+        [Route("{action}")]
         public IActionResult Order(ProductOrder productOrder)
         {
             ProductOrder order = new ProductOrder
@@ -63,6 +61,7 @@ namespace PremiumMedStore.Controllers
                 Telephone = productOrder.Telephone,
                 Adres = productOrder.Adres,
                 Message = productOrder.Message,
+                ProductId=productOrder.ProductId,
                
             };
             _context.ProductOrders.Add(order);

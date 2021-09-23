@@ -22,6 +22,7 @@ namespace PremiumMedStore.Data
         public DbSet<Vacancy> Vacancies { get; set; }
         public DbSet<VacancyForm> VacancyForms { get; set; }
         public DbSet<Welcome> Welcomes { get; set; }
+        public DbSet<User> Users { get; set; }
 
     }
 }

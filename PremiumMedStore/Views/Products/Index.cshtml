@@ -1,9 +1,9 @@
-﻿
+﻿@model ProductViewModel
 
 <main>
     <section id=news-main>
         <div class="container news-container">
-            <img src="~/image/fusion-medical-animation-EAgGqOiDDMg-unsplash 1.png" style="opacity: 0.3;" alt="">
+            <img src="~/uploads/fusion-medical-animation-EAgGqOiDDMg-unsplash 1.png" style="opacity: 0.3;" alt="">
 
             <partial name="_breadcrumb" model="Model.BreadCrumb" />
         </div>
@@ -19,7 +19,7 @@
                         <p>@item.ProductAbout </p>
                     </div>
                     <div class="col-lg-6">
-                        <img src="~/@item.Photo" alt="">
+                        <img src="~/Uploads/@item.Photo" alt="">
                     </div>
                 </div>
             }
