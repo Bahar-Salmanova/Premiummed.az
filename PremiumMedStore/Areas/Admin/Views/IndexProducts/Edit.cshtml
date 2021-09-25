@@ -4,9 +4,9 @@
     ViewData["Title"] = "Edit";
 }
 
-<h1>Edit</h1>
+<h1>Dəyişdir</h1>
 
-<h4>IndexProduct</h4>
+<h4>Əsas Səhifə Şəkil</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
@@ -23,29 +23,77 @@
                 <input asp-for="Desc" class="form-control" />
                 <span asp-validation-for="Desc" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="Photo1" class="control-label"></label>
-                <input asp-for="Photo1" class="form-control" />
-                <span asp-validation-for="Photo1" class="text-danger"></span>
+            <div class="custom-file my-3">
+                <input asp-for="Upload1" class="custom-file-input">
+                <label asp-for="Upload1" class="custom-file-label">Fayl Seçin</label>
+                <span asp-validation-for="Upload1" class="text-danger"></span>
+            </div>
+            <div class="custom-file my-3">
+                <input asp-for="Upload2" class="custom-file-input">
+                <label asp-for="Upload2" class="custom-file-label">Fayl Seçin</label>
+                <span asp-validation-for="Upload2" class="text-danger"></span>
+            </div>
+            <div class="custom-file my-3">
+                <input asp-for="Upload3" class="custom-file-input">
+                <label asp-for="Upload3" class="custom-file-label">Fayl Seçin</label>
+                <span asp-validation-for="Upload3" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Photo2" class="control-label"></label>
-                <input asp-for="Photo2" class="form-control" />
-                <span asp-validation-for="Photo2" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Photo3" class="control-label"></label>
-                <input asp-for="Photo3" class="form-control" />
-                <span asp-validation-for="Photo3" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
+                <input type="submit" value="Yadda Saxla" class="btn btn-primary" />
             </div>
         </form>
+    </div>
+    <div class="col-lg-2 ">
+        <img class="image-preview img-fluid mt-4" src="~/uploads/@Model.Photo1" />
+    </div>
+    <div class="col-lg-2 ">
+        <img class="image-preview img-fluid mt-4" src="~/uploads/@Model.Photo2" />
+    </div>
+    <div class="col-lg-2 ">
+        <img class="image-preview img-fluid mt-4" src="~/uploads/@Model.Photo3" />
     </div>
 </div>
 
 <div>
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Index">Geri</a>
 </div>
+
+@section Scripts{
+
+
+    <script>
+        $(document).ready(function () {
+            $("#Upload1").change(function () {
+                var file = this.files[0];
+                var fileReader = new FileReader();
+                fileReader.onload = function (e) {
+                    var preview = $(".image-preview");
+                    preview[0].src = e.target.result;
+                    //$(".image-preview")[i].attr("src", e.target.result);
+                };
+                fileReader.readAsDataURL(file, "UTF-8");
+            });
+            $("#Upload2").change(function () {
+                var file = this.files[0];
+                var fileReader = new FileReader();
+                fileReader.onload = function (e) {
+                    var preview = $(".image-preview");
+                    preview[1].src = e.target.result;
+                    //$(".image-preview")[i].attr("src", e.target.result);
+                };
+                fileReader.readAsDataURL(file, "UTF-8");
+            });
+            $("#Upload3").change(function () {
+                var file = this.files[0];
+                var fileReader = new FileReader();
+                fileReader.onload = function (e) {
+                    var preview = $(".image-preview");
+                    preview[2].src = e.target.result;
+                    //$(".image-preview")[i].attr("src", e.target.result);
+                };
+                fileReader.readAsDataURL(file, "UTF-8");
+            });
+        });
+    </script>
+}
 

@@ -58,17 +58,17 @@ namespace PremiumMedStore.Areas.Admin.Controllers
 
             return View(model);
         }
-        public IActionResult LogOut(int Id)
+        public IActionResult LogOut()
         {
-            User user = _context.Users.FirstOrDefault(x => x.Id == Id);
+            //User user = _context.Users.FirstOrDefault(x => x.Id == Id);
 
-            if (user != null)
-            {
+            //if (user != null)
+            //{
                 Response.Cookies.Delete("token");
                 return RedirectToAction("index", "Home");
-            }
+            //}
 
-            return NoContent();
+            //return NoContent();
         }
     }
 }

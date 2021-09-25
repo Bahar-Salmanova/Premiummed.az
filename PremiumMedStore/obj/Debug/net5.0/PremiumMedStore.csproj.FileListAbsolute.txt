@@ -199,10 +199,8 @@ C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Debug\net5.0\Razo
 C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Debug\net5.0\Razor\Areas\Admin\Views\Settings\Details.cshtml.g.cs
 C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Debug\net5.0\Razor\Areas\Admin\Views\Settings\Edit.cshtml.g.cs
 C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Debug\net5.0\Razor\Areas\Admin\Views\Settings\Index.cshtml.g.cs
-C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Debug\net5.0\Razor\Areas\Admin\Views\ProductOrders\Create.cshtml.g.cs
 C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Debug\net5.0\Razor\Areas\Admin\Views\ProductOrders\Delete.cshtml.g.cs
 C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Debug\net5.0\Razor\Areas\Admin\Views\ProductOrders\Details.cshtml.g.cs
-C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Debug\net5.0\Razor\Areas\Admin\Views\ProductOrders\Edit.cshtml.g.cs
 C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Debug\net5.0\Razor\Areas\Admin\Views\ProductOrders\Index.cshtml.g.cs
 C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Debug\net5.0\Razor\Areas\Admin\Views\SosialLinks\Create.cshtml.g.cs
 C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Debug\net5.0\Razor\Areas\Admin\Views\SosialLinks\Delete.cshtml.g.cs

@@ -34,17 +34,13 @@
                             <label asp-for="@Model.VacancyForm.Name" class="control-label ">Ad</label>
                             <input asp-for="@Model.VacancyForm.Name" class="form-control" required>
                             <span asp-validation-for="@Model.VacancyForm.Name" class="text-danger"></span>
-
                             <div class="invalid-feedback">Zəhmət olmasa adınızı düzgün qeyd edin</div>
                         </div>
-
-
                         <div class="col-md-6 surname form-group">
                             <label asp-for="@Model.VacancyForm.Surname" class="control-label"></label>
                             <input asp-for="@Model.VacancyForm.Surname" class="form-control" />
                             <span asp-validation-for="@Model.VacancyForm.Surname" class="text-danger"></span>
                             <div class="invalid-feedback">Zəhmət olmasa soyadınızı düzgün qeyd edin</div>
-
                         </div>
                         <div class="col-md-6 email form-group">
                             <label asp-for="@Model.VacancyForm.Email">Email address</label>
@@ -68,7 +64,6 @@
                             <input asp-for="@Model.VacancyForm.Upload" type="file" class="form-control" required>
                             <span asp-validation-for="@Model.VacancyForm.Upload" class="text-danger"></span>
                             <div class="invalid-feedback">Fayl yukleyin</div>
-
                         </div>
 
                         <div class="col-12 bton">

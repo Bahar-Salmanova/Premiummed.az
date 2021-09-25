@@ -19,15 +19,15 @@ namespace PremiumMedStore.Models
         [MaxLength(200)]
         public string Photo { get; set; }
 
-        [Required,MaxLength(200)]
+        [MaxLength(200)]
 
         public string Photo1  { get; set; }
 
-        [Required, MaxLength(200)]
+        [MaxLength(200)]
 
         public string Photo2 { get; set; }
 
-        [Required, MaxLength(200)]
+        [MaxLength(200)]
         public string Photo3 { get; set; }
 
 
@@ -43,6 +43,12 @@ namespace PremiumMedStore.Models
 
         [NotMapped]
         public IFormFile Upload { get; set; }
+        [NotMapped]
+        public IFormFile Upload1 { get; set; }
+        [NotMapped]
+        public IFormFile Upload2 { get; set; }
+        [NotMapped]
+        public IFormFile Upload3 { get; set; }
 
         public ICollection<ProductOrder> ProductOrders{ get; set; }
 

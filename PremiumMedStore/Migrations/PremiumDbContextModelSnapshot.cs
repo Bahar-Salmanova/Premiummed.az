@@ -210,17 +210,14 @@ namespace PremiumMedStore.Migrations
                         .HasColumnType("nvarchar(200)");
 
                     b.Property<string>("Photo1")
-                        .IsRequired()
                         .HasMaxLength(200)
                         .HasColumnType("nvarchar(200)");
 
                     b.Property<string>("Photo2")
-                        .IsRequired()
                         .HasMaxLength(200)
                         .HasColumnType("nvarchar(200)");
 
                     b.Property<string>("Photo3")
-                        .IsRequired()
                         .HasMaxLength(200)
                         .HasColumnType("nvarchar(200)");
 

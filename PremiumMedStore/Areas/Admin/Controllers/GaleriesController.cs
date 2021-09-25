@@ -1,12 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using PremiumMedStore.Data;
 using PremiumMedStore.Filters;
+using PremiumMedStore.Helpers;
 using PremiumMedStore.Models;
 
 namespace PremiumMedStore.Areas.Admin.Controllers
@@ -16,10 +19,12 @@ namespace PremiumMedStore.Areas.Admin.Controllers
     public class GaleriesController : Controller
     {
         private readonly PremiumDbContext _context;
+        private readonly IFileManager _fileManager;
 
-        public GaleriesController(PremiumDbContext context)
+        public GaleriesController(PremiumDbContext context, IFileManager fileManager)
         {
             _context = context;
+            _fileManager = fileManager;
         }
 
         // GET: Admin/Galeries
@@ -57,10 +62,31 @@ namespace PremiumMedStore.Areas.Admin.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Photo,Photo1,Photo2")] Galery galery)
+        public async Task<IActionResult> Create([Bind("Id,Upload1, Upload2, Upload3")] Galery galery)
         {
+            if (galery.Upload1 == null)
+            {
+                ModelState.AddModelError("Uploads", "The Photo field is required.");
+            }
+            if (galery.Upload2 == null)
+            {
+                ModelState.AddModelError("Uploads", "The Photo field is required.");
+            }
+            if (galery.Upload3 == null)
+            {
+                ModelState.AddModelError("Uploads", "The Photo field is required.");
+            }
             if (ModelState.IsValid)
             {
+                var fileName = _fileManager.Upload(galery.Upload1, "wwwroot/uploads");
+                galery.Photo = fileName;
+
+                var fileName1 = _fileManager.Upload(galery.Upload2, "wwwroot/uploads");
+                galery.Photo1 = fileName1;
+
+                var fileName2 = _fileManager.Upload(galery.Upload3, "wwwroot/uploads");
+                galery.Photo2 = fileName2;
+
                 _context.Add(galery);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
@@ -89,23 +115,69 @@ namespace PremiumMedStore.Areas.Admin.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Photo,Photo1,Photo2")] Galery galery)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Upload1,Photo,Upload2,Photo1,Upload3,Photo2")] Galery galery)
         {
             if (id != galery.Id)
             {
                 return NotFound();
             }
+           
 
             if (ModelState.IsValid)
             {
                 try
                 {
+                    if (galery.Upload1 != null)
+                    {
+                        var oldFile = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "uploads", galery.Photo);
+                        _fileManager.Delete(oldFile);
+
+                        if (System.IO.File.Exists(oldFile))
+                        {
+                            _fileManager.Delete(oldFile);
+                        }
+
+                        var fileName = _fileManager.Upload(galery.Upload1, "wwwroot/uploads");
+                        galery.Photo = fileName;
+
+
+                    }
+                    if (galery.Upload2 != null)
+                    {
+                        var oldFile = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "uploads", galery.Photo1);
+                        _fileManager.Delete(oldFile);
+
+                        if (System.IO.File.Exists(oldFile))
+                        {
+                            _fileManager.Delete(oldFile);
+                        }
+
+                        var fileName = _fileManager.Upload(galery.Upload2, "wwwroot/uploads");
+                        galery.Photo1 = fileName;
+
+
+                    }
+                    if (galery.Upload3 != null)
+                    {
+                        var oldFile = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "uploads", galery.Photo2);
+                        _fileManager.Delete(oldFile);
+
+                        if (System.IO.File.Exists(oldFile))
+                        {
+                            _fileManager.Delete(oldFile);
+                        };
+
+                        var fileName = _fileManager.Upload(galery.Upload3, "wwwroot/uploads");
+                        galery.Photo2 = fileName;
+
+
+                    }
                     _context.Update(galery);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!GaleryExists(galery.Id))
+                    if (!NewsExists(galery.Id))
                     {
                         return NotFound();
                     }
@@ -117,6 +189,11 @@ namespace PremiumMedStore.Areas.Admin.Controllers
                 return RedirectToAction(nameof(Index));
             }
             return View(galery);
+        }
+
+        private bool NewsExists(int id)
+        {
+            throw new NotImplementedException();
         }
 
         // GET: Admin/Galeries/Delete/5

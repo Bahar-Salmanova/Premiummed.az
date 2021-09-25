@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using PremiumMedStore.Data;
+using PremiumMedStore.Helpers;
 using PremiumMedStore.Models;
 using PremiumMedStore.ViewModel;
 using System;
@@ -13,10 +14,12 @@ namespace PremiumMedStore.Controllers
     public class CareerController : Controller
     {
          private readonly PremiumDbContext _context;
+        private readonly IFileManager _fileManager;
 
-        public CareerController(PremiumDbContext context)
+        public CareerController(PremiumDbContext context, IFileManager fileManager)
         {
             _context = context;
+            _fileManager = fileManager;
 
         }
         public IActionResult Index()
@@ -53,18 +56,19 @@ namespace PremiumMedStore.Controllers
         [Route("{action}")]
         public IActionResult CareerApply(VacancyForm vacancyForm)
         {
-            VacancyForm form = new VacancyForm
-            {
-                Name = vacancyForm.Name,
-                Surname = vacancyForm.Surname,
-                Telephone = vacancyForm.Telephone,
-                Text = vacancyForm.Text,
-                Email=vacancyForm.Email,    
-                File=vacancyForm.File,
-                VacancyId = vacancyForm.VacancyId
-
-            };
-            _context.VacancyForms.Add(form);
+            var fileName = _fileManager.Upload(vacancyForm.Upload, "wwwroot/uploads");
+            vacancyForm.File = fileName;
+            //VacancyForm form = new VacancyForm
+            //{
+            //    Name = vacancyForm.Name,
+            //    Surname = vacancyForm.Surname,
+            //    Telephone = vacancyForm.Telephone,
+            //    Text = vacancyForm.Text,
+            //    Email=vacancyForm.Email,    
+            //    File = fileName,
+            //    VacancyId = vacancyForm.VacancyId
+            //};
+            _context.VacancyForms.Add(vacancyForm);
             _context.SaveChanges();
             return RedirectToAction("index");
         }

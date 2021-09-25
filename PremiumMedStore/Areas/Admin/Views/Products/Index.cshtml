@@ -4,11 +4,16 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
-
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-9">
+            <div class="col-lg-6"><h1>Məhsullar</h1></div>
+            <div class="col-lg-3">
+                <a asp-action="Create"><i class="fas fa-plus-square "></i></a>
+            </div>
+        </div>
+    </div>
+</div>
 <table class="table">
     <thead>
         <tr>
@@ -46,16 +51,16 @@
                 @Html.DisplayFor(modelItem => item.Name)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Photo)
+                <img class="w-75" src="~/Uploads/@item.Photo" alt="Alternate Text" />
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Photo1)
+                <img class="w-75" src="~/Uploads/@item.Photo1" alt="Alternate Text" />
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Photo2)
+                <img class="w-75" src="~/Uploads/@item.Photo2" alt="Alternate Text" />
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Photo3)
+                <img class="w-75" src="~/Uploads/@item.Photo3" alt="Alternate Text" />
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.ProductAbout)
@@ -67,9 +72,9 @@
                 @Html.DisplayFor(modelItem => item.ProductLink)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                <a asp-action="Edit" asp-route-id="@item.Id">Dəyişdir</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Detallar</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Sil</a>
             </td>
         </tr>
 }

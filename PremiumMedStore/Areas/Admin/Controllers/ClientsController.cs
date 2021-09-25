@@ -160,7 +160,7 @@ namespace PremiumMedStore.Areas.Admin
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             var clients = await _context.Clients.FindAsync(id);
-            _fileManager.Delete(clients.Logo, "wwwroot/uploads");
+            _fileManager.Delete(clients.Logo,"wwwroot/uploads");
             _context.Clients.Remove(clients);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));

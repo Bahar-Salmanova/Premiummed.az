@@ -28,6 +28,10 @@ namespace PremiumMedStore.Models
         public string Photo3 { get; set; }
 
         [NotMapped]
-        public IFormFile Upload { get; set; }
+        public IFormFile Upload1 { get; set; }
+        [NotMapped]
+        public IFormFile Upload2 { get; set; }
+        [NotMapped]
+        public IFormFile Upload3 { get; set; }
     }
 }
