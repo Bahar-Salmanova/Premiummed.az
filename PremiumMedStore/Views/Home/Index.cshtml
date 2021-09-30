@@ -21,18 +21,19 @@
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
             </a>
-
+            <h3>
+                @Model.Welcome.About
+            </h3>
+            <p>
+                @Model.Welcome.Description
+            </p>
         </div>
-        <h3>
-            @Model.Welcome.About
-        </h3>
-        <p>
-            @Model.Welcome.Description
-        </p>
+       
         <button type="button">
-            <a asp-controller="products" asp-action="index">Məhsullar</a>
+            <a asp-controller="products" asp-action="productcategory">Məhsullar</a>
         </button>
     </section>
+
     <section id="product-image">
         <div class="container product-image-container">
 
@@ -40,37 +41,32 @@
                 <h3>Məhsullar </h3>
                 <div class="col-lg-12 product-img-col">
                     <div class="owl-carousel karuselerow owl-theme">
-
-                        @foreach (var item in Model.IndexProduct)
+                        @foreach (var item in Model.Products)
                         {
                             <div class="row item">
                                 <div class="col-lg-6 col">
                                     <img src="~/Uploads/@item.Photo1" alt="">
-                                    <h4>@item.Title</h4>
+                                  <a asp-controller="products" asp-action="product" asp-route-id="@item.Id"><h4>@item.Name</h4></a>  
                                     <p>
-                                       @item.Desc
+                                        @item.ProductAbout
                                     </p>
                                 </div>
                                 <div class="col-lg-6 col">
                                     <img src="~/Uploads/@item.Photo2" alt="">
                                     <img src="~/Uploads/@item.Photo3" alt="">
                                 </div>
-                                <div class="xedice"></div>
                             </div>
                         }
 
-
-                       
-
-
                     </div>
+                    <div class="xedice"></div>
                 </div>
 
             </div>
 
         </div>
     </section>
-    <section id="about">
+   <section id="about">
         <div class="container about-container">
             <img src="~/Uploads/image.7.png" alt="">
 
@@ -89,7 +85,8 @@
                         fəaliyyəti , laborator məhsul və xidmətlərin realizasiyası, layihələr üzrə fəaliyyət,
                         klinikaların metodik və servis dəstəyinin mükəmməl şəkildə həyata..
                     </p>
-                    <a asp-controller="aboutus" asp-action="index">Hamısını oxu ---></a>
+                    <a asp-controller="aboutus" asp-action="index" >Hamısını oxu <i class="fas fa-arrow-right ml-1 mt-3"></i> </a>
+                   
                 </div>
             </div>
         </div>
@@ -109,11 +106,46 @@
         </div>
         <div class=" client-slidere">
             <div class=" slidere-clients owl-carousel owl-theme">
+                <div class=" item" style="width: 70px;">
+                    <img src="~/uploads/image 27.png" alt="" class="randox first">
+                    <img src="~/uploads/2...png" alt="" class="randox second">
 
-                @foreach (var item in Model.Clients)
-                {
-                    <div class=" item" style="width: 70px;"><img src="~/Uploads/@item.Logo" alt=""></div>
-                }
+                </div>
+                <div class=" item" style="width: 70px;">
+                    <img src="~/uploads/image 28.png" alt="" class="first">
+                    <img src="~/uploads/3...png" class="second" alt="">
+
+                </div>
+                <div class=" item" style="width: 70px;">
+                    <img src="~/uploads/image 29.png" alt="" class="first">
+                    <img src="~/uploads/4...png" class="second" alt="">
+                </div>
+                <div class=" item" style="width: 70px;">
+                    <img src="~/uploads/image 30.png" alt="" class="first">
+                    <img src="~/uploads/5...png" class="second" alt="">
+
+                </div>
+                <div class=" item" style="width: 70px;">
+                    <img src="~/uploads/image 32.png" alt="" class="first">
+                    <img src="~/uploads/7...png" class="second" alt="">
+                </div>
+                <div class=" item" style="width: 70px;">
+                    <img src="~/uploads/image 31.png" alt="" class="first">
+                    <img src="~/uploads/6...png" class="second" alt="">
+                </div>
+                <div class=" item" style="width: 70px;">
+                    <img src="~/uploads/image 30.png" alt="" class="first">
+                    <img src="~/uploads/5...png" class="second" alt="">
+
+                </div>
+                <div class=" item" style="width: 70px;">
+                    <img src="~/uploads/image 27.png" alt="" class="first randox">
+                    <img src="~/uploads/2...png" alt="" class="randox second">
+                </div>
+                <div class=" item" style="width: 70px;">
+                    <img src="~/uploads/8...png" alt="" class="first">
+                    <img src="~/uploads/image 34.png" alt="" class="second">
+                </div>
 
             </div>
         </div>
@@ -150,7 +182,7 @@
             <div class="col-lg-6 order">
                 <span>Məhsullarımızı əldə etmək çətin deyil!</span>
                 <h4>İndi sifariş et!</h4>
-                <button><a asp-controller="products" asp-action="index">Sifariş et</a> </button>
+                <button><a asp-controller="products" asp-action="productcategory">Sifariş et</a> </button>
             </div>
             <div class="col-lg-6 support ">
                 <span>24/7 xidmətinizdəyik!</span>

@@ -4,16 +4,14 @@ using PremiumMedStore.Data;
 using PremiumMedStore.Helpers;
 using PremiumMedStore.Models;
 using PremiumMedStore.ViewModel;
-using System;
-using System.Collections.Generic;
+using System.IO;
 using System.Linq;
-using System.Threading.Tasks;
 
 namespace PremiumMedStore.Controllers
 {
     public class CareerController : Controller
     {
-         private readonly PremiumDbContext _context;
+        private readonly PremiumDbContext _context;
         private readonly IFileManager _fileManager;
 
         public CareerController(PremiumDbContext context, IFileManager fileManager)
@@ -34,6 +32,8 @@ namespace PremiumMedStore.Controllers
                     Links = "Vakansiya"
                 }
             };
+            ViewBag.Active = "Karyera";
+            ViewBag.ProductCategories = _context.ProductCategories.ToList();
             return View(model);
         }
         [Route("{action}")]
@@ -41,8 +41,8 @@ namespace PremiumMedStore.Controllers
         {
             CareerViewModel model = new CareerViewModel
             {
-                Vacancy = _context.Vacancies.Include(v=>v.VacancyForms).ToList(),
-                
+                Vacancy = _context.Vacancies.Include(v => v.VacancyForms).ToList(),
+
                 BreadCrumb = new BreadCrumbViewModel
                 {
                     Title = "Ana Səhifə",
@@ -50,12 +50,38 @@ namespace PremiumMedStore.Controllers
                 },
                 Id = id
             };
+            ViewBag.Active = "Karyera";
+            ViewBag.ProductCategories = _context.ProductCategories.ToList();
             return View(model);
         }
+
         [HttpPost]
         [Route("{action}")]
         public IActionResult CareerApply(VacancyForm vacancyForm)
         {
+            if(vacancyForm.VacancyId == 0)
+            {
+                return NotFound();
+            }
+            if (vacancyForm.Upload.ContentType != "application/pdf")
+            {
+                ModelState.AddModelError("VacancyForm.Upload", "yalniz pdf fayli olar");
+                CareerViewModel model = new CareerViewModel
+                {
+                    Vacancy = _context.Vacancies.Include(v => v.VacancyForms).ToList(),
+
+                    BreadCrumb = new BreadCrumbViewModel
+                    {
+                        Title = "Ana Səhifə",
+                        Links = "Vakansiya"
+                    },
+                    Id = vacancyForm.VacancyId
+                };
+                ViewBag.Active = "Karyera";
+                ViewBag.ProductCategories = _context.ProductCategories.ToList();
+                return View(model);
+            };
+
             var fileName = _fileManager.Upload(vacancyForm.Upload, "wwwroot/uploads");
             vacancyForm.File = fileName;
             //VacancyForm form = new VacancyForm

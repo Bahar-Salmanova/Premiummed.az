@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using PremiumMedStore.Data;
 using PremiumMedStore.ViewModel;
@@ -28,7 +29,10 @@ namespace PremiumMedStore.Controllers
                 IndexProduct = _context.IndexProducts.ToList(),
                 Clients = _context.Clients.ToList(),
                 News = _context.News.ToList(),
+                Products=_context.Products.Take(2).ToList(),
+                ProductCategory = _context.ProductCategories.ToList(),
             };
+            ViewBag.ProductCategories = _context.ProductCategories.ToList();
             return View(model);
         }
 

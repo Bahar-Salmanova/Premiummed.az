@@ -17,6 +17,8 @@
             <input type="hidden" asp-for="Photo1" />
             <input type="hidden" asp-for="Photo2" />
             <input type="hidden" asp-for="Photo3" />
+            <input type="hidden" asp-for="ProductLink" />
+
             <div class="form-group">
                 <label asp-for="Name" class="control-label"></label>
                 <input asp-for="Name" class="form-control" />
@@ -52,10 +54,27 @@
                 <input asp-for="FullAbout" class="form-control" />
                 <span asp-validation-for="FullAbout" class="text-danger"></span>
             </div>
+
+            <div class="custom-file my-3">
+                <input asp-for="File" class="custom-file-input">
+                <label asp-for="File" class="custom-file-label">Fayl Seçin</label>
+                <span asp-validation-for="File" class="text-danger"></span>
+            </div>
             <div class="form-group">
-                <label asp-for="ProductLink" class="control-label"></label>
-                <input asp-for="ProductLink" class="form-control" />
-                <span asp-validation-for="ProductLink" class="text-danger"></span>
+                <label asp-for="ProductCategoryId" class="control-label"></label>
+                <select asp-for="ProductCategoryId" class="form-control">
+                    @foreach (var item in ViewBag.Products)
+                    {
+                        if (Model.ProductCategoryId == item.Id)
+                        {
+                            <option selected value="@item.Id">@item.Name</option>
+                        }
+                        else
+                        {
+                            <option value="@item.Id">@item.Name</option>
+                        }
+                    }
+                </select>
             </div>
             <div class="form-group">
                 <input type="submit" value="Yadda Saxla" class="btn btn-primary" />

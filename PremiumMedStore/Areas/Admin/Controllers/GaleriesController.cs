@@ -78,13 +78,44 @@ namespace PremiumMedStore.Areas.Admin.Controllers
             }
             if (ModelState.IsValid)
             {
-                var fileName = _fileManager.Upload(galery.Upload1, "wwwroot/uploads");
+                //photo1//
+                IFormFile file = galery.Upload1;
+                string filExt = file.FileName[file.FileName.LastIndexOf(".")..];
+                DateTime origin = new DateTime(1970, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc);
+                TimeSpan diff = DateTime.Now.ToUniversalTime() - origin;
+                string fileName = DateTime.Now.Ticks + filExt;
+                string path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "uploads", fileName);
+                using (FileStream fs = new FileStream(path, FileMode.OpenOrCreate))
+                {
+                    galery.Upload1.CopyTo(fs);
+                }
                 galery.Photo = fileName;
 
-                var fileName1 = _fileManager.Upload(galery.Upload2, "wwwroot/uploads");
+                //photo2//
+                IFormFile file1 = galery.Upload2;
+                string filExt1 = file1.FileName[file1.FileName.LastIndexOf(".")..];
+                DateTime origin1 = new DateTime(1970, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc);
+                TimeSpan diff1 = DateTime.Now.ToUniversalTime() - origin1;
+                string fileName1 = DateTime.Now.Ticks + filExt1;
+                string path1 = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "uploads", fileName1);
+                using (FileStream fs = new FileStream(path1, FileMode.OpenOrCreate))
+                {
+                    galery.Upload2.CopyTo(fs);
+                }
                 galery.Photo1 = fileName1;
 
-                var fileName2 = _fileManager.Upload(galery.Upload3, "wwwroot/uploads");
+                //photo3//
+
+                IFormFile file2 = galery.Upload3;
+                string filExt2 = file2.FileName[file2.FileName.LastIndexOf(".")..];
+                DateTime origin2 = new DateTime(1970, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc);
+                TimeSpan diff2 = DateTime.Now.ToUniversalTime() - origin2;
+                string fileName2 = DateTime.Now.Ticks + filExt2;
+                string path2 = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "uploads", fileName2);
+                using (FileStream fs = new FileStream(path2, FileMode.OpenOrCreate))
+                {
+                    galery.Upload3.CopyTo(fs);
+                }
                 galery.Photo2 = fileName2;
 
                 _context.Add(galery);
@@ -127,51 +158,71 @@ namespace PremiumMedStore.Areas.Admin.Controllers
             {
                 try
                 {
+                    //photo1//
                     if (galery.Upload1 != null)
                     {
                         var oldFile = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "uploads", galery.Photo);
-                        _fileManager.Delete(oldFile);
-
                         if (System.IO.File.Exists(oldFile))
                         {
                             _fileManager.Delete(oldFile);
                         }
-
-                        var fileName = _fileManager.Upload(galery.Upload1, "wwwroot/uploads");
+                        IFormFile file = galery.Upload1;
+                        string filExt = file.FileName[file.FileName.LastIndexOf(".")..];
+                        DateTime origin = new DateTime(1970, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc);
+                        TimeSpan diff = DateTime.Now.ToUniversalTime() - origin;
+                        string fileName = DateTime.Now.Ticks + filExt;
+                        string path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "uploads", fileName);
+                        using (FileStream fs = new FileStream(path, FileMode.OpenOrCreate))
+                        {
+                            galery.Upload1.CopyTo(fs);
+                        }
                         galery.Photo = fileName;
-
-
                     }
+
+                    //photo2//
                     if (galery.Upload2 != null)
                     {
                         var oldFile = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "uploads", galery.Photo1);
-                        _fileManager.Delete(oldFile);
-
                         if (System.IO.File.Exists(oldFile))
                         {
                             _fileManager.Delete(oldFile);
                         }
-
-                        var fileName = _fileManager.Upload(galery.Upload2, "wwwroot/uploads");
+                        IFormFile file = galery.Upload2;
+                        string filExt = file.FileName[file.FileName.LastIndexOf(".")..];
+                        DateTime origin = new DateTime(1970, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc);
+                        TimeSpan diff = DateTime.Now.ToUniversalTime() - origin;
+                        string fileName = DateTime.Now.Ticks + filExt;
+                        string path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "uploads", fileName);
+                        using (FileStream fs = new FileStream(path, FileMode.OpenOrCreate))
+                        {
+                            galery.Upload2.CopyTo(fs);
+                        }
                         galery.Photo1 = fileName;
-
-
                     }
+
+                    //photo3//
                     if (galery.Upload3 != null)
                     {
                         var oldFile = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "uploads", galery.Photo2);
-                        _fileManager.Delete(oldFile);
-
                         if (System.IO.File.Exists(oldFile))
                         {
                             _fileManager.Delete(oldFile);
-                        };
-
-                        var fileName = _fileManager.Upload(galery.Upload3, "wwwroot/uploads");
+                        }
+                        IFormFile file = galery.Upload3;
+                        string filExt = file.FileName[file.FileName.LastIndexOf(".")..];
+                        DateTime origin = new DateTime(1970, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc);
+                        TimeSpan diff = DateTime.Now.ToUniversalTime() - origin;
+                        string fileName = DateTime.Now.Ticks + filExt;
+                        string path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "uploads", fileName);
+                        using (FileStream fs = new FileStream(path, FileMode.OpenOrCreate))
+                        {
+                            galery.Upload3.CopyTo(fs);
+                        }
                         galery.Photo2 = fileName;
-
-
                     }
+
+                    
+
                     _context.Update(galery);
                     await _context.SaveChangesAsync();
                 }

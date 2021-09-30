@@ -29,6 +29,8 @@ namespace PremiumMedStore.Controllers
 
                 }
             };
+            ViewBag.Active = "Xəbərlər";
+            ViewBag.ProductCategories = _context.ProductCategories.ToList();
             return View(model);
         }
         public IActionResult Measure(int id)
@@ -43,6 +45,8 @@ namespace PremiumMedStore.Controllers
 
                 }
             };
+            ViewBag.Active = "Xəbərlər";
+            ViewBag.ProductCategories = _context.ProductCategories.ToList();
             return View(model);
         }
 
@@ -63,6 +67,8 @@ namespace PremiumMedStore.Controllers
 
                 }
             };
+            ViewBag.Active = "Xəbərlər";
+            ViewBag.ProductCategories = _context.ProductCategories.ToList();
             return View(model);
         }
 
@@ -79,6 +85,8 @@ namespace PremiumMedStore.Controllers
 
                 }
             };
+            ViewBag.Active = "Xəbərlər";
+            ViewBag.ProductCategories = _context.ProductCategories.ToList();
             return View(model);
         }
 
@@ -99,6 +107,8 @@ namespace PremiumMedStore.Controllers
                 }
 
             };
+            ViewBag.Active = "Xəbərlər";
+            ViewBag.ProductCategories = _context.ProductCategories.ToList();
             return View(model);
         }
     }

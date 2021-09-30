@@ -15,6 +15,7 @@ namespace PremiumMedStore.ViewModel
         public BreadCrumbViewModel BreadCrumb { get; set; }
         public Settings Setting { get; set; }
         public SosialLinks SosialLinks { get; set; }
-
+        public List <ProductCategory> ProductCategory { get; set; }
+        public List<Products> Products { get; set; }
     }
 }

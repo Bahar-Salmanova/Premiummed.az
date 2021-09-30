@@ -4,6 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using PremiumMedStore.Data;
 using PremiumMedStore.Filters;
 using PremiumMedStore.Models;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -26,6 +27,14 @@ namespace PremiumMedStore.Areas.Admin.Controllers
             var premiumDbContext = _context.VacancyForms.Include(v => v.Vacancy);
             return View(await premiumDbContext.ToListAsync());
         }
+        public FileResult ShowPDF(int id)
+        {
+            var premiumDbContext = _context.VacancyForms.Where(vf => vf.Id == id).FirstOrDefault();
+            var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "uploads", premiumDbContext.File);
+            var fileStream = new FileStream(path, FileMode.OpenOrCreate, FileAccess.Read);
+            return File(fileStream, "application/pdf");
+        }
+
 
         // GET: Admin/VacancyForms/Details/5
         public async Task<IActionResult> Details(int? id)

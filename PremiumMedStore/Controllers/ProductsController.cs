@@ -5,6 +5,7 @@ using PremiumMedStore.Models;
 using PremiumMedStore.ViewModel;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -19,18 +20,21 @@ namespace PremiumMedStore.Controllers
         {
             _context = context;
         }
-        public IActionResult Index( int id)
+        public IActionResult Index(int id)
         {
             ProductViewModel model = new ProductViewModel
             {
-                Products = _context.Products.ToList(),
+                Products=_context.Products.Where(p => p.ProductCategoryId == id).Include(p=>p.ProductCategory).ToList(),
+                ProductCategory=_context.ProductCategories.Where(pc => pc.Id == id).FirstOrDefault(),
                 BreadCrumb = new BreadCrumbViewModel
                 {
                     Title = "Ana Səhifə",
                     Links = "Məhsullar"
 
-                }
+                },
+                Id=id,
             };
+            ViewBag.ProductCategories = _context.ProductCategories.ToList();
             return View(model);
         }
 
@@ -48,6 +52,7 @@ namespace PremiumMedStore.Controllers
                 },
                 Id = id
             };
+            ViewBag.ProductCategories = _context.ProductCategories.ToList();
             return View(model);
         }
         [HttpPost]
@@ -66,7 +71,8 @@ namespace PremiumMedStore.Controllers
             };
             _context.ProductOrders.Add(order);
             _context.SaveChanges();
-            return RedirectToAction("index");
+            ViewBag.ProductCategories = _context.ProductCategories.ToList();
+            return Redirect("/products/index/"+productOrder.ProductId);
         }
        
         [Route("/{controller}/{action}/{id?}")]
@@ -85,7 +91,31 @@ namespace PremiumMedStore.Controllers
                 }
             };
 
+            ViewBag.ProductCategories = _context.ProductCategories.ToList();
+            return View(model);
+        }
+        public FileResult ShowPDF(int id)
+        {
+            var premiumDbContext = _context.Products.Where(p => p.Id == id).FirstOrDefault();
+            var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "uploads", premiumDbContext.ProductLink);
+            var fileStream = new FileStream(path, FileMode.OpenOrCreate, FileAccess.Read);
+            return File(fileStream, "application/pdf");
+        }
 
+        [Route("/{controller}/{action}/{id?}")]
+        public IActionResult ProductCategory()
+        {
+            ProductCategoryViewModel model = new ProductCategoryViewModel
+            {
+                ProductCategories = _context.ProductCategories.ToList(),
+                BreadCrumb = new BreadCrumbViewModel
+                {
+                    Title = "Ana Səhifə",
+                    Links = "Məhsullar"
+
+                }
+            };
+            ViewBag.ProductCategories = _context.ProductCategories.ToList();
             return View(model);
         }
     }

@@ -29,7 +29,8 @@ namespace PremiumMedStore.Controllers
 
                 }
             };
-
+            ViewBag.Active = "Haqqimizda";
+            ViewBag.ProductCategories = _context.ProductCategories.ToList();
             return View(model);
         }
         public IActionResult Mission()
@@ -43,8 +44,8 @@ namespace PremiumMedStore.Controllers
 
                 }
             };
-
-
+            ViewBag.Active = "Haqqimizda";
+            ViewBag.ProductCategories = _context.ProductCategories.ToList();
             return View(model);
         }
         public IActionResult Vision()
@@ -58,6 +59,8 @@ namespace PremiumMedStore.Controllers
 
                 }
             };
+            ViewBag.Active = "Haqqimizda";
+            ViewBag.ProductCategories = _context.ProductCategories.ToList();
             return View(model);
         }
         public IActionResult Quality()
@@ -71,6 +74,8 @@ namespace PremiumMedStore.Controllers
 
                 }
             };
+            ViewBag.Active = "Haqqimizda";
+            ViewBag.ProductCategories = _context.ProductCategories.ToList();
             return View(model);
         }
 

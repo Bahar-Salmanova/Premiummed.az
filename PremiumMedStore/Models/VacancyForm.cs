@@ -15,7 +15,7 @@ namespace PremiumMedStore.Models
         [Required,MaxLength(100)]
         public string Name { get; set; }
 
-        [EmailAddress]
+        [Required,EmailAddress]
         public string Email { get; set; }
 
         public int VacancyId { get; set; }

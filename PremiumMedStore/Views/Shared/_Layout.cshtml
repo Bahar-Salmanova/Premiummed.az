@@ -49,78 +49,78 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link ml-4" asp-controller="aboutus" asp-action="index">Haqqımızda </a>
+                                @if (ViewBag.Active == "Haqqimizda")
+                                {
+                                    <a class="nav-link ml-4 active" asp-controller="aboutus" asp-action="index">Haqqımızda </a>
+                                }
+                                else
+                                {
+
+                                    <a class="nav-link ml-4" asp-controller="aboutus" asp-action="index">Haqqımızda </a>
+                                }
                             </li>
                             <li class="dropdown" id="menu1">
                                 <a class="dropdown-a" data-toggle="dropdown" href="#menu1">
                                     Məhsullar
                                 </a>
                                 <ul class="dropdown-menu" style="column-count: 2;">
-                                    <li>
-                                        <a asp-controller="products" asp-action="product">Covid-19</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Instruments</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Poct</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Elisa</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Biochemistry</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Rapid Test</a>
+                                    @foreach (var item in ViewBag.ProductCategories)
+                                    {
+                                        <li>
+                                            <a asp-controller="products" asp-action="index" asp-route-id="@item.Id">@item.Name</a>
+                                        </li>
+                                    }
+                                   
+                                   
 
-                                    </li>
-                                    <li>
-                                        <a href="#">Real Time PCR</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Dezinfection</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Vacuum Blood Tubes</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Consumables</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Controls(External,internal)</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Programs 7/24</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Coagulations</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Rapid Test+Latex</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Rapid Test</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Dezinfection</a>
-                                    </li>
 
                                 </ul>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" aria-current="page" asp-controller="news" asp-action="index">Xəbərlər</a>
+                                @if (ViewBag.Active == "Xəbərlər")
+                                {
+                                <a class="nav-link ml-4 active" asp-controller="news" asp-action="index">Xəbərlər </a>
+                                }
+                                else
+                                {
+
+                                <a class="nav-link ml-4" asp-controller="news" asp-action="index">Xəbərlər </a>
+                                }
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" aria-current="page" asp-controller="galery" asp-action="index">Qalereya</a>
+                                @if (ViewBag.Active == "Qalereya")
+                                {
+                                <a class="nav-link ml-4 active" asp-controller="galery" asp-action="index">Qalereya </a>
+                                }
+                                else
+                                {
+
+                            <a class="nav-link ml-4" asp-controller="galery" asp-action="index">Qalereya </a>
+                                }
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" aria-current="page" asp-controller="career" asp-action="index">Karyera</a>
+                                @if (ViewBag.Active == "Karyera")
+                                {
+                                <a class="nav-link ml-4 active" asp-controller="career" asp-action="index">Karyera </a>
+                                }
+                                else
+                                {
+
+                                <a class="nav-link ml-4" asp-controller="career" asp-action="index">Karyera </a>
+                                }
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link " aria-current="page" asp-controller="contact" asp-action="index">Əlaqə</a>
+                                @if (ViewBag.Active == "Əlaqə")
+                                {
+                                <a class="nav-link ml-4 active" asp-controller="contact" asp-action="index">Əlaqə </a>
+                                }
+                                else
+                                {
+
+                                 <a class="nav-link ml-4" asp-controller="contact" asp-action="index">Əlaqə </a>
+                                }
                             </li>
-                            <li class="dropdown" id="menu2">
+                            <li class="dropdown d-none" id="menu2" >
                                 <a class="dropdown-a" data-toggle="dropdown" href="#menu2">
                                     AZ <i class="fas fa-angle-down"></i>
                                 </a>
@@ -137,7 +137,7 @@
                             </li>
 
                             <li class="nav-item">
-                                <button><a asp-controller="products" asp-action="index">Sifariş et</a></button>
+                                <button><a asp-controller="products" asp-action="productcategory">Sifariş et</a></button>
                             </li>
                         </ul>
 
@@ -166,7 +166,7 @@
                                 <li class="item"><a asp-controller="aboutus" asp-action="index">Haqqımızda</a></li>
                                 <li class="item"><a asp-controller="products" asp-action="index">Məhsullar</a> </li>
                                 <li class="item"><a asp-controller="galery" asp-action="index">Qalereya</a></li>
-                                <li class="item"><a asp-controller="news" asp-action="freenews">Xəbərlər</a></li>
+                                <li class="item"><a asp-controller="news" asp-action="index">Xəbərlər</a></li>
                                 <li class="item"><a asp-controller="news" asp-action="mission">Tədbirlər</a></li>
                                 <li class="item"><a asp-controller="career" asp-action="index">Karyera</a></li>
                             </ul>

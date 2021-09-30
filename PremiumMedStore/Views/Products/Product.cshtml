@@ -22,11 +22,7 @@
                 <div class="col-lg-6 item">
                     <h3>@Model.Product.Name</h3>
                     <p>
-                        COVID-19 Ab tests use a patient blood sample to detect SARS-CoV-2 virus-specific antibodies
-                        COVID-19 virus-specific antibodies are produced when infected with the virus. The presence
-                        of this antibody may show the infection in progress or the past infection with active
-                        immunity. The COVID-19 Ab test detects the specific antibody to provide information on the
-                        patients’ immunity against the SARS-CoV-2 virus.
+                        @Model.Product.FullAbout
                     </p>
                     <button type="button"><a asp-controller="products" asp-action="order" asp-route-id="@Model.Product.Id">Sifariş et</a> </button>
                 </div>
@@ -35,7 +31,7 @@
                 </div>
             </div>
 
-            <button type="submit"><a href="~/@Model.Product.ProductLink" download="Link"><i class="fas fa-download"></i>   Broşuru yüklə </a></button>
+            <button type="submit"><a asp-controller="products" asp-action="ShowPDF" asp-route-id="@Model.Product.Id" download><i class="fas fa-download"></i>   Broşuru yüklə </a></button>
 
 
         </div>

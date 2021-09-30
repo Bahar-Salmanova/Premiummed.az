@@ -150,6 +150,27 @@ namespace PremiumMedStore.Migrations
                     b.ToTable("News");
                 });
 
+            modelBuilder.Entity("PremiumMedStore.Models.ProductCategory", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("About")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("CategoryImage")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("ProductCategories");
+                });
+
             modelBuilder.Entity("PremiumMedStore.Models.ProductOrder", b =>
                 {
                     b.Property<int>("Id")
@@ -202,8 +223,8 @@ namespace PremiumMedStore.Migrations
                         .HasColumnType("nvarchar(1000)");
 
                     b.Property<string>("Name")
-                        .HasMaxLength(100)
-                        .HasColumnType("nvarchar(100)");
+                        .HasMaxLength(120)
+                        .HasColumnType("nvarchar(120)");
 
                     b.Property<string>("Photo")
                         .HasMaxLength(200)
@@ -225,11 +246,16 @@ namespace PremiumMedStore.Migrations
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
 
+                    b.Property<int>("ProductCategoryId")
+                        .HasColumnType("int");
+
                     b.Property<string>("ProductLink")
                         .HasMaxLength(200)
                         .HasColumnType("nvarchar(200)");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("ProductCategoryId");
 
                     b.ToTable("Products");
                 });
@@ -351,6 +377,7 @@ namespace PremiumMedStore.Migrations
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("Email")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("File")
@@ -417,6 +444,17 @@ namespace PremiumMedStore.Migrations
                     b.Navigation("Product");
                 });
 
+            modelBuilder.Entity("PremiumMedStore.Models.Products", b =>
+                {
+                    b.HasOne("PremiumMedStore.Models.ProductCategory", "ProductCategory")
+                        .WithMany("Products")
+                        .HasForeignKey("ProductCategoryId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("ProductCategory");
+                });
+
             modelBuilder.Entity("PremiumMedStore.Models.VacancyForm", b =>
                 {
                     b.HasOne("PremiumMedStore.Models.Vacancy", "Vacancy")
@@ -426,6 +464,11 @@ namespace PremiumMedStore.Migrations
                         .IsRequired();
 
                     b.Navigation("Vacancy");
+                });
+
+            modelBuilder.Entity("PremiumMedStore.Models.ProductCategory", b =>
+                {
+                    b.Navigation("Products");
                 });
 
             modelBuilder.Entity("PremiumMedStore.Models.Products", b =>

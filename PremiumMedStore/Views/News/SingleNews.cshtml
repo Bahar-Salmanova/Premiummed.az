@@ -1,39 +1,63 @@
 ﻿@model SingleNewsViewModel
 
 <main>
-    <section id=news-main>
-        <div class="container news-container">
-            <img src="~/Uploads/main-news.png" alt="">
-
+    <section id="news2">
+        <div class="div">
             <partial name="_breadcrumb" model="Model.BreadCrumb" />
+        </div>
 
+        <div class="container slider">
+
+            <div class="row items owl-carousel owl-theme">
+
+                @foreach (var item in Model.Galery)
+                {
+                    <div class="col-lg-2 item popup-gallery">
+                        <a href="~/Uploads/@item.Photo" title="The Cleaner">
+                            <img src="~/Uploads/@item.Photo" width="175" height="175">
+                        </a>
+                    </div>
+                }
+
+            </div>
+            <div class="search">
+                <i class="fas fa-search"></i>
+            </div>
+            <div class="row news2-row">
+                <div class="col-lg-12 news2-row-col">
+                    <h5>
+                        @Model.New.Desc
+
+                    </h5>
+                    <p>
+                        @Model.New.FullDecs
+                    </p>
+                </div>
+
+            </div>
         </div>
     </section>
-    <section id=news-main-2>
-        <div class="container news-main-2-container">
-            <div class="row news-main-2-row">
+    <section id="news2-section2">
+        <div class="container karusele ">
+            <div class="row news2-section2-row karusel owl-carousel owl-theme">
 
-                <div class="col-lg-12 roller-new">
-                    @foreach (var item in Model.News)
-                    {
-                        <div class="col-lg-4">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h5>@item.Title</h5>
-                                    <a asp-controller="news" asp-action="singlenews" asp-route-id="@item.Id" class="card-title">@item.About</a>
-                                    <p class="card-text">
-                                        @item.Desc
-                                    </p>
-                                </div>
-                            </div>
+                @foreach (var item in Model.News)
+                {
+                    <div class="col-lg-12 ">
+
+                        <div class="item">
+
+                            <h5>@item.Title</h5>
+                            <a asp-controller="news" asp-action="singlemeasure" asp-route-id="@item.Id">@item.About</a>
+                            <p>
+                                @item.Desc
+                            </p>
+
                         </div>
-                    }
 
+                    </div>
+                }
 
-
-
-
-                </div>
             </div>
         </div>
     </section>

@@ -218,3 +218,14 @@ C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Debug\net5.0\Razo
 C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\bin\Debug\net5.0\CryptoHelper.dll
 C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Debug\net5.0\Razor\Areas\Admin\Views\User\Login.cshtml.g.cs
 C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Debug\net5.0\Razor\Areas\Admin\Views\Home\Index.cshtml.g.cs
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Debug\net5.0\Razor\Views\Products\ProductCategory.cshtml.g.cs
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Debug\net5.0\Razor\Areas\Admin\Views\Welcomes\Create.cshtml.g.cs
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Debug\net5.0\Razor\Areas\Admin\Views\Welcomes\Delete.cshtml.g.cs
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Debug\net5.0\Razor\Areas\Admin\Views\Welcomes\Details.cshtml.g.cs
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Debug\net5.0\Razor\Areas\Admin\Views\Welcomes\Edit.cshtml.g.cs
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Debug\net5.0\Razor\Areas\Admin\Views\Welcomes\Index.cshtml.g.cs
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Debug\net5.0\Razor\Areas\Admin\Views\ProductCategories\Create.cshtml.g.cs
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Debug\net5.0\Razor\Areas\Admin\Views\ProductCategories\Delete.cshtml.g.cs
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Debug\net5.0\Razor\Areas\Admin\Views\ProductCategories\Details.cshtml.g.cs
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Debug\net5.0\Razor\Areas\Admin\Views\ProductCategories\Edit.cshtml.g.cs
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Debug\net5.0\Razor\Areas\Admin\Views\ProductCategories\Index.cshtml.g.cs

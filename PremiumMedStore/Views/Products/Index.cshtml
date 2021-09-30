@@ -9,10 +9,13 @@
         </div>
     </section>
     <section id="product1">
-        <span>Covid-19</span>
+       
+        <span>@Model.ProductCategory.Name</span>
         <div class="container product1-container">
+           
             @foreach (var item in Model.Products)
             {
+                <input type="hidden" asp-for="Product.ProductCategoryId" value="@Model.Id" />
                 <div class="row product1-row">
                     <div class="col-lg-6 products">
                         <a asp-controller="products" asp-action="product" asp-route-id="@item.Id"><h3>@item.Name</h3></a>

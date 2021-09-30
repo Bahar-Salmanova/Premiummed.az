@@ -1,0 +1,67 @@
+﻿@model PremiumMedStore.Models.ProductCategory
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Dəyişdir</h1>
+
+<h4>Kateqoriya</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit" method="post" enctype="multipart/form-data">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="About" class="control-label"></label>
+                <input asp-for="About" class="form-control" />
+                <span asp-validation-for="About" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CategoryImage" class="control-label"></label>
+                <input asp-for="CategoryImage" class="form-control" />
+                <span asp-validation-for="CategoryImage" class="text-danger"></span>
+            </div>
+            <div class="custom-file my-3">
+                <input asp-for="Upload" class="custom-file-input">
+                <label asp-for="Upload" class="custom-file-label">Şəkil Seçin</label>
+                <span asp-validation-for="Upload" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Yadda Saxla" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+    <div class="col-lg-4 ">
+        <img class="image-preview img-fluid mt-4" src="~/uploads/@Model.CategoryImage" />
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Geri</a>
+</div>
+
+@section Scripts{
+
+
+    <script>
+        $(document).ready(function () {
+            $("#Upload").change(function () {
+                var file = this.files[0];
+                var fileReader = new FileReader();
+                fileReader.onload = function (e) {
+                    $(".image-preview").attr("src", e.target.result);
+                };
+                fileReader.readAsDataURL(file, "UTF-8");
+            });
+        });
+    </script>
+}
+
+

@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using PremiumMedStore.Data;
 using PremiumMedStore.Filters;
@@ -8,6 +10,7 @@ using System;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace PremiumMedStore.Areas.Admin.Controllers
 {
@@ -27,7 +30,7 @@ namespace PremiumMedStore.Areas.Admin.Controllers
         // GET: Admin/Products
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Products.ToListAsync());
+            return View(await _context.Products.Include(p => p.ProductCategory).ToListAsync());
         }
 
         // GET: Admin/Products/Details/5
@@ -38,8 +41,8 @@ namespace PremiumMedStore.Areas.Admin.Controllers
                 return NotFound();
             }
 
-            var products = await _context.Products
-                .FirstOrDefaultAsync(m => m.Id == id);
+            var products = await _context.Products.Where(m => m.Id == id).Include(p => p.ProductCategory)
+                .FirstOrDefaultAsync();
             if (products == null)
             {
                 return NotFound();
@@ -51,6 +54,7 @@ namespace PremiumMedStore.Areas.Admin.Controllers
         // GET: Admin/Products/Create
         public IActionResult Create()
         {
+            ViewBag.Products = _context.ProductCategories.ToList();
             return View();
         }
 
@@ -59,7 +63,7 @@ namespace PremiumMedStore.Areas.Admin.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Name,Upload,Upload1,Upload2,Upload3,ProductAbout,FullAbout,ProductLink")] Products products)
+        public async Task<IActionResult> Create([Bind("Id,Name,Upload,Upload1,Upload2,Upload3,ProductAbout,FullAbout,File,ProductCategoryId")] Products products)
         {
             if (products.Upload == null)
             {
@@ -77,24 +81,85 @@ namespace PremiumMedStore.Areas.Admin.Controllers
             {
                 ModelState.AddModelError("Uploads", "The Photo field is required.");
             }
+            if (products.File == null)
+            {
+                ModelState.AddModelError("Uploads", "The Photo field is required.");
+            }
             if (ModelState.IsValid)
             {
-                var fileName = _fileManager.Upload(products.Upload, "wwwroot/uploads");
+                //photo1//
+                IFormFile file = products.Upload;
+                string filExt = file.FileName[file.FileName.LastIndexOf(".")..];
+                DateTime origin = new DateTime(1970, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc);
+                TimeSpan diff = DateTime.Now.ToUniversalTime() - origin;
+                string fileName = DateTime.Now.Ticks + filExt;
+                string path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "uploads", fileName);
+                using (FileStream fs = new FileStream(path, FileMode.OpenOrCreate))
+                {
+                    products.Upload.CopyTo(fs);
+                }
                 products.Photo = fileName;
 
-                var fileName1 = _fileManager.Upload(products.Upload1, "wwwroot/uploads");
+                //photo2//
+                IFormFile file1 = products.Upload1;
+                string filExt1 = file1.FileName[file1.FileName.LastIndexOf(".")..];
+                DateTime origin1 = new DateTime(1970, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc);
+                TimeSpan diff1 = DateTime.Now.ToUniversalTime() - origin1;
+                string fileName1 = DateTime.Now.Ticks + filExt1;
+                string path1 = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "uploads", fileName1);
+                using (FileStream fs = new FileStream(path1, FileMode.OpenOrCreate))
+                {
+                    products.Upload1.CopyTo(fs);
+                }
                 products.Photo1 = fileName1;
 
-                var fileName2 = _fileManager.Upload(products.Upload2, "wwwroot/uploads");
+                //photo3//
+                IFormFile file2 = products.Upload2;
+                string filExt2 = file2.FileName[file2.FileName.LastIndexOf(".")..];
+                DateTime origin2 = new DateTime(1970, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc);
+                TimeSpan diff2 = DateTime.Now.ToUniversalTime() - origin2;
+                string fileName2 = DateTime.Now.Ticks + filExt2;
+                string path2 = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "uploads", fileName2);
+                using (FileStream fs = new FileStream(path2, FileMode.OpenOrCreate))
+                {
+                    products.Upload2.CopyTo(fs);
+                }
                 products.Photo2 = fileName2;
 
-                var fileName3 = _fileManager.Upload(products.Upload3, "wwwroot/uploads");
+                //photo4//
+                IFormFile file3 = products.Upload3;
+                string filExt3 = file3.FileName[file3.FileName.LastIndexOf(".")..];
+                DateTime origin3 = new DateTime(1970, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc);
+                TimeSpan diff3 = DateTime.Now.ToUniversalTime() - origin3;
+                string fileName3 = DateTime.Now.Ticks + filExt3;
+                string path3 = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "uploads", fileName3);
+                using (FileStream fs = new FileStream(path3, FileMode.OpenOrCreate))
+                {
+                    products.Upload3.CopyTo(fs);
+                }
                 products.Photo3 = fileName3;
+
+                //file//
+                IFormFile file4 = products.Upload3;
+                string filExt4 = file4.FileName[file4.FileName.LastIndexOf(".")..];
+                DateTime origin4 = new DateTime(1970, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc);
+                TimeSpan diff4 = DateTime.Now.ToUniversalTime() - origin4;
+                string fileName4 = DateTime.Now.Ticks + filExt4;
+                string path4 = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "uploads", fileName4);
+                using (FileStream fs = new FileStream(path4, FileMode.OpenOrCreate))
+                {
+                    products.File.CopyTo(fs);
+                }
+                products.ProductLink = fileName4;
+
 
                 _context.Add(products);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
+
+            ViewBag.Products = _context.ProductCategories.ToList();
+            //ViewData["ProductCategoryId"] = new SelectList(_context.ProductCategories, "Id", "Id", products.ProductCategoryId);
             return View(products);
         }
 
@@ -111,6 +176,7 @@ namespace PremiumMedStore.Areas.Admin.Controllers
             {
                 return NotFound();
             }
+            ViewBag.Products = _context.ProductCategories.ToList();
             return View(products);
         }
 
@@ -119,7 +185,7 @@ namespace PremiumMedStore.Areas.Admin.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,Photo,Upload,Upload1,Upload2,Upload3,Photo1,Photo2,Photo3,ProductAbout,FullAbout,ProductLink")] Products products)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,Photo,Upload,Upload1,Upload2,Upload3,File,Photo1,Photo2,Photo3,ProductAbout,FullAbout,ProductLink,ProductCategoryId")] Products products)
         {
            
             if (id != products.Id)
@@ -131,6 +197,7 @@ namespace PremiumMedStore.Areas.Admin.Controllers
             {
                 try
                 {
+                    //photo1//
                     if (products.Upload != null)
                     {
                         var oldFile = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "uploads", products.Photo);
@@ -138,12 +205,20 @@ namespace PremiumMedStore.Areas.Admin.Controllers
                         {
                             _fileManager.Delete(oldFile);
                         }
-
-                        var fileName = _fileManager.Upload(products.Upload, "wwwroot/uploads");
+                        IFormFile file = products.Upload;
+                        string filExt = file.FileName[file.FileName.LastIndexOf(".")..];
+                        DateTime origin = new DateTime(1970, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc);
+                        TimeSpan diff = DateTime.Now.ToUniversalTime() - origin;
+                        string fileName = DateTime.Now.Ticks + filExt;
+                        string path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "uploads", fileName);
+                        using (FileStream fs = new FileStream(path, FileMode.OpenOrCreate))
+                        {
+                            products.Upload.CopyTo(fs);
+                        }
                         products.Photo = fileName;
-
-
                     }
+
+                    //photo2//
                     if (products.Upload1 != null)
                     {
                         var oldFile = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "uploads", products.Photo1);
@@ -151,12 +226,20 @@ namespace PremiumMedStore.Areas.Admin.Controllers
                         {
                             _fileManager.Delete(oldFile);
                         }
-
-                        var fileName = _fileManager.Upload(products.Upload1, "wwwroot/uploads");
+                        IFormFile file = products.Upload1;
+                        string filExt = file.FileName[file.FileName.LastIndexOf(".")..];
+                        DateTime origin = new DateTime(1970, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc);
+                        TimeSpan diff = DateTime.Now.ToUniversalTime() - origin;
+                        string fileName = DateTime.Now.Ticks + filExt;
+                        string path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "uploads", fileName);
+                        using (FileStream fs = new FileStream(path, FileMode.OpenOrCreate))
+                        {
+                            products.Upload1.CopyTo(fs);
+                        }
                         products.Photo1 = fileName;
-
-
                     }
+
+                    //photo3//
                     if (products.Upload2 != null)
                     {
                         var oldFile = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "uploads", products.Photo2);
@@ -164,12 +247,20 @@ namespace PremiumMedStore.Areas.Admin.Controllers
                         {
                             _fileManager.Delete(oldFile);
                         }
-
-                        var fileName = _fileManager.Upload(products.Upload2, "wwwroot/uploads");
+                        IFormFile file = products.Upload2;
+                        string filExt = file.FileName[file.FileName.LastIndexOf(".")..];
+                        DateTime origin = new DateTime(1970, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc);
+                        TimeSpan diff = DateTime.Now.ToUniversalTime() - origin;
+                        string fileName = DateTime.Now.Ticks + filExt;
+                        string path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "uploads", fileName);
+                        using (FileStream fs = new FileStream(path, FileMode.OpenOrCreate))
+                        {
+                            products.Upload2.CopyTo(fs);
+                        }
                         products.Photo2 = fileName;
-
-
                     }
+
+                    //photo4//
                     if (products.Upload3 != null)
                     {
                         var oldFile = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "uploads", products.Photo3);
@@ -177,12 +268,40 @@ namespace PremiumMedStore.Areas.Admin.Controllers
                         {
                             _fileManager.Delete(oldFile);
                         }
-
-                        var fileName = _fileManager.Upload(products.Upload3, "wwwroot/uploads");
+                        IFormFile file = products.Upload3;
+                        string filExt = file.FileName[file.FileName.LastIndexOf(".")..];
+                        DateTime origin = new DateTime(1970, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc);
+                        TimeSpan diff = DateTime.Now.ToUniversalTime() - origin;
+                        string fileName = DateTime.Now.Ticks + filExt;
+                        string path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "uploads", fileName);
+                        using (FileStream fs = new FileStream(path, FileMode.OpenOrCreate))
+                        {
+                            products.Upload3.CopyTo(fs);
+                        }
                         products.Photo3 = fileName;
-
-
                     }
+                    if (products.File != null)
+                    {
+                        //if()
+                        var oldFile = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "uploads", products.ProductLink);
+                        if (System.IO.File.Exists(oldFile))
+                        {
+                            _fileManager.Delete(oldFile);
+                        }
+                        IFormFile file = products.File;
+                        string filExt = file.FileName[file.FileName.LastIndexOf(".")..];
+                        DateTime origin = new DateTime(1970, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc);
+                        TimeSpan diff = DateTime.Now.ToUniversalTime() - origin;
+                        string fileName = DateTime.Now.Ticks + filExt;
+                        string path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "uploads", fileName);
+                        using (FileStream fs = new FileStream(path, FileMode.OpenOrCreate))
+                        {
+                            products.File.CopyTo(fs);
+                        }
+                        products.ProductLink = fileName;
+                    }
+
+
                     _context.Update(products);
                     await _context.SaveChangesAsync();
                 }
@@ -199,6 +318,8 @@ namespace PremiumMedStore.Areas.Admin.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
+            ViewBag.Products = _context.ProductCategories.ToList();
+            //ViewData["ProductCategoryId"] = new SelectList(_context.ProductCategories, "Id", "Id", products.ProductCategoryId);
             return View(products);
         }
 

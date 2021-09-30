@@ -1,11 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
-using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace PremiumMedStore.Models
 {
@@ -13,15 +9,20 @@ namespace PremiumMedStore.Models
     {
         public int Id { get; set; }
 
-        [MaxLength(100)]
-        public string Name { get; set; }
+        [MaxLength(120)]
 
+        public string Name { get; set; }
+        
+        public int ProductCategoryId { get; set; }
+     
+        public ProductCategory ProductCategory { get; set; }
+     
         [MaxLength(200)]
         public string Photo { get; set; }
 
         [MaxLength(200)]
 
-        public string Photo1  { get; set; }
+        public string Photo1 { get; set; }
 
         [MaxLength(200)]
 
@@ -42,6 +43,9 @@ namespace PremiumMedStore.Models
         public string ProductLink { get; set; }
 
         [NotMapped]
+        public IFormFile File { get; set; }
+
+        [NotMapped]
         public IFormFile Upload { get; set; }
         [NotMapped]
         public IFormFile Upload1 { get; set; }
@@ -50,7 +54,7 @@ namespace PremiumMedStore.Models
         [NotMapped]
         public IFormFile Upload3 { get; set; }
 
-        public ICollection<ProductOrder> ProductOrders{ get; set; }
+        public ICollection<ProductOrder> ProductOrders { get; set; }
 
 
     }

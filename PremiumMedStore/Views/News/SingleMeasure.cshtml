@@ -8,20 +8,20 @@
         </div>
 
         <div class="container slider">
+
             <div class="row items owl-carousel owl-theme">
 
                 @foreach (var item in Model.Galeries)
-
                 {
-                    <div class="col-lg-2 item"><a href=""><img src="~/Uploads/@item.Photo" alt=""></a></div>
+                    <div class="col-lg-2 item popup-gallery">
+                        <a href="~/Uploads/@item.Photo" title="The Cleaner">
+                            <img src="~/Uploads/@item.Photo" width="175" height="175">
+                        </a>
+                    </div>
                 }
-
-
-
-            </div>
-            <div class="search">
-                <i class="fas fa-search"></i>
-            </div>
+             
+            </div>           
+           
             <div class="row news2-row">
                 <div class="col-lg-12 news2-row-col">
                     <h5>

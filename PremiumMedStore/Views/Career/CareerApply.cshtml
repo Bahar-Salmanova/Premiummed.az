@@ -43,11 +43,12 @@
                             <div class="invalid-feedback">Zəhmət olmasa soyadınızı düzgün qeyd edin</div>
                         </div>
                         <div class="col-md-6 email form-group">
-                            <label asp-for="@Model.VacancyForm.Email">Email address</label>
-                            <input asp-for="@Model.VacancyForm.Email" placeholder="Elektron poçtunuz" required>
+                            <label asp-for="@Model.VacancyForm.Email" class="control-label"></label>
+                            <input asp-for="@Model.VacancyForm.Email" class="form-control" />
                             <span asp-validation-for="@Model.VacancyForm.Email" class="text-danger"></span>
-                            <div class="invalid-feedback">Zəhmət olmasa email ünvanınızı düzgün qeyd edin</div>
+                            <div class="invalid-feedback">Zəhmət olmasa emailinizi düzgün qeyd edin</div>
                         </div>
+                       
                         <div class="col-md-6 telephone form-group">
                             <label asp-for="@Model.VacancyForm.Telephone" class="form-label ">Əlaqə nömrəsi</label>
                             <input asp-for="@Model.VacancyForm.Telephone" class="form-control" placeholder="+994" required>
@@ -63,7 +64,7 @@
                         <div class="col-lg-12 file form-group">
                             <input asp-for="@Model.VacancyForm.Upload" type="file" class="form-control" required>
                             <span asp-validation-for="@Model.VacancyForm.Upload" class="text-danger"></span>
-                            <div class="invalid-feedback">Fayl yukleyin</div>
+                           
                         </div>
 
                         <div class="col-12 bton">

@@ -15,12 +15,23 @@
                     <div class="owl-carousel karusele-row owl-theme">
                         @foreach (var item in Model.Galery)
                         {
-                        <div class="item">
-                            <img src="~/Uploads/@item.Photo" alt="">
-                            <img src="~/Uploads/@item.Photo1" alt="">
-                            <img src="~/Uploads/@item.Photo2" alt="">
-                        </div>
+                            <div class="item popup-gallery">
+
+                                <a href="~/uploads/@item.Photo" title="The Cleaner">
+                                    <img src="~/uploads/@item.Photo" width="175" height="175">
+                                </a>
+                                <a href="~/uploads/@item.Photo1" title="The Cleaner">
+                                    <img src="~/uploads/@item.Photo1" width="175" height="175">
+                                </a>
+                                <a href="~/uploads/@item.Photo2" title="The Cleaner">
+                                    <img src="~/uploads/@item.Photo2" width="75" height="75">
+                                </a>
+                            </div>
                         }
+
+
+
+                        
                     </div>
                 </div>
             </div>
