@@ -1,0 +1,519 @@
+@media (max-width: 991px) {
+  header {
+    position: fixed;
+    top: 10px;
+    z-index: 1000;
+    width: 100%;
+  }
+  header #head-section {
+    display: none;
+  }
+  header #navbar {
+    width: 100%;
+  }
+  header #navbar .navbar .head .logo {
+    margin-left: 1px;
+  }
+  header #navbar .navbar .head .logo img {
+    margin-left: -43px;
+  }
+  header #navbar .navbar .head .navbar-toggler {
+    display: none;
+  }
+  header #navbar .navbar .head .navbar-collapse {
+    display: none;
+  }
+    header #navbar .navbar .head span {
+        margin-left: 37px;
+        margin-top: -42px;
+    }
+  header #navbar .mobile-nav-toggler {
+    display: block;
+  }
+  main{
+      margin-top:68px;
+  }
+  main #products {
+    margin-top: 0px;
+    width: 100%;
+  }
+  main #products .carousel-inner .carousel-item img {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  main #products .carousel-control-prev {
+    margin-left: 3px;
+  }
+    main #products h3 {
+        left: 15px;
+        width: 338px;
+        font-size: 17px;
+        line-height: 23px;
+    }
+  main #products p {
+    left: 13px;
+    font-size: 10px;
+    width: 350px;
+    top: 214px;
+    line-height: 14px;
+  }
+  main #products button {
+    top: 66%;
+    left: 40%;
+    padding: 2px 12px;
+  }
+  main #products button a {
+    font-size: 13px;
+  }
+  main #product-image .product-image-container .product-image-row1 h3 {
+    margin-left: 12px;
+    font-size: 25px;
+  }
+  main #product-image .product-image-container .product-image-row1 h3::after {
+    width: 132px;
+    left: 172px;
+  }
+  main #product-image .product-image-container .product-image-row1 .product-img-col {
+    margin-left: 11px;
+    margin-right: 71px;
+  }
+  main #product-image .product-image-container .product-image-row1 .product-img-col .karuselerow .item .col img {
+    width: 130px;
+    height: 110px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  main #product-image .product-image-container .product-image-row1 .product-img-col .karuselerow .item .col h4 {
+    padding-top: 0px;
+    font-size: 16px;
+    font-weight:400;
+    padding-bottom: 0px;
+    line-height: 15px;
+  }
+  main #product-image .product-image-container .product-image-row1 .product-img-col .karuselerow .item .col p {
+    width: 158px;
+    font-size: 10px;
+    line-height: 12px;
+  }
+  main #product-image .product-image-container .product-image-row1 .product-img-col .karuselerow .owl-nav {
+    display: none;
+  }
+  main #about .about-container img {
+    width: 508px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 546px;
+  }
+  main #about .about-container .about-row .about-col5 h4 {
+    font-size: 21px;
+    line-height: 31px;
+  }
+  main #about .about-container .about-row .about-col7 {
+    margin-top: 20px;
+  }
+  main #about .about-container .about-row .about-col7 p {
+    margin-bottom: 54px;
+  }
+  main #client-section .client .distribyutor {
+    margin-left: 0px;
+  }
+    main #client-section .client-slidere {
+        padding-top: 7px;
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+        padding-left: 10px;
+        padding-right: 10px;
+        text-align: -webkit-center;
+    }
+  main #client-section .client-slidere .slidere-clients .owl-item {
+   
+  }
+  main #client-section .client-slidere .slidere-clients .owl-item .item img {
+    padding-top: 7px;
+    width: 100px !important;
+    padding-bottom: 0px;
+  }
+  main #news2-section2 .karusele {
+    padding-top: 1px;
+    padding-bottom: 0px;
+  }
+  main #ordered .order-row .order {
+    padding-left: 74px;
+  }
+  main #ordered .order-row .support {
+    padding-left: 74px;
+  }
+  main #news-main .news-container {
+    
+  }
+  main #news-main .news-container img {
+    width: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 245px;
+  }
+  main #news-main .news-container nav .breadcrumb {
+    top: 33px;
+    left: 17px;
+  }
+  main #news-main .news-container nav .breadcrumb li a {
+    font-size: 16px;
+    line-height: 23px;
+  }
+  main #news-main .news-container nav .breadcrumb .active {
+    font-size: 15px;
+    line-height: 23px;
+  }
+  main #aboutus .aboutus-container {
+    padding-top: 38px;
+    padding-bottom: 0px;
+  }
+  main #aboutus .aboutus-container .aboutus-row .missions ul {
+    padding-left: 26px;
+  }
+  main #aboutus .aboutus-container .aboutus-row .missions ul li {
+    font-size: 11px;
+    line-height: 15px;
+    padding-bottom: 5px;
+  }
+  main #aboutus .aboutus-container .aboutus-row .missions ul li .active {
+    font-size: 21px;
+    line-height: 28px;
+  }
+  main #aboutus .aboutus-container .aboutus-row .description p {
+    padding-top: 1px;
+    padding-left: 26px;
+    font-size: 11px;
+    line-height: 15px;
+  }
+  main #news2 {
+   
+  }
+  main #news2 .div nav {
+    top: 33px;
+    left: 14px;
+  }
+  main #news2 .div nav .breadcrumb li a {
+    font-size: 16px;
+    line-height: 23px;
+  }
+  main #news2 .div nav .breadcrumb .active {
+    display: none;
+  }
+  main #news2 .slider .items .owl-item .item a img {
+    width: 144px;
+    height: 144px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  main #news2 .slider .items .owl-nav .owl-prev {
+    left: -29%;
+  }
+  main #news2 .slider .items .owl-nav .owl-next {
+    right: -32%;
+  }
+  main #news2 .slider .search {
+    display: none;
+  }
+  main #news2 .slider .news2-row {
+    margin-left: -77px;
+  }
+  main #news2 .slider .news2-row .news2-row-col h5 {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    width: 314px;
+  }
+  main #news2 .slider .news2-row .news2-row-col p {
+    font-size: 10px;
+    line-height: 14px;
+    width: 314px;
+  }
+  main #news2-section2 .karusele .karusel .owl-item {
+   
+  }
+  main #news2-section2 .karusele .karusel .owl-item .col-lg-12 .item h5 {
+    font-size: 18px;
+    line-height: 19px;
+  }
+  main #news2-section2 .karusele .karusel .owl-item .col-lg-12 .item a {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    width: 200px;
+  }
+  main #news2-section2 .karusele .karusel .owl-item .col-lg-12 .item p {
+    font-size: 12px;
+    line-height: 16px;
+    margin-top: 5px;
+    width: 230px;
+  }
+  main #product1 span {
+    top: 53px;
+    left: 26px;
+    font-size: 26px;
+  }
+    main #product1 span::after {
+        width: 105px;
+        top: 21px;
+        left: -25px;
+    }
+  main #product1 .product1-container .product1-row .products {
+    padding-top: 26px;
+    padding-left: 29px;
+  }
+  main #product1 .product1-container .product1-row .products a h3 {
+    font-size: 23px;
+    line-height: 28px;
+    margin-bottom: 10px;
+  }
+  main #product1 .product1-container .product1-row .products p {
+    font-size: 13px;
+    line-height: 21px;
+    width: 273px;
+  }
+  main #product1 .product1-container .product1-row .col-lg-6 img {
+    display: none;
+  }
+  main #product2 .product2-container span {
+    font-size: 25px;
+    line-height: 30px;
+  }
+  main #product2 .product2-container span::after {
+    width: 166px;
+  }
+  main #product2 .product2-container .product2-row .item {
+    margin-top: 3px;
+  }
+  main #product2 .product2-container .product2-row .item img {
+    width: 330px;
+    height: 161px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  main #product2 .product2-container .product2-row .item h3 {
+    font-size: 21px;
+    line-height: 23px;
+    padding-top: 9px;
+    padding-bottom: 8px;
+  }
+  main #product2 .product2-container .product2-row .item p {
+    margin-bottom: 75px;
+    width: 295px;
+    height: 170px;
+    font-size: 12px;
+    line-height: 18px;
+  }
+    main #product2 .product2-container .product2-row .item button {
+        margin-right: 139px;
+        margin-bottom: -27px;
+        padding: 8px 24px;
+    }
+  main #product2 .product2-container button {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 13px;
+    padding-right: 12px;
+    bottom: 6%;
+    left: 4%;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 20px;
+  }
+  main #test-decs .test-decs-container .test-decs-row {
+    padding-left: 12%;
+  }
+  main #test-decs .test-decs-container .test-decs-row .item {
+    margin-bottom: 13px;
+  }
+  main #test-decs .test-decs-container .test-decs-row .item .card .card-body h6 {
+    font-size: 14px;
+    line-height: 15px;
+  }
+  main #test-decs .test-decs-container .test-decs-row .item .card .card-body p {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  main #diagnosis .diagnosis-container .diagnosis-row .col-lg-6 {
+    margin-bottom: 36px;
+  }
+  main #diagnosis .diagnosis-container .diagnosis-row .col-lg-6 .card .card-body h5 {
+    font-size: 17px;
+    line-height: 17px;
+    padding-bottom: 0px;
+  }
+  main #diagnosis .diagnosis-container .diagnosis-row .col-lg-6 .card .card-body p {
+    font-size: 12px;
+    line-height: 17px;
+  }
+  main #diagnosis .diagnosis-container .diagnosis-row .col-lg-6 .card .card-body img {
+    width: 8%;
+  }
+  main #productorder .productorder-container {
+    margin-left: 4px;
+  }
+  main #productorder .productorder-container .productorder-row .order-form .row .send button {
+    padding: 10px 33px;
+  }
+  main #news-page3 .news-page3-container {
+    padding-top: 64px;
+  }
+  main #news-page3 .news-page3-container .news-page3-row .new-measure {
+    margin-left: 10px;
+    margin-bottom: 39px;
+  }
+  main #news-page3 .news-page3-container .news-page3-row .roller-news .col-lg-6 .card .card-body h5 {
+    font-size: 17px;
+    line-height: 19px;
+  }
+  main #news-page3 .news-page3-container .news-page3-row .roller-news .col-lg-6 .card .card-body a {
+    font-size: 16px;
+    line-height: 21px;
+  }
+  main #news-page3 .news-page3-container .news-page3-row .roller-news .col-lg-6 .card .card-body p {
+    width: 263px;
+    font-size: 13px;
+    line-height: 18px;
+  }
+  main #galery .galery-container {
+    margin-left: 88px;
+  }
+  main #galery .galery-container .galery-row .glry .karusele-row .owl-nav .owl-next {
+    left: 58%;
+  }
+  main .contact-container .contact-row .contact2 {
+    margin-bottom: 32px;
+  }
+  main .contact-container .contact-row .map {
+    margin-left: -15px;
+  }
+  main #career1 .career1-container .career1-row .vacancy .panel .panel-collapse .panel-body {
+    width: 315px;
+  }
+  main #career1 .career1-container .career1-row .vacancy .panel .panel-collapse .apply {
+    margin-left: 13px;
+  }
+  main .career2-container .career2-row {
+    margin-left: 4px;
+  }
+  main #vacancy-form .vacancy-form-container .vacancy-form-row .apply {
+    margin-left: 3px;
+  }
+  main #vacancy-form .vacancy-form-container .vacancy-form-row .apply .needs-validation .bton button {
+    padding: 9px 149px;
+  }
+  footer #footer .footer-container .footer-row {
+    padding-top: 28px;
+  }
+  footer #footer .footer-container .footer-row .big-column1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  footer #footer .footer-container .footer-row .big-column1 a img {
+    padding-bottom: 70px;
+  }
+  footer #footer .footer-container .footer-row .big-column1 p {
+    font-size: 12px;
+    line-height: 16px;
+    width: 330px;
+    margin-left: 15px;
+    margin-top: 26px;
+  }
+  footer #footer .footer-container .footer-row .big-column2 {
+    display: none;
+  }
+  footer #footer .footer-container .footer-row .big-column2 .page-column h5 {
+    font-size: 12px;
+    line-height: 17px;
+    padding-bottom: 0px;
+  }
+  footer #footer .footer-container .footer-row .big-column2 .page-column ul .item {
+    margin-bottom: 6px;
+    font-size: 13px;
+    line-height: 14px;
+  }
+  footer #footer .footer-container .footer-row .big-column2 .contact h5 {
+    font-size: 12px;
+    line-height: 17px;
+    padding-bottom: 0px;
+  }
+  footer #footer .footer-copyright {
+    display: none;
+  }
+}
+@media (max-width:371px){
+    main #product-image .product-image-container .product-image-row1 .product-img-col .karuselerow .item .col img {
+        width: 104px;
+        height: 100px;
+        -o-object-fit: cover;
+        object-fit: cover;
+    }
+    main #product-image .product-image-container .product-image-row1 h3::after {
+        width: 110px;
+        left: 162px;
+    }
+    main #about .about-container .about-row .about-col7 p {
+        margin-bottom: 6px;
+    }
+    main #career1 .career1-container .career1-row .vacancy .panel .panel-collapse .panel-body {
+        width: 293px;
+        
+    }
+    main #vacancy-form .vacancy-form-container .vacancy-form-row .apply .needs-validation .bton button {
+        padding: 9px 109px;
+        margin-left: 27px;
+    }
+    main #galery .galery-container .galery-row .glry .karusele-row .owl-nav .owl-next{
+        left:60%;
+    }
+    main #product2 .product2-container .product2-row .item img {
+        width: 297px;
+        height: 150px;
+    }
+    main #product2 .product2-container .product2-row {
+        margin-left: -1px;
+    }
+    main  #product2 .product2-container .product2-row .item button {
+            padding: 7px 13px;
+            font-size: 13px;
+        }
+    main #product2 .product2-container button{
+        left:8%;
+    }
+    main #news2 .slider .items .owl-item .item a img {
+        width: 118px;
+        height: 137px;
+    }
+    main #news2 .slider {
+        padding-left: 107px;
+    }
+    main #news2 .slider .news2-row .news2-row-col h5{
+        width:286px;
+    }
+    main #news2 .slider .news2-row .news2-row-col p {
+        width: 286px;
+    }
+    main #product-image .product-image-container .product-image-row1 .product-img-col .karuselerow .item .col h4 {
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 14px;
+        padding-bottom: 0px;
+    }
+    main #product-image .product-image-container .product-image-row1 .product-img-col .karuselerow .item .col p {
+        width: 123px;
+    }
+
+}
+@media (max-width:404px){
+    main #about .about-container img {
+        width: 509px;
+    }
+    main #news2-section2 .karusele .karusel .owl-item .col-lg-12 .item a {
+        font-size: 14px;
+    }
+    main #news2 .slider .items .owl-nav .owl-next {
+        right: -22%;
+    }
+}
+/*# sourceMappingURL=responsive.css.map */

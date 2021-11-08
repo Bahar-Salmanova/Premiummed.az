@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="24/7" xml:space="preserve">
+    <value>24/7 xidmətinizdəyik!</value>
+  </data>
+  <data name="About" xml:space="preserve">
+    <value>Haqqımızda</value>
+  </data>
+  <data name="Adres" xml:space="preserve">
+    <value>Bakı şəhəri, Sabunçu rayonu, Zabrat 1 qəsəbəsi, Vaqif küçəsi 7, m.9A</value>
+  </data>
+  <data name="Career" xml:space="preserve">
+    <value>Karyera</value>
+  </data>
+  <data name="CompaniAbout" xml:space="preserve">
+    <value>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam tempore corporis cupiditate blanditiis quaerat non omnis suscipit consectetur ut quae. Nobis tempore distinctio sed.</value>
+  </data>
+  <data name="Companies" xml:space="preserve">
+    <value>Distribyutoru olduğumuz şirkətlər</value>
+  </data>
+  <data name="Contact" xml:space="preserve">
+    <value>Əlaqə</value>
+  </data>
+  <data name="Do you have a question?" xml:space="preserve">
+    <value>Sualınız var?</value>
+  </data>
+  <data name="Events" xml:space="preserve">
+    <value>Tədbirlər</value>
+  </data>
+  <data name="FooterPremium" xml:space="preserve">
+    <value>PremiumMed MMC , tibbi laborator avadanlıqları, reaktivlər və sərfiyyatları istehlak edən ən böyük istehsalçı şirkətlərin, dünyaca məşhur brendlərin Azərbaycan bazarına ixracatçısıdır.</value>
+  </data>
+  <data name="Gallery" xml:space="preserve">
+    <value>Qalereya</value>
+  </data>
+  <data name="Get support!" xml:space="preserve">
+    <value>Dəstək al</value>
+  </data>
+  <data name="HeaderTitle" xml:space="preserve">
+    <value>Keyfiyyət və xidmətdə Sizi düşünərək!</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>Əsas Səhifə</value>
+  </data>
+  <data name="Mission" xml:space="preserve">
+    <value>Misiya</value>
+  </data>
+  <data name="MissionDesc" xml:space="preserve">
+    <value>Tibb sektorunun dinamikasını ən yaxşı şəkildə təhlil edərək, ən uyğun ticari şərtlər altında, uzunmüddətli, qeyri-şərtsiz müştəri məmnuniyyəti təmin etmək və yüksək peşəkarlıqla, Azərbaycan laboratoriyalarını dünya bazarında beynəlxalq standartlara cavab verən keyfiyyətli mallarla təchiz edərək, markalarımıza sadiq müştərilər yaratmaq, cəmiyyətin sağlamlıq səviyyəsini və həyat keyfiyyətini yüksəltməyə xidmət edəcək tibbi laboratoriyalarımızı, zəruri avadanlıqlar və məhsullarla təmin etmək. Keçmiş referanslarımızın, gələcək işimizin öhdəliyi olduğunu nəzərə alaraq, dəyərli müştərilərimizə ən yaxşı xidməti təqdim etmək.</value>
+  </data>
+  <data name="News" xml:space="preserve">
+    <value>Xəbərlər</value>
+  </data>
+  <data name="NotDifficult" xml:space="preserve">
+    <value>Məhsullarımızı əldə etmək çətin deyil!</value>
+  </data>
+  <data name="Order" xml:space="preserve">
+    <value>Sifariş et.</value>
+  </data>
+  <data name="Order now!" xml:space="preserve">
+    <value>İndi sifariş et!</value>
+  </data>
+  <data name="Pages" xml:space="preserve">
+    <value>Səhifələr</value>
+  </data>
+  <data name="Products" xml:space="preserve">
+    <value>Məhsullar</value>
+  </data>
+  <data name="Quality Policy" xml:space="preserve">
+    <value>Keyfiyyət Siyasəti</value>
+  </data>
+  <data name="QualityDesc" xml:space="preserve">
+    <value>• Müştərilərimizin tələblərinə və fəaliyyət göstərdiyimiz sektorda səhiyyə sistemimizin qəbul etdiyi qaydalara uyğun olaraq, xidməti davamlı olaraq təkmilləşdirmək; Milli və beynəlxalq qanunlara, standartlara və tənzimləyici tələblərə uyğun hərəkət etmək,
+• Davamlılığın və inkişafın təmin edilməsi, keyfiyyətin yalnız komanda işi ilə təmin olunacağına inanmaq, komanda ruhu və ümumi fikir metodu ilə partnyor müştərilərlə işləmək,
+• Müştərilərimizin cari və gələcək ehtiyaclarını qarşılamaq üçün bu sahədə yeniliklərə sərmayə qoyaraq, keyfiyyətli və təhlükəsiz məhsullarla keyfiyyətli xidmət göstərmək, ilk dəfə və hər dəfə qeyri -şərtsiz müştəri məmnuniyyətini təmin etmək,
+• Qurduğumuz keyfiyyət sistemlərini həyata keçirmək və təkmilləşdirmək üçün özünü yeniləmək və inkişaf etdirmək, insan resurslarına sərmayə qoyaraq davamlılığı təmin etmək. Bu sahədə kadrların davamlı inkişafını təmin etmək, təlimlər təşkil etmək,
+• Sağlamlıq sektorundakı yenilikləri daim izləmək, bazar payını və məhsul çeşidini artırmaq, optimal səmərəliliyi və gəlirliliyi təmin etmək, sektorun liderləri arasında olmaq və rəqiblərimizdən öndə olmaq,
+• Şirkət işçiləri üçün sağlam və təhlükəsiz iş mühiti təmin etmək, təlim, ünsiyyət və motivasiya imkanlarını artıraraq korporativ mənsubiyyət hissini gücləndirmək,
+• Şirkətimizin fəaliyyətindən təsirlənən bütün insanların (işçilər, müvəqqəti işçilər, subpodratçılar, ziyarətçilər, müştərilər və iş yerindəki hər hansı bir şəxs) sağlamlığına və təhlükəsizliyinə təsir edən amilləri və şərtləri qiymətləndirmək və lazımi tədbirləri görmək,
+• Ətraf mühit haqqında məlumatlılıq yaratmaq, onun qorunmasına və inkişafına töhfə vermək.</value>
+  </data>
+  <data name="Read them all" xml:space="preserve">
+    <value>Hamısını oxu</value>
+  </data>
+  <data name="Reserved" xml:space="preserve">
+    <value>Bütün hüquqlar qorunur.</value>
+  </data>
+  <data name="Vision" xml:space="preserve">
+    <value>Vizyon</value>
+  </data>
+  <data name="VisionDesc" xml:space="preserve">
+    <value>Keyfiyyət, etibar, insan sağlamlığı, prestij, müştəri məmnuniyyəti prinsiplərinə sadiq qalaraq, xidməti şaxələndirmək və təkmilləşdirməklə, dünya standartlarına uyğun, müştərilərə xidmət etmək. Peşəkar sərmayələri və proffesional, dinamik komanda ilə ən yüksək bazar payına malik, öz sahəsində ən müxtəlif məhsul çeşidi təqdim edən tibbi laborator məhsullar istehlakçısı olmaq.</value>
+  </data>
+  <data name="we who?" xml:space="preserve">
+    <value>2016-ci ilin mart ayında, Bakı şəhərində qurulmuş PremiumMed MMC , tibbi laborator avadanlıqları, reaktivlər və sərfiyyatları istehlak edən ən böyük istehsalçı şirkətlərin, dünyaca məşhur brendlərin Azərbaycan bazarına ixracatçısıdır. Bu sahədə sübut olunmuş texnologiyalardan və yeniliklərdən istifadə edən, yaşının az olmasına baxmayaraq, dinamik və gözəl fikirlərlə dolu, gənc və müstəqil bir şirkətdir. Şirkətin ən vacib və önəmli – açar fəaliyyəti , laborator məhsul və xidmətlərin realizasiyası, layihələr üzrə fəaliyyət, klinikaların metodik və servis dəstəyinin mükəmməl şəkildə həyata..</value>
+  </data>
+  <data name="who" xml:space="preserve">
+    <value>Biz kimik?</value>
+  </data>
+</root>

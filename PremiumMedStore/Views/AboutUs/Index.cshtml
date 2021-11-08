@@ -4,7 +4,7 @@
 <main>
     <section id=news-main>
         <div class="container news-container">
-            <img src="~/Uploads/image.7.png" alt="">
+            <img src="~/Uploads/testalize-me-0jE8ynV4mis-unsplash 1.jpg" alt="">
             <partial name="_breadcrumb" model="Model.BreadCrumb" />
         </div>
     </section>
@@ -13,28 +13,15 @@
             <div class="row aboutus-row">
                 <div class="col-lg-5 missions">
                     <ul class="list">
-                        <li><a asp-controller="aboutus" asp-action="index" class="active">Haqqımızda</a> </li>
-                        <li><a asp-controller="aboutus" asp-action="mission">Misiya</a></li>
-                        <li><a asp-controller="aboutus" asp-action="vision">Vizyon</a></li>
-                        <li><a asp-controller="aboutus" asp-action="quality">Keyfiyyət Siyasəti</a></li>
+                        <li><a asp-controller="aboutus" asp-action="index" class="active">@ViewBag.TranslatedInfo["About"].Value</a> </li>
+                        <li><a asp-controller="aboutus" asp-action="mission">@ViewBag.TranslatedInfo["Mission"].Value</a></li>
+                        <li><a asp-controller="aboutus" asp-action="vision">@ViewBag.TranslatedInfo["Vision"].Value</a></li>
+                        <li><a asp-controller="aboutus" asp-action="quality">@ViewBag.TranslatedInfo["Quality Policy"].Value</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-7 description">
                     <p>
-                        2016-ci ilin mart ayında, Bakı şəhərində qurulmuş PremiumMed MMC , tibbi laborator
-                        avadanlıqları, reaktivlər və sərfiyyatları istehlak edən ən böyük istehsalçı şirkətlərin, dünyaca
-                        məşhur brendlərin Azərbaycan bazarına ixracatçısıdır. Bu sahədə sübut olunmuş
-                        texnologiyalardan və yeniliklərdən istifadə edən, yaşının az olmasına baxmayaraq, dinamik və
-                        gözəl fikirlərlə dolu, gənc və müstəqil bir şirkətdir.
-                        Şirkətin ən vacib və önəmli – açar fəaliyyəti , laborator məhsul və xidmətlərin realizasiyası,
-                        layihələr üzrə fəaliyyət, klinikaların metodik və servis dəstəyinin mükəmməl şəkildə həyata
-                        keçirilməsidir.
-                        Bu illər ərzində, şirkət iri miqyaslı və iddialı layihələr həyata keçirərək zəngin təcrübə
-                        toplamışdır, Azərbaycanda bir çox diaqnostik test və proqramların novatoru olmuşdur.
-                        Şirkətin rəhbərliyi bu sahədə 15 ildən artıq təcrübəyə malikdirlər. PremiumMed, müasir
-                        idarəetmə təcrübəsi olan, ixtisaslı işçiləri birləşdirən, dinamik inkişaf edən bir şirkətdir. Şirkətin
-                        amalı, fəaliyyət müddəti boyunca özünü müştərilərinə yüksək səviyyədə məsuliyyətli bir
-                        tərəfdaş kimi sübut etməkdir.
+                        @ViewBag.TranslatedInfo["we who?"].Value
                     </p>
                 </div>
             </div>

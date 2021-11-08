@@ -29,6 +29,7 @@ namespace PremiumMedStore.Controllers
                 }
 
             };
+            ViewBag.Title = "Əlaqə";
             ViewBag.Active = "Əlaqə";
             ViewBag.ProductCategories = _context.ProductCategories.ToList();
 

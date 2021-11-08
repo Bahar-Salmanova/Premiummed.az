@@ -34,6 +34,8 @@ namespace PremiumMedStore.Controllers
                 },
                 Id=id,
             };
+            ViewBag.Title = "Məhsullar";
+            ViewBag.Active = "Məhsullar";
             ViewBag.ProductCategories = _context.ProductCategories.ToList();
             return View(model);
         }
@@ -52,6 +54,8 @@ namespace PremiumMedStore.Controllers
                 },
                 Id = id
             };
+            ViewBag.Title = "Məhsullar";
+            ViewBag.Active = "Məhsullar";
             ViewBag.ProductCategories = _context.ProductCategories.ToList();
             return View(model);
         }
@@ -71,8 +75,11 @@ namespace PremiumMedStore.Controllers
             };
             _context.ProductOrders.Add(order);
             _context.SaveChanges();
+
+            ViewBag.Title = "Məhsullar";
+            ViewBag.Active = "Məhsullar";
             ViewBag.ProductCategories = _context.ProductCategories.ToList();
-            return Redirect("/products/index/"+productOrder.ProductId);
+            return Redirect("/products/product/"+productOrder.ProductId);
         }
        
         [Route("/{controller}/{action}/{id?}")]
@@ -91,6 +98,8 @@ namespace PremiumMedStore.Controllers
                 }
             };
 
+            ViewBag.Title = "Məhsullar";
+            ViewBag.Active = "Məhsullar";
             ViewBag.ProductCategories = _context.ProductCategories.ToList();
             return View(model);
         }
@@ -115,6 +124,8 @@ namespace PremiumMedStore.Controllers
 
                 }
             };
+            ViewBag.Title = "Məhsullar";
+            ViewBag.Active = "Məhsullar";
             ViewBag.ProductCategories = _context.ProductCategories.ToList();
             return View(model);
         }

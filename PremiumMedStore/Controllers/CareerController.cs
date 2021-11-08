@@ -32,6 +32,7 @@ namespace PremiumMedStore.Controllers
                     Links = "Vakansiya"
                 }
             };
+            ViewBag.Title = "Karyera";
             ViewBag.Active = "Karyera";
             ViewBag.ProductCategories = _context.ProductCategories.ToList();
             return View(model);
@@ -50,6 +51,7 @@ namespace PremiumMedStore.Controllers
                 },
                 Id = id
             };
+            ViewBag.Title = "Karyera";
             ViewBag.Active = "Karyera";
             ViewBag.ProductCategories = _context.ProductCategories.ToList();
             return View(model);
@@ -77,6 +79,7 @@ namespace PremiumMedStore.Controllers
                     },
                     Id = vacancyForm.VacancyId
                 };
+                ViewBag.Title = "Karyera";
                 ViewBag.Active = "Karyera";
                 ViewBag.ProductCategories = _context.ProductCategories.ToList();
                 return View(model);

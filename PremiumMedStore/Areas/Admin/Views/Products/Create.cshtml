@@ -16,47 +16,47 @@
 
             </div>
             <div class="form-group">
-                <label asp-for="Name" class="control-label"></label>
+                <label asp-for="Name" class="control-label">Adı</label>
                 <input asp-for="Name" class="form-control" />
                 <span asp-validation-for="Name" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Upload" class="control-label"></label>
+                <label asp-for="Upload" class="control-label">Şəkil</label>
                 <input asp-for="Upload" class="form-control" />
                 <span asp-validation-for="Upload" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Upload1" class="control-label"></label>
+                <label asp-for="Upload1" class="control-label">Şəkil1</label>
                 <input asp-for="Upload1" class="form-control" />
                 <span asp-validation-for="Upload1" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Upload2" class="control-label"></label>
+                <label asp-for="Upload2" class="control-label">Şəkil2</label>
                 <input asp-for="Upload2" class="form-control" />
                 <span asp-validation-for="Upload2" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Upload3" class="control-label"></label>
+                <label asp-for="Upload3" class="control-label">Şəkil3</label>
                 <input asp-for="Upload3" class="form-control" />
                 <span asp-validation-for="Upload3" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="ProductAbout" class="control-label"></label>
+                <label asp-for="ProductAbout" class="control-label">Qısa Məhsul Haq.</label>
                 <input asp-for="ProductAbout" class="form-control" />
                 <span asp-validation-for="ProductAbout" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="FullAbout" class="control-label"></label>
+                <label asp-for="FullAbout" class="control-label">Tam Məhsul Haq.</label>
                 <input asp-for="FullAbout" class="form-control" />
                 <span asp-validation-for="FullAbout" class="text-danger"></span>
             </div>
             <div class="custom-file my-3">
                 <input asp-for="File" class="custom-file-input">
-                <label asp-for="File" class="custom-file-label">Fayl Seçin</label>
+                <label asp-for="File" class="custom-file-label">Tərkib Linki</label>
                 <span asp-validation-for="File" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="ProductCategoryId" class="control-label"></label>
+                <label asp-for="ProductCategoryId" class="control-label">Kateqoriya</label>
                 <select asp-for="ProductCategoryId" class="form-control">
                     @foreach (var item in ViewBag.Products)
                     {

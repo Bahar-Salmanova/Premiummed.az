@@ -12,21 +12,15 @@
             <div class="row aboutus-row">
                 <div class="col-lg-5 missions">
                     <ul class="list">
-                        <li><a asp-controller="aboutus" asp-action="index">Haqqımızda</a> </li>
-                        <li><a asp-controller="aboutus" asp-action="mission">Misiya</a></li>
-                        <li><a asp-controller="aboutus" asp-action="vision" class="active">Vizyon</a></li>
-                        <li><a asp-controller="aboutus" asp-action="quality">Keyfiyyət Siyasəti</a></li>
+                        <li><a asp-controller="aboutus" asp-action="index">@ViewBag.TranslatedInfo["About"].Value</a> </li>
+                        <li><a asp-controller="aboutus" asp-action="mission">@ViewBag.TranslatedInfo["Mission"].Value</a> </li>
+                        <li><a asp-controller="aboutus" asp-action="vision" class="active">@ViewBag.TranslatedInfo["Vision"].Value</a> </li>
+                        <li><a asp-controller="aboutus" asp-action="quality">@ViewBag.TranslatedInfo["Quality Policy"].Value</a> </li>
                     </ul>
                 </div>
                 <div class="col-lg-7 description">
                     <p>
-                        Keyfiyyət, etibar, insan sağlamlığı, prestij, müştəri məmnuniyyəti prinsiplərinə sadiq
-                        qalaraq,
-                        xidməti şaxələndirmək və təkmilləşdirməklə, dünya standartlarına uyğun, müştərilərə xidmət
-                        etmək. Peşəkar sərmayələri və proffesional, dinamik komanda ilə ən yüksək bazar payına
-                        malik, öz sahəsində ən müxtəlif məhsul çeşidi təqdim edən tibbi laborator məhsullar
-                        istehlakçısı
-                        olmaq.
+                        @ViewBag.TranslatedInfo["VisionDesc"].Value
                     </p>
                 </div>
             </div>

@@ -1,16 +1,20 @@
 ﻿@model HomeViewModel
+
 <main>
     <section id="products">
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="d-block w-100" src="~/Uploads/image 25.png" alt="First slide">
+                    <img class="d-block" src="~/Uploads/new-banners-v2-RIQAS--scaled.jpg" alt="First slide">
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="~/Uploads/main-news.png" alt="Second slide">
+                    <img class="d-block" src="~/Uploads/WhatsApp Image 2021-10-09 at 16.58.57.jpeg" alt="Second slide">
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="~/Uploads/image 25.png" alt="Third slide">
+                    <img class="d-block " src="~/Uploads/QCMD-1-1024x231.png" alt="Third slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block " src="~/Uploads/image 25.png" alt="Fourth slide">
                 </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -28,9 +32,9 @@
                 @Model.Welcome.Description
             </p>
         </div>
-       
+
         <button type="button">
-            <a asp-controller="products" asp-action="productcategory">Məhsullar</a>
+            <a asp-controller="products" asp-action="productcategory"> @ViewBag.TranslatedInfo["Products"].Value</a>
         </button>
     </section>
 
@@ -38,24 +42,24 @@
         <div class="container product-image-container">
 
             <div class="row product-image-row1">
-                <h3>Məhsullar </h3>
-                <div class="col-lg-12 product-img-col">
+                <h3> @ViewBag.TranslatedInfo["Products"].Value </h3>
+                <div class="col-lg-12 product-img-col col-sm-6">
                     <div class="owl-carousel karuselerow owl-theme">
                         @foreach (var item in Model.Products)
                         {
-                            <div class="row item">
-                                <div class="col-lg-6 col">
-                                    <img src="~/Uploads/@item.Photo1" alt="">
-                                  <a asp-controller="products" asp-action="product" asp-route-id="@item.Id"><h4>@item.Name</h4></a>  
-                                    <p>
-                                        @item.ProductAbout
-                                    </p>
-                                </div>
-                                <div class="col-lg-6 col">
-                                    <img src="~/Uploads/@item.Photo2" alt="">
-                                    <img src="~/Uploads/@item.Photo3" alt="">
-                                </div>
+                        <div class="row item">
+                            <div class="col-lg-6 col col-sm-3">
+                                <img src="~/Uploads/@item.Photo1" alt="">
+                                <a asp-controller="products" asp-action="product" asp-route-id="@item.Id"><h4>@item.Name</h4></a>
+                                <p>
+                                    @item.ProductAbout
+                                </p>
                             </div>
+                            <div class="col-lg-6 col col-sm-3">
+                                <img src="~/Uploads/@item.Photo2" alt="">
+                                <img src="~/Uploads/@item.Photo3" alt="">
+                            </div>
+                        </div>
                         }
 
                     </div>
@@ -66,27 +70,21 @@
 
         </div>
     </section>
-   <section id="about">
+    <section id="about">
         <div class="container about-container">
             <img src="~/Uploads/image.7.png" alt="">
 
             <div class="row about-row">
-                <div class="col-lg-5 about-col5">
-                    <h4>Biz Kimik?</h4>
+                <div class="col-lg-5 about-col5 col-sm-3">
+                    <h4>@ViewBag.TranslatedInfo["Who"].Value</h4>
                 </div>
-                <div class="col-lg-6 about-col7">
-                    <h3>Haqqımızda</h3>
+                <div class="col-lg-6 about-col7 col-sm-3">
+                    <h3>@ViewBag.TranslatedInfo["About"].Value</h3>
                     <p>
-                        2016-ci ilin mart ayında, Bakı şəhərində qurulmuş PremiumMed MMC , tibbi laborator
-                        avadanlıqları, reaktivlər və sərfiyyatları istehlak edən ən böyük istehsalçı şirkətlərin,
-                        dünyaca məşhur brendlərin Azərbaycan bazarına ixracatçısıdır. Bu sahədə sübut olunmuş
-                        texnologiyalardan və yeniliklərdən istifadə edən, yaşının az olmasına baxmayaraq, dinamik və
-                        gözəl fikirlərlə dolu, gənc və müstəqil bir şirkətdir. Şirkətin ən vacib və önəmli – açar
-                        fəaliyyəti , laborator məhsul və xidmətlərin realizasiyası, layihələr üzrə fəaliyyət,
-                        klinikaların metodik və servis dəstəyinin mükəmməl şəkildə həyata..
+                        @ViewBag.TranslatedInfo["we who?"].Value
                     </p>
-                    <a asp-controller="aboutus" asp-action="index" >Hamısını oxu <i class="fas fa-arrow-right ml-1 mt-3"></i> </a>
-                   
+                    <a asp-controller="aboutus" asp-action="index">@ViewBag.TranslatedInfo["Read them all"].Value<i class="fas fa-arrow-right ml-1 mt-3"></i> </a>
+
                 </div>
             </div>
         </div>
@@ -94,11 +92,10 @@
     <section id="client-section">
         <div class="container client">
             <div class="row distribyutor">
-                <div class="col-lg-8">
-                    <h4>Distribyutoru olduğumuz şirkətlər</h4>
+                <div class="col-lg-8 col-sm-4">
+                    <h4> @ViewBag.TranslatedInfo["Companies"].Value</h4>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam tempore corporis cupiditate
-                        blanditiis quaerat non omnis suscipit consectetur ut quae. Nobis tempore distinctio sed.
+                        @ViewBag.TranslatedInfo["CompaniAbout"].Value
                     </p>
                 </div>
             </div>
@@ -106,45 +103,41 @@
         </div>
         <div class=" client-slidere">
             <div class=" slidere-clients owl-carousel owl-theme">
-                <div class=" item" style="width: 70px;">
-                    <img src="~/uploads/image 27.png" alt="" class="randox first">
-                    <img src="~/uploads/2...png" alt="" class="randox second">
+                <div class=" item" style="width: 100px;">
+                    <a> <img src="~/uploads/image 27.png" alt="" class="randox first"></a>
+                    <a href="https://www.randox.com/"><img src="~/uploads/2...png" alt="" class="randox second"></a>
 
                 </div>
-                <div class=" item" style="width: 70px;">
-                    <img src="~/uploads/image 28.png" alt="" class="first">
-                    <img src="~/uploads/3...png" class="second" alt="">
+                <div class=" item" style="width: 100px;">
+                    <a> <img src="~/uploads/image 39.png" alt="" class="first"></a>
+                    <a href="http://www.spesera.com.tr/"><img src="~/uploads/image 38.png" alt="" class="second"></a>
 
                 </div>
-                <div class=" item" style="width: 70px;">
-                    <img src="~/uploads/image 29.png" alt="" class="first">
-                    <img src="~/uploads/4...png" class="second" alt="">
-                </div>
-                <div class=" item" style="width: 70px;">
-                    <img src="~/uploads/image 30.png" alt="" class="first">
-                    <img src="~/uploads/5...png" class="second" alt="">
+                <div class=" item" style="width: 100px;">
+                    <a><img src="~/uploads/image 28.png" alt="" class="first"></a>
+                    <a href="https://www.fortressdiagnostics.com/"><img src="~/uploads/3...png" class="second" alt=""></a>
 
                 </div>
-                <div class=" item" style="width: 70px;">
-                    <img src="~/uploads/image 32.png" alt="" class="first">
-                    <img src="~/uploads/7...png" class="second" alt="">
+                <div class=" item" style="width: 100px;">
+                    <a><img src="~/uploads/image 29.png" alt="" class="first"></a>
+                    <a href="https://en.vircell.com/"> <img src="~/uploads/4...png" class="second" alt=""></a>
                 </div>
-                <div class=" item" style="width: 70px;">
-                    <img src="~/uploads/image 31.png" alt="" class="first">
-                    <img src="~/uploads/6...png" class="second" alt="">
-                </div>
-                <div class=" item" style="width: 70px;">
-                    <img src="~/uploads/image 30.png" alt="" class="first">
-                    <img src="~/uploads/5...png" class="second" alt="">
+                <div class=" item" style="width: 100px;">
+                    <a><img src="~/uploads/image 30.png" alt="" class="first"></a>
+                    <a href="https://www.boditech.co.kr/en"><img src="~/uploads/5...png" class="second" alt=""></a>
 
                 </div>
-                <div class=" item" style="width: 70px;">
-                    <img src="~/uploads/image 27.png" alt="" class="first randox">
-                    <img src="~/uploads/2...png" alt="" class="randox second">
+                <div class=" item" style="width: 100px;">
+                    <a><img src="~/uploads/image 32.png" alt="" class="first"></a>
+                    <a href="https://www.disera.com.tr/en/"><img src="~/uploads/7...png" class="second" alt=""></a>
                 </div>
-                <div class=" item" style="width: 70px;">
-                    <img src="~/uploads/8...png" alt="" class="first">
-                    <img src="~/uploads/image 34.png" alt="" class="second">
+                <div class=" item" style="width: 100px;">
+                    <a><img src="~/uploads/image 31.png" alt="" class="first"></a>
+                    <a href="https://www.immundiagnostik.com/en"><img src="~/uploads/6...png" class="second" alt=""></a>
+                </div>
+                <div class=" item" style="width: 100px;">
+                    <a> <img src="~/uploads/8...png" alt="" class="first"></a>
+                    <a><img src="~/uploads/image 34.png" alt="" class="second"></a>
                 </div>
 
             </div>
@@ -157,19 +150,19 @@
 
                 @foreach (var item in Model.News)
                 {
-                    <div class="col-lg-12 ">
+                <div class="col-lg-12 col-sm-6 ">
 
 
-                        <div class="item">
+                    <div class="item">
 
-                            <h5>@item.Title</h5>
-                            <a asp-controller="news" asp-action="singlenews" asp-route-id="@item.Id">@item.About</a>
-                            <p>
-                                @item.Desc
-                            </p>
+                        <h5>@item.Title</h5>
+                        <a asp-controller="news" asp-action="singlenews" asp-route-id="@item.Id">@item.About</a>
+                        <p>
+                            @item.Desc
+                        </p>
 
-                        </div>
                     </div>
+                </div>
 
                 }
 
@@ -179,15 +172,15 @@
     <section id="ordered">
 
         <div class="row order-row">
-            <div class="col-lg-6 order">
-                <span>Məhsullarımızı əldə etmək çətin deyil!</span>
-                <h4>İndi sifariş et!</h4>
-                <button><a asp-controller="products" asp-action="productcategory">Sifariş et</a> </button>
+            <div class="col-lg-6 order col-sm-3">
+                <span>@ViewBag.TranslatedInfo["NotDifficult!"].Value</span>
+                <h4>@ViewBag.TranslatedInfo["Order now!"].Value</h4>
+                <button><a asp-controller="products" asp-action="productcategory">@ViewBag.TranslatedInfo["Order"].Value</a> </button>
             </div>
-            <div class="col-lg-6 support ">
-                <span>24/7 xidmətinizdəyik!</span>
-                <h4>Sualınız var?</h4>
-                <button><a asp-controller="contact" asp-action="index"> Dəstək al</a></button>
+            <div class="col-lg-6 support col-sm-3">
+                <span>@ViewBag.TranslatedInfo["24/7"].Value</span>
+                <h4>@ViewBag.TranslatedInfo["Do you have a question?"].Value</h4>
+                <button><a asp-controller="contact" asp-action="index"> @ViewBag.TranslatedInfo["Get support!"].Value</a></button>
             </div>
         </div>
 

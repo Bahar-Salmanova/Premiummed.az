@@ -65,29 +65,8 @@ namespace PremiumMedStore.Areas.Admin.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,Name,Upload,Upload1,Upload2,Upload3,ProductAbout,FullAbout,File,ProductCategoryId")] Products products)
         {
-            if (products.Upload == null)
+            if (products.Upload != null)
             {
-                ModelState.AddModelError("Uploads", "The Photo field is required.");
-            }
-            if (products.Upload1 == null)
-            {
-                ModelState.AddModelError("Uploads", "The Photo field is required.");
-            }
-            if (products.Upload2 == null)
-            {
-                ModelState.AddModelError("Uploads", "The Photo field is required.");
-            }
-            if (products.Upload3 == null)
-            {
-                ModelState.AddModelError("Uploads", "The Photo field is required.");
-            }
-            if (products.File == null)
-            {
-                ModelState.AddModelError("Uploads", "The Photo field is required.");
-            }
-            if (ModelState.IsValid)
-            {
-                //photo1//
                 IFormFile file = products.Upload;
                 string filExt = file.FileName[file.FileName.LastIndexOf(".")..];
                 DateTime origin = new DateTime(1970, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc);
@@ -99,6 +78,38 @@ namespace PremiumMedStore.Areas.Admin.Controllers
                     products.Upload.CopyTo(fs);
                 }
                 products.Photo = fileName;
+            }
+            if (products.Upload1 == null)
+            {
+                ModelState.AddModelError("Upload1", "The Photo field is required.");
+            }
+            if (products.Upload2 == null)
+            {
+                ModelState.AddModelError("Upload2", "The Photo field is required.");
+            }
+            if (products.Upload3 == null)
+            {
+                ModelState.AddModelError("Upload3", "The Photo field is required.");
+            }
+            if (products.File != null)
+            {
+                IFormFile file4 = products.File;
+                string filExt4 = file4.FileName[file4.FileName.LastIndexOf(".")..];
+                DateTime origin4 = new DateTime(1970, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc);
+                TimeSpan diff4 = DateTime.Now.ToUniversalTime() - origin4;
+                string fileName4 = DateTime.Now.Ticks + filExt4;
+                string path4 = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "uploads", fileName4);
+                using (FileStream fs = new FileStream(path4, FileMode.OpenOrCreate))
+                {
+                    products.File.CopyTo(fs);
+                }
+                products.ProductLink = fileName4;
+            }
+            
+            if (ModelState.IsValid)
+            {
+                //photo1//
+                
 
                 //photo2//
                 IFormFile file1 = products.Upload1;
@@ -140,17 +151,7 @@ namespace PremiumMedStore.Areas.Admin.Controllers
                 products.Photo3 = fileName3;
 
                 //file//
-                IFormFile file4 = products.Upload3;
-                string filExt4 = file4.FileName[file4.FileName.LastIndexOf(".")..];
-                DateTime origin4 = new DateTime(1970, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc);
-                TimeSpan diff4 = DateTime.Now.ToUniversalTime() - origin4;
-                string fileName4 = DateTime.Now.Ticks + filExt4;
-                string path4 = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "uploads", fileName4);
-                using (FileStream fs = new FileStream(path4, FileMode.OpenOrCreate))
-                {
-                    products.File.CopyTo(fs);
-                }
-                products.ProductLink = fileName4;
+               
 
 
                 _context.Add(products);

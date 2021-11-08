@@ -20,15 +20,16 @@ namespace PremiumMedStore.Areas.Admin.Controllers
 
         public IActionResult Login()
         {
-            //User user = new User
-            //{
-            //    Email = "Bahar@gmail.com",
-            //    FullName = "Bahar",
-            //    Password = Crypto.HashPassword("Bahar123")
-            //};
-            //_context.Users.Add(user);
-            //_context.SaveChanges();
-            return View();
+           //User user = new User
+           //{
+           //    Email = "Bahar2@gmail.com",
+           //    FullName = "Bahar",
+           //    Password = Crypto.HashPassword("Bahar12345"),
+           //    Token = "dfjdgsdklfgsdfj"
+           //};
+           //_context.Users.Add(user);
+           //_context.SaveChanges();
+           return View();
         }
 
         [HttpPost]

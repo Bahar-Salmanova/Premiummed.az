@@ -1,4 +1,3 @@
-C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Debug\net5.0\PremiumMedStore.csproj.AssemblyReference.cache
 C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Debug\net5.0\PremiumMedStore.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Debug\net5.0\PremiumMedStore.AssemblyInfoInputs.cache
 C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Debug\net5.0\PremiumMedStore.AssemblyInfo.cs
@@ -229,3 +228,15 @@ C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Debug\net5.0\Razo
 C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Debug\net5.0\Razor\Areas\Admin\Views\ProductCategories\Details.cshtml.g.cs
 C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Debug\net5.0\Razor\Areas\Admin\Views\ProductCategories\Edit.cshtml.g.cs
 C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Debug\net5.0\Razor\Areas\Admin\Views\ProductCategories\Index.cshtml.g.cs
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Debug\net5.0\PremiumMedStore.csproj.AssemblyReference.cache
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\bin\Debug\net5.0\az-Latn-az\PremiumMedStore.resources.dll
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Debug\net5.0\PremiumMedStore.SharedResource.az-Latn-az.resources
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Debug\net5.0\PremiumMedStore.csproj.GenerateResource.cache
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Debug\net5.0\az-Latn-az\PremiumMedStore.resources.dll
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Debug\net5.0\PremiumMedStore.Resource.Controllers.HomeController.az-Latn-az.resources
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\bin\Debug\net5.0\en-US\PremiumMedStore.resources.dll
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Debug\net5.0\PremiumMedStore.Resource.Controllers.HomeController.en-US.resources
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Debug\net5.0\en-US\PremiumMedStore.resources.dll
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\bin\Debug\net5.0\ru-RU\PremiumMedStore.resources.dll
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Debug\net5.0\PremiumMedStore.Resource.Controllers.HomeController.ru-RU.resources
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Debug\net5.0\ru-RU\PremiumMedStore.resources.dll

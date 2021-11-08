@@ -19,7 +19,7 @@
         <tr>
 
             <th>
-                @Html.DisplayNameFor(model => model.Name)
+               Adı
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Photo)
@@ -34,16 +34,12 @@
                 @Html.DisplayNameFor(model => model.Photo3)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.ProductAbout)
+               Tam Məhsul Haqqında
             </th>
+           
+           
             <th>
-                @Html.DisplayNameFor(model => model.FullAbout)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.ProductLink)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.ProductCategory)
+               Məhsul Kateqoriyasi
             </th>
             <th></th>
         </tr>
@@ -68,14 +64,10 @@
                 <img class="w-75" src="~/Uploads/@item.Photo3" alt="Alternate Text" />
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.ProductAbout)
-            </td>
-            <td>
                 @Html.DisplayFor(modelItem => item.FullAbout)
             </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.ProductLink)
-            </td>
+           
+           
             <td>
                 @Html.DisplayFor(modelItem => item.ProductCategory.Name)
             </td>

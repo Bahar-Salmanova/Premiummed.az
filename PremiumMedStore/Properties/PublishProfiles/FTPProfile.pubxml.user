@@ -1,0 +1,2766 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword />
+    <History>False|2021-10-20T23:49:26.6444935Z;False|2021-10-20T23:42:38.5995396+04:00;False|2021-10-19T00:16:22.2893797+04:00;False|2021-10-14T20:56:17.6837832+04:00;False|2021-10-14T11:04:37.2230598+04:00;False|2021-10-11T23:41:06.5423080+04:00;False|2021-10-11T00:21:46.4009453+04:00;False|2021-10-10T14:26:43.4513324+04:00;False|2021-10-06T21:00:30.8787036+04:00;False|2021-10-06T00:12:01.1544898+04:00;False|2021-10-05T14:48:18.0818703+04:00;False|2021-10-05T00:36:33.5712866+04:00;False|2021-10-03T16:55:10.2947851+04:00;False|2021-10-03T16:30:06.4451751+04:00;False|2021-10-02T21:14:27.9296492+04:00;</History>
+    <_PublishTargetUrl>ftp://ftp.site4now.net/site1\site1</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="appsettings.Development.json">
+      <publishTime>10/01/2021 11:37:07</publishTime>
+    </File>
+    <File Include="appsettings.json">
+      <publishTime>09/21/2021 23:19:17</publishTime>
+    </File>
+    <File Include="CryptoHelper.dll">
+      <publishTime>03/07/2018 10:07:22</publishTime>
+    </File>
+    <File Include="cs/Microsoft.CodeAnalysis.CSharp.resources.dll">
+      <publishTime>11/12/2020 00:15:14</publishTime>
+    </File>
+    <File Include="cs/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll">
+      <publishTime>11/12/2020 04:20:06</publishTime>
+    </File>
+    <File Include="cs/Microsoft.CodeAnalysis.resources.dll">
+      <publishTime>11/12/2020 00:14:40</publishTime>
+    </File>
+    <File Include="cs/Microsoft.CodeAnalysis.Workspaces.resources.dll">
+      <publishTime>11/12/2020 04:16:28</publishTime>
+    </File>
+    <File Include="de/Microsoft.CodeAnalysis.CSharp.resources.dll">
+      <publishTime>11/12/2020 00:15:14</publishTime>
+    </File>
+    <File Include="de/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll">
+      <publishTime>11/12/2020 04:20:06</publishTime>
+    </File>
+    <File Include="de/Microsoft.CodeAnalysis.resources.dll">
+      <publishTime>11/12/2020 00:14:42</publishTime>
+    </File>
+    <File Include="de/Microsoft.CodeAnalysis.Workspaces.resources.dll">
+      <publishTime>11/12/2020 04:16:28</publishTime>
+    </File>
+    <File Include="dotnet-aspnet-codegenerator-design.dll">
+      <publishTime>02/09/2021 05:32:20</publishTime>
+    </File>
+    <File Include="es/Microsoft.CodeAnalysis.CSharp.resources.dll">
+      <publishTime>11/12/2020 00:15:14</publishTime>
+    </File>
+    <File Include="es/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll">
+      <publishTime>11/12/2020 04:20:06</publishTime>
+    </File>
+    <File Include="es/Microsoft.CodeAnalysis.resources.dll">
+      <publishTime>11/12/2020 00:14:42</publishTime>
+    </File>
+    <File Include="es/Microsoft.CodeAnalysis.Workspaces.resources.dll">
+      <publishTime>11/12/2020 04:16:28</publishTime>
+    </File>
+    <File Include="fr/Microsoft.CodeAnalysis.CSharp.resources.dll">
+      <publishTime>11/12/2020 00:15:14</publishTime>
+    </File>
+    <File Include="fr/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll">
+      <publishTime>11/12/2020 04:20:06</publishTime>
+    </File>
+    <File Include="fr/Microsoft.CodeAnalysis.resources.dll">
+      <publishTime>11/12/2020 00:14:42</publishTime>
+    </File>
+    <File Include="fr/Microsoft.CodeAnalysis.Workspaces.resources.dll">
+      <publishTime>11/12/2020 04:16:28</publishTime>
+    </File>
+    <File Include="Humanizer.dll">
+      <publishTime>06/02/2020 13:07:58</publishTime>
+    </File>
+    <File Include="it/Microsoft.CodeAnalysis.CSharp.resources.dll">
+      <publishTime>11/12/2020 00:15:14</publishTime>
+    </File>
+    <File Include="it/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll">
+      <publishTime>11/12/2020 04:20:06</publishTime>
+    </File>
+    <File Include="it/Microsoft.CodeAnalysis.resources.dll">
+      <publishTime>11/12/2020 00:14:42</publishTime>
+    </File>
+    <File Include="it/Microsoft.CodeAnalysis.Workspaces.resources.dll">
+      <publishTime>11/12/2020 04:16:28</publishTime>
+    </File>
+    <File Include="ja/Microsoft.CodeAnalysis.CSharp.resources.dll">
+      <publishTime>11/12/2020 00:15:14</publishTime>
+    </File>
+    <File Include="ja/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll">
+      <publishTime>11/12/2020 04:20:06</publishTime>
+    </File>
+    <File Include="ja/Microsoft.CodeAnalysis.resources.dll">
+      <publishTime>11/12/2020 00:14:42</publishTime>
+    </File>
+    <File Include="ja/Microsoft.CodeAnalysis.Workspaces.resources.dll">
+      <publishTime>11/12/2020 04:16:28</publishTime>
+    </File>
+    <File Include="ko/Microsoft.CodeAnalysis.CSharp.resources.dll">
+      <publishTime>11/12/2020 00:15:14</publishTime>
+    </File>
+    <File Include="ko/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll">
+      <publishTime>11/12/2020 04:20:06</publishTime>
+    </File>
+    <File Include="ko/Microsoft.CodeAnalysis.resources.dll">
+      <publishTime>11/12/2020 00:14:42</publishTime>
+    </File>
+    <File Include="ko/Microsoft.CodeAnalysis.Workspaces.resources.dll">
+      <publishTime>11/12/2020 04:16:28</publishTime>
+    </File>
+    <File Include="Microsoft.AspNetCore.Razor.Language.dll">
+      <publishTime>10/27/2020 02:58:46</publishTime>
+    </File>
+    <File Include="Microsoft.Bcl.AsyncInterfaces.dll">
+      <publishTime>04/14/2020 22:39:12</publishTime>
+    </File>
+    <File Include="Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>11/12/2020 00:15:12</publishTime>
+    </File>
+    <File Include="Microsoft.CodeAnalysis.CSharp.Workspaces.dll">
+      <publishTime>11/12/2020 04:20:06</publishTime>
+    </File>
+    <File Include="Microsoft.CodeAnalysis.dll">
+      <publishTime>11/12/2020 00:14:40</publishTime>
+    </File>
+    <File Include="Microsoft.CodeAnalysis.Razor.dll">
+      <publishTime>10/27/2020 02:59:10</publishTime>
+    </File>
+    <File Include="Microsoft.CodeAnalysis.Workspaces.dll">
+      <publishTime>11/12/2020 04:16:26</publishTime>
+    </File>
+    <File Include="Microsoft.Data.SqlClient.dll">
+      <publishTime>08/25/2020 23:24:48</publishTime>
+    </File>
+    <File Include="Microsoft.EntityFrameworkCore.Abstractions.dll">
+      <publishTime>08/11/2021 03:32:48</publishTime>
+    </File>
+    <File Include="Microsoft.EntityFrameworkCore.dll">
+      <publishTime>08/11/2021 03:33:00</publishTime>
+    </File>
+    <File Include="Microsoft.EntityFrameworkCore.Relational.dll">
+      <publishTime>08/11/2021 03:33:06</publishTime>
+    </File>
+    <File Include="Microsoft.EntityFrameworkCore.SqlServer.dll">
+      <publishTime>07/15/2021 13:54:12</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.DependencyInjection.dll">
+      <publishTime>06/15/2021 23:12:46</publishTime>
+    </File>
+    <File Include="Microsoft.Identity.Client.dll">
+      <publishTime>05/18/2020 20:11:54</publishTime>
+    </File>
+    <File Include="Microsoft.IdentityModel.JsonWebTokens.dll">
+      <publishTime>10/18/2019 23:39:24</publishTime>
+    </File>
+    <File Include="Microsoft.IdentityModel.Logging.dll">
+      <publishTime>10/18/2019 23:40:20</publishTime>
+    </File>
+    <File Include="Microsoft.IdentityModel.Protocols.dll">
+      <publishTime>10/18/2019 23:41:02</publishTime>
+    </File>
+    <File Include="Microsoft.IdentityModel.Protocols.OpenIdConnect.dll">
+      <publishTime>10/18/2019 23:48:48</publishTime>
+    </File>
+    <File Include="Microsoft.IdentityModel.Tokens.dll">
+      <publishTime>10/18/2019 23:43:40</publishTime>
+    </File>
+    <File Include="Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll">
+      <publishTime>02/09/2021 05:32:08</publishTime>
+    </File>
+    <File Include="Microsoft.VisualStudio.Web.CodeGeneration.Core.dll">
+      <publishTime>02/09/2021 05:32:16</publishTime>
+    </File>
+    <File Include="Microsoft.VisualStudio.Web.CodeGeneration.dll">
+      <publishTime>02/09/2021 05:32:18</publishTime>
+    </File>
+    <File Include="Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll">
+      <publishTime>02/09/2021 05:32:18</publishTime>
+    </File>
+    <File Include="Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll">
+      <publishTime>02/09/2021 05:32:14</publishTime>
+    </File>
+    <File Include="Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll">
+      <publishTime>02/09/2021 05:32:12</publishTime>
+    </File>
+    <File Include="Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll">
+      <publishTime>02/09/2021 05:32:18</publishTime>
+    </File>
+    <File Include="Newtonsoft.Json.dll">
+      <publishTime>03/24/2018 17:44:14</publishTime>
+    </File>
+    <File Include="pl/Microsoft.CodeAnalysis.CSharp.resources.dll">
+      <publishTime>11/12/2020 00:15:14</publishTime>
+    </File>
+    <File Include="pl/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll">
+      <publishTime>11/12/2020 04:20:06</publishTime>
+    </File>
+    <File Include="pl/Microsoft.CodeAnalysis.resources.dll">
+      <publishTime>11/12/2020 00:14:42</publishTime>
+    </File>
+    <File Include="pl/Microsoft.CodeAnalysis.Workspaces.resources.dll">
+      <publishTime>11/12/2020 04:16:28</publishTime>
+    </File>
+    <File Include="PremiumMedStore.deps.json">
+      <publishTime>10/14/2021 03:17:27</publishTime>
+    </File>
+    <File Include="PremiumMedStore.dll">
+      <publishTime>10/14/2021 03:16:49</publishTime>
+    </File>
+    <File Include="PremiumMedStore.exe">
+      <publishTime>10/14/2021 03:16:49</publishTime>
+    </File>
+    <File Include="PremiumMedStore.pdb">
+      <publishTime>10/06/2021 20:56:25</publishTime>
+    </File>
+    <File Include="PremiumMedStore.runtimeconfig.json">
+      <publishTime>09/30/2021 22:11:05</publishTime>
+    </File>
+    <File Include="PremiumMedStore.Views.dll">
+      <publishTime>10/14/2021 03:17:24</publishTime>
+    </File>
+    <File Include="PremiumMedStore.Views.pdb">
+      <publishTime>10/14/2021 03:17:24</publishTime>
+    </File>
+    <File Include="pt-BR/Microsoft.CodeAnalysis.CSharp.resources.dll">
+      <publishTime>11/12/2020 00:15:14</publishTime>
+    </File>
+    <File Include="pt-BR/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll">
+      <publishTime>11/12/2020 04:20:06</publishTime>
+    </File>
+    <File Include="pt-BR/Microsoft.CodeAnalysis.resources.dll">
+      <publishTime>11/12/2020 00:14:42</publishTime>
+    </File>
+    <File Include="pt-BR/Microsoft.CodeAnalysis.Workspaces.resources.dll">
+      <publishTime>11/12/2020 04:16:28</publishTime>
+    </File>
+    <File Include="ru/Microsoft.CodeAnalysis.CSharp.resources.dll">
+      <publishTime>11/12/2020 00:15:14</publishTime>
+    </File>
+    <File Include="ru/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll">
+      <publishTime>11/12/2020 04:20:06</publishTime>
+    </File>
+    <File Include="ru/Microsoft.CodeAnalysis.resources.dll">
+      <publishTime>11/12/2020 00:14:42</publishTime>
+    </File>
+    <File Include="ru/Microsoft.CodeAnalysis.Workspaces.resources.dll">
+      <publishTime>11/12/2020 04:16:28</publishTime>
+    </File>
+    <File Include="runtimes/unix/lib/netcoreapp3.1/Microsoft.Data.SqlClient.dll">
+      <publishTime>08/25/2020 23:25:12</publishTime>
+    </File>
+    <File Include="runtimes/win-arm/lib/net5.0/dotnet-aspnet-codegenerator-design.exe">
+      <publishTime>02/09/2021 05:32:20</publishTime>
+    </File>
+    <File Include="runtimes/win-arm/native/Microsoft.Data.SqlClient.SNI.dll">
+      <publishTime>08/25/2020 20:34:56</publishTime>
+    </File>
+    <File Include="runtimes/win-arm/native/Microsoft.Data.SqlClient.SNI.pdb">
+      <publishTime>08/25/2020 20:31:56</publishTime>
+    </File>
+    <File Include="runtimes/win-arm64/lib/net5.0/dotnet-aspnet-codegenerator-design.exe">
+      <publishTime>02/09/2021 05:32:20</publishTime>
+    </File>
+    <File Include="runtimes/win-arm64/native/Microsoft.Data.SqlClient.SNI.dll">
+      <publishTime>08/25/2020 20:35:06</publishTime>
+    </File>
+    <File Include="runtimes/win-arm64/native/Microsoft.Data.SqlClient.SNI.pdb">
+      <publishTime>08/25/2020 20:31:56</publishTime>
+    </File>
+    <File Include="runtimes/win-x64/native/Microsoft.Data.SqlClient.SNI.dll">
+      <publishTime>08/25/2020 20:34:56</publishTime>
+    </File>
+    <File Include="runtimes/win-x64/native/Microsoft.Data.SqlClient.SNI.pdb">
+      <publishTime>08/25/2020 20:31:56</publishTime>
+    </File>
+    <File Include="runtimes/win-x86/native/Microsoft.Data.SqlClient.SNI.dll">
+      <publishTime>08/25/2020 20:34:56</publishTime>
+    </File>
+    <File Include="runtimes/win-x86/native/Microsoft.Data.SqlClient.SNI.pdb">
+      <publishTime>08/25/2020 20:31:56</publishTime>
+    </File>
+    <File Include="runtimes/win/lib/netcoreapp3.1/Microsoft.Data.SqlClient.dll">
+      <publishTime>08/25/2020 23:24:48</publishTime>
+    </File>
+    <File Include="runtimes/win/lib/netstandard2.0/System.Runtime.Caching.dll">
+      <publishTime>11/15/2019 08:53:44</publishTime>
+    </File>
+    <File Include="runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll">
+      <publishTime>11/15/2019 08:53:46</publishTime>
+    </File>
+    <File Include="System.Composition.AttributedModel.dll">
+      <publishTime>11/05/2016 04:55:42</publishTime>
+    </File>
+    <File Include="System.Composition.Convention.dll">
+      <publishTime>11/05/2016 04:55:42</publishTime>
+    </File>
+    <File Include="System.Composition.Hosting.dll">
+      <publishTime>11/05/2016 04:55:42</publishTime>
+    </File>
+    <File Include="System.Composition.Runtime.dll">
+      <publishTime>11/05/2016 04:55:44</publishTime>
+    </File>
+    <File Include="System.Composition.TypedParts.dll">
+      <publishTime>11/05/2016 04:55:46</publishTime>
+    </File>
+    <File Include="System.Configuration.ConfigurationManager.dll">
+      <publishTime>11/15/2019 08:37:04</publishTime>
+    </File>
+    <File Include="System.Diagnostics.DiagnosticSource.dll">
+      <publishTime>12/12/2020 02:40:42</publishTime>
+    </File>
+    <File Include="System.IdentityModel.Tokens.Jwt.dll">
+      <publishTime>10/18/2019 23:38:18</publishTime>
+    </File>
+    <File Include="System.Runtime.Caching.dll">
+      <publishTime>11/15/2019 08:37:36</publishTime>
+    </File>
+    <File Include="System.Security.Cryptography.ProtectedData.dll">
+      <publishTime>11/15/2019 08:37:42</publishTime>
+    </File>
+    <File Include="tr/Microsoft.CodeAnalysis.CSharp.resources.dll">
+      <publishTime>11/12/2020 00:15:14</publishTime>
+    </File>
+    <File Include="tr/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll">
+      <publishTime>11/12/2020 04:20:06</publishTime>
+    </File>
+    <File Include="tr/Microsoft.CodeAnalysis.resources.dll">
+      <publishTime>11/12/2020 00:14:42</publishTime>
+    </File>
+    <File Include="tr/Microsoft.CodeAnalysis.Workspaces.resources.dll">
+      <publishTime>11/12/2020 04:16:28</publishTime>
+    </File>
+    <File Include="web.config">
+      <publishTime>10/11/2021 23:34:49</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/assets/css/bootstrap-datetimepicker.min.css">
+      <publishTime>06/08/2020 19:27:42</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/assets/css/bootstrap.min.css">
+      <publishTime>06/08/2020 19:27:42</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/assets/css/dataTables.bootstrap4.min.css">
+      <publishTime>06/08/2020 19:27:42</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/assets/css/font-awesome.min.css">
+      <publishTime>06/08/2020 19:27:42</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/assets/css/fullcalendar.min.css">
+      <publishTime>06/08/2020 19:27:42</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/assets/css/select2.min.css">
+      <publishTime>06/08/2020 19:27:42</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/assets/css/style.css">
+      <publishTime>09/24/2021 20:09:22</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/assets/css/tagsinput.css">
+      <publishTime>06/08/2020 19:27:42</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/assets/fonts/fontawesome-webfont3e6e.eot">
+      <publishTime>06/08/2020 19:27:44</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/assets/fonts/fontawesome-webfont3e6e.html">
+      <publishTime>12/06/2020 00:33:47</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/assets/fonts/fontawesome-webfont3e6e.svg">
+      <publishTime>06/08/2020 19:27:44</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/assets/fonts/fontawesome-webfont3e6e.ttf">
+      <publishTime>06/08/2020 19:27:43</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/assets/fonts/fontawesome-webfont3e6e.woff">
+      <publishTime>06/08/2020 19:27:43</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/assets/fonts/fontawesome-webfontd41d.eot">
+      <publishTime>06/08/2020 19:27:44</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/assets/img/attachment.png">
+      <publishTime>06/08/2020 19:27:48</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/assets/img/blog/blog-01.jpg">
+      <publishTime>06/08/2020 19:27:48</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/assets/img/blog/blog-02.jpg">
+      <publishTime>06/08/2020 19:27:48</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/assets/img/blog/blog-03.jpg">
+      <publishTime>06/08/2020 19:27:48</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/assets/img/blog/blog-04.jpg">
+      <publishTime>06/08/2020 19:27:48</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/assets/img/blog/blog-thumb-01.jpg">
+      <publishTime>06/08/2020 19:27:48</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/assets/img/blog/blog-thumb-02.jpg">
+      <publishTime>06/08/2020 19:27:48</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/assets/img/blog/blog-thumb-03.jpg">
+      <publishTime>06/08/2020 19:27:48</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/assets/img/blog/blog-thumb-04.jpg">
+      <publishTime>06/08/2020 19:27:48</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/assets/img/calander.png">
+      <publishTime>06/08/2020 19:27:48</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/assets/img/clock.png">
+      <publishTime>06/08/2020 19:27:48</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/assets/img/doctor-03.jpg">
+      <publishTime>06/08/2020 19:27:47</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/assets/img/doctor-thumb-01.jpg">
+      <publishTime>06/08/2020 19:27:46</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/assets/img/doctor-thumb-02.jpg">
+      <publishTime>06/08/2020 19:27:46</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/assets/img/doctor-thumb-03.jpg">
+      <publishTime>06/08/2020 19:27:46</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/assets/img/doctor-thumb-04.jpg">
+      <publishTime>06/08/2020 19:27:46</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/assets/img/doctor-thumb-05.jpg">
+      <publishTime>06/08/2020 19:27:46</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/assets/img/doctor-thumb-06.jpg">
+      <publishTime>06/08/2020 19:27:46</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/assets/img/doctor-thumb-07.jpg">
+      <publishTime>06/08/2020 19:27:46</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/assets/img/doctor-thumb-08.jpg">
+      <publishTime>06/08/2020 19:27:46</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/assets/img/doctor-thumb-09.jpg">
+      <publishTime>06/08/2020 19:27:46</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/assets/img/doctor-thumb-10.jpg">
+      <publishTime>06/08/2020 19:27:46</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/assets/img/doctor-thumb-11.jpg">
+      <publishTime>06/08/2020 19:27:46</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/assets/img/doctor-thumb-12.jpg">
+      <publishTime>06/08/2020 19:27:45</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/assets/img/favicon.ico">
+      <publishTime>06/08/2020 19:27:45</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/assets/img/logo-dark.png">
+      <publishTime>06/08/2020 19:27:45</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/assets/img/logo.png">
+      <publishTime>06/08/2020 19:27:45</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/assets/img/patient-thumb-01.jpg">
+      <publishTime>06/08/2020 19:27:45</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/assets/img/patient-thumb-02.jpg">
+      <publishTime>06/08/2020 19:27:45</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/assets/img/placeholder-thumb.jpg">
+      <publishTime>06/08/2020 19:27:45</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/assets/img/placeholder.jpg">
+      <publishTime>06/08/2020 19:27:45</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/assets/img/sent.png">
+      <publishTime>06/08/2020 19:27:45</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/assets/img/user-02.jpg">
+      <publishTime>06/08/2020 19:27:45</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/assets/img/user-03.jpg">
+      <publishTime>06/08/2020 19:27:44</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/assets/img/user-04.jpg">
+      <publishTime>06/08/2020 19:27:44</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/assets/img/user-05.jpg">
+      <publishTime>06/08/2020 19:27:44</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/assets/img/user-06.jpg">
+      <publishTime>06/08/2020 19:27:44</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/assets/img/user.jpg">
+      <publishTime>06/08/2020 19:27:44</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/assets/img/video-call.jpg">
+      <publishTime>06/08/2020 19:27:44</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/assets/js/app.js">
+      <publishTime>06/08/2020 19:27:50</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/assets/js/bootstrap-datetimepicker.min.js">
+      <publishTime>06/08/2020 19:27:50</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/assets/js/bootstrap.min.js">
+      <publishTime>06/08/2020 19:27:50</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/assets/js/Chart.bundle.js">
+      <publishTime>06/08/2020 19:27:51</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/assets/js/chart.js">
+      <publishTime>06/08/2020 19:27:50</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/assets/js/dataTables.bootstrap4.min.js">
+      <publishTime>06/08/2020 19:27:50</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/assets/js/fullcalendar.min.js">
+      <publishTime>06/08/2020 19:27:50</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/assets/js/jquery-3.2.1.min.js">
+      <publishTime>06/08/2020 19:27:49</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/assets/js/jquery-ui.min.html">
+      <publishTime>12/06/2020 00:33:50</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/assets/js/jquery.dataTables.min.js">
+      <publishTime>06/08/2020 19:27:49</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/assets/js/jquery.fullcalendar.js">
+      <publishTime>06/08/2020 19:27:49</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/assets/js/jquery.slimscroll.js">
+      <publishTime>06/08/2020 19:27:49</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/assets/js/moment.min.js">
+      <publishTime>06/08/2020 19:27:49</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/assets/js/popper.min.js">
+      <publishTime>06/08/2020 19:27:49</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/assets/js/select2.min.js">
+      <publishTime>06/08/2020 19:27:49</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/assets/js/tagsinput.js">
+      <publishTime>06/08/2020 19:27:49</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/assets/plugins/light-gallery/css/lightgallery.min.css">
+      <publishTime>06/08/2020 19:27:50</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/assets/plugins/light-gallery/fonts/lgd41d.eot">
+      <publishTime>06/08/2020 19:27:52</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/assets/plugins/light-gallery/fonts/lgd641.eot">
+      <publishTime>06/08/2020 19:27:52</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/assets/plugins/light-gallery/fonts/lgd641.svg">
+      <publishTime>06/08/2020 19:27:51</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/assets/plugins/light-gallery/fonts/lgd641.ttf">
+      <publishTime>06/08/2020 19:27:51</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/assets/plugins/light-gallery/fonts/lgd641.woff">
+      <publishTime>06/08/2020 19:27:51</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/assets/plugins/light-gallery/img/loading.gif">
+      <publishTime>06/08/2020 19:27:52</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/assets/plugins/light-gallery/img/video-play.png">
+      <publishTime>06/08/2020 19:27:52</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/assets/plugins/light-gallery/img/vimeo-play.png">
+      <publishTime>06/08/2020 19:27:52</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/assets/plugins/light-gallery/img/youtube-play.png">
+      <publishTime>06/08/2020 19:27:52</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/assets/plugins/light-gallery/js/lightgallery-all.min.js">
+      <publishTime>06/08/2020 19:27:52</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/assets/plugins/summernote/dist/font/summernote4c4d.eot">
+      <publishTime>06/08/2020 19:27:55</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/assets/plugins/summernote/dist/font/summernote4c4d.ttf">
+      <publishTime>06/08/2020 19:27:54</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/assets/plugins/summernote/dist/font/summernote4c4d.woff">
+      <publishTime>06/08/2020 19:27:54</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/assets/plugins/summernote/dist/font/summernoted41d.eot">
+      <publishTime>06/08/2020 19:27:55</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/assets/plugins/summernote/dist/summernote-bs4.css">
+      <publishTime>06/08/2020 19:27:54</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/assets/plugins/summernote/dist/summernote-bs4.min.js">
+      <publishTime>06/08/2020 19:27:54</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/css/sb-admin-2.css">
+      <publishTime>12/14/2020 02:18:57</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/css/sb-admin-2.min.css">
+      <publishTime>12/02/2020 22:00:34</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/img/undraw_posting_photo.svg">
+      <publishTime>12/02/2020 22:00:34</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/img/undraw_profile.svg">
+      <publishTime>12/02/2020 22:00:34</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/img/undraw_profile_1.svg">
+      <publishTime>12/02/2020 22:00:34</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/img/undraw_profile_2.svg">
+      <publishTime>12/02/2020 22:00:34</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/img/undraw_profile_3.svg">
+      <publishTime>12/02/2020 22:00:34</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/img/undraw_rocket.svg">
+      <publishTime>12/02/2020 22:00:34</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/js/demo/chart-area-demo.js">
+      <publishTime>12/02/2020 22:00:34</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/js/demo/chart-bar-demo.js">
+      <publishTime>12/02/2020 22:00:34</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/js/demo/chart-pie-demo.js">
+      <publishTime>12/02/2020 22:00:34</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/js/demo/datatables-demo.js">
+      <publishTime>12/02/2020 22:00:34</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/js/sb-admin-2.js">
+      <publishTime>12/02/2020 22:00:34</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/js/sb-admin-2.min.js">
+      <publishTime>12/02/2020 22:00:34</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/scss/navs/_global.scss">
+      <publishTime>12/02/2020 22:00:34</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/scss/navs/_sidebar.scss">
+      <publishTime>12/02/2020 22:00:34</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/scss/navs/_topbar.scss">
+      <publishTime>12/02/2020 22:00:34</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/scss/sb-admin-2.scss">
+      <publishTime>12/02/2020 22:00:34</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/scss/utilities/_animation.scss">
+      <publishTime>12/02/2020 22:00:34</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/scss/utilities/_background.scss">
+      <publishTime>12/02/2020 22:00:34</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/scss/utilities/_border.scss">
+      <publishTime>12/02/2020 22:00:34</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/scss/utilities/_display.scss">
+      <publishTime>12/02/2020 22:00:34</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/scss/utilities/_progress.scss">
+      <publishTime>12/02/2020 22:00:34</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/scss/utilities/_rotate.scss">
+      <publishTime>12/02/2020 22:00:34</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/scss/utilities/_text.scss">
+      <publishTime>12/02/2020 22:00:34</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/scss/_buttons.scss">
+      <publishTime>12/02/2020 22:00:34</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/scss/_cards.scss">
+      <publishTime>12/02/2020 22:00:34</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/scss/_charts.scss">
+      <publishTime>12/02/2020 22:00:34</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/scss/_dropdowns.scss">
+      <publishTime>12/02/2020 22:00:34</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/scss/_error.scss">
+      <publishTime>12/02/2020 22:00:34</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/scss/_footer.scss">
+      <publishTime>12/02/2020 22:00:34</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/scss/_global.scss">
+      <publishTime>12/02/2020 22:00:34</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/scss/_login.scss">
+      <publishTime>12/02/2020 22:00:34</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/scss/_mixins.scss">
+      <publishTime>12/02/2020 22:00:34</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/scss/_navs.scss">
+      <publishTime>12/02/2020 22:00:34</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/scss/_utilities.scss">
+      <publishTime>12/02/2020 22:00:34</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/scss/_variables.scss">
+      <publishTime>12/02/2020 22:00:34</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/bootstrap/js/bootstrap.bundle.js">
+      <publishTime>12/02/2020 22:00:34</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/bootstrap/js/bootstrap.bundle.js.map">
+      <publishTime>12/02/2020 22:00:34</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/bootstrap/js/bootstrap.bundle.min.js">
+      <publishTime>12/02/2020 22:00:34</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/bootstrap/js/bootstrap.bundle.min.js.map">
+      <publishTime>12/02/2020 22:00:34</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/bootstrap/js/bootstrap.js">
+      <publishTime>12/02/2020 22:00:34</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/bootstrap/js/bootstrap.js.map">
+      <publishTime>12/02/2020 22:00:34</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/bootstrap/js/bootstrap.min.js">
+      <publishTime>12/02/2020 22:00:34</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/bootstrap/js/bootstrap.min.js.map">
+      <publishTime>12/02/2020 22:00:34</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/bootstrap/scss/bootstrap-grid.scss">
+      <publishTime>12/02/2020 22:00:34</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/bootstrap/scss/bootstrap-reboot.scss">
+      <publishTime>12/02/2020 22:00:34</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/bootstrap/scss/bootstrap.scss">
+      <publishTime>12/02/2020 22:00:34</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/bootstrap/scss/mixins/_alert.scss">
+      <publishTime>12/02/2020 22:00:34</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/bootstrap/scss/mixins/_background-variant.scss">
+      <publishTime>12/02/2020 22:00:34</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/bootstrap/scss/mixins/_badge.scss">
+      <publishTime>12/02/2020 22:00:34</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/bootstrap/scss/mixins/_border-radius.scss">
+      <publishTime>12/02/2020 22:00:34</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/bootstrap/scss/mixins/_box-shadow.scss">
+      <publishTime>12/02/2020 22:00:34</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/bootstrap/scss/mixins/_breakpoints.scss">
+      <publishTime>12/02/2020 22:00:34</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/bootstrap/scss/mixins/_buttons.scss">
+      <publishTime>12/02/2020 22:00:34</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/bootstrap/scss/mixins/_caret.scss">
+      <publishTime>12/02/2020 22:00:34</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/bootstrap/scss/mixins/_clearfix.scss">
+      <publishTime>12/02/2020 22:00:34</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/bootstrap/scss/mixins/_deprecate.scss">
+      <publishTime>12/02/2020 22:00:34</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/bootstrap/scss/mixins/_float.scss">
+      <publishTime>12/02/2020 22:00:34</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/bootstrap/scss/mixins/_forms.scss">
+      <publishTime>12/02/2020 22:00:34</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/bootstrap/scss/mixins/_gradients.scss">
+      <publishTime>12/02/2020 22:00:34</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/bootstrap/scss/mixins/_grid-framework.scss">
+      <publishTime>12/02/2020 22:00:34</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/bootstrap/scss/mixins/_grid.scss">
+      <publishTime>12/02/2020 22:00:34</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/bootstrap/scss/mixins/_hover.scss">
+      <publishTime>12/02/2020 22:00:34</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/bootstrap/scss/mixins/_image.scss">
+      <publishTime>12/02/2020 22:00:34</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/bootstrap/scss/mixins/_list-group.scss">
+      <publishTime>12/02/2020 22:00:34</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/bootstrap/scss/mixins/_lists.scss">
+      <publishTime>12/02/2020 22:00:34</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/bootstrap/scss/mixins/_nav-divider.scss">
+      <publishTime>12/02/2020 22:00:34</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/bootstrap/scss/mixins/_pagination.scss">
+      <publishTime>12/02/2020 22:00:34</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/bootstrap/scss/mixins/_reset-text.scss">
+      <publishTime>12/02/2020 22:00:34</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/bootstrap/scss/mixins/_resize.scss">
+      <publishTime>12/02/2020 22:00:34</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/bootstrap/scss/mixins/_screen-reader.scss">
+      <publishTime>12/02/2020 22:00:34</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/bootstrap/scss/mixins/_size.scss">
+      <publishTime>12/02/2020 22:00:34</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/bootstrap/scss/mixins/_table-row.scss">
+      <publishTime>12/02/2020 22:00:34</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/bootstrap/scss/mixins/_text-emphasis.scss">
+      <publishTime>12/02/2020 22:00:34</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/bootstrap/scss/mixins/_text-hide.scss">
+      <publishTime>12/02/2020 22:00:34</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/bootstrap/scss/mixins/_text-truncate.scss">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/bootstrap/scss/mixins/_transition.scss">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/bootstrap/scss/mixins/_visibility.scss">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/bootstrap/scss/utilities/_align.scss">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/bootstrap/scss/utilities/_background.scss">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/bootstrap/scss/utilities/_borders.scss">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/bootstrap/scss/utilities/_clearfix.scss">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/bootstrap/scss/utilities/_display.scss">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/bootstrap/scss/utilities/_embed.scss">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/bootstrap/scss/utilities/_flex.scss">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/bootstrap/scss/utilities/_float.scss">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/bootstrap/scss/utilities/_interactions.scss">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/bootstrap/scss/utilities/_overflow.scss">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/bootstrap/scss/utilities/_position.scss">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/bootstrap/scss/utilities/_screenreaders.scss">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/bootstrap/scss/utilities/_shadows.scss">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/bootstrap/scss/utilities/_sizing.scss">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/bootstrap/scss/utilities/_spacing.scss">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/bootstrap/scss/utilities/_stretched-link.scss">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/bootstrap/scss/utilities/_text.scss">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/bootstrap/scss/utilities/_visibility.scss">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/bootstrap/scss/vendor/_rfs.scss">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/bootstrap/scss/_alert.scss">
+      <publishTime>12/02/2020 22:00:34</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/bootstrap/scss/_badge.scss">
+      <publishTime>12/02/2020 22:00:34</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/bootstrap/scss/_breadcrumb.scss">
+      <publishTime>12/02/2020 22:00:34</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/bootstrap/scss/_button-group.scss">
+      <publishTime>12/02/2020 22:00:34</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/bootstrap/scss/_buttons.scss">
+      <publishTime>12/02/2020 22:00:34</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/bootstrap/scss/_card.scss">
+      <publishTime>12/02/2020 22:00:34</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/bootstrap/scss/_carousel.scss">
+      <publishTime>12/02/2020 22:00:34</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/bootstrap/scss/_close.scss">
+      <publishTime>12/02/2020 22:00:34</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/bootstrap/scss/_code.scss">
+      <publishTime>12/02/2020 22:00:34</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/bootstrap/scss/_custom-forms.scss">
+      <publishTime>12/02/2020 22:00:34</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/bootstrap/scss/_dropdown.scss">
+      <publishTime>12/02/2020 22:00:34</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/bootstrap/scss/_forms.scss">
+      <publishTime>12/02/2020 22:00:34</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/bootstrap/scss/_functions.scss">
+      <publishTime>12/02/2020 22:00:34</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/bootstrap/scss/_grid.scss">
+      <publishTime>12/02/2020 22:00:34</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/bootstrap/scss/_images.scss">
+      <publishTime>12/02/2020 22:00:34</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/bootstrap/scss/_input-group.scss">
+      <publishTime>12/02/2020 22:00:34</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/bootstrap/scss/_jumbotron.scss">
+      <publishTime>12/02/2020 22:00:34</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/bootstrap/scss/_list-group.scss">
+      <publishTime>12/02/2020 22:00:34</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/bootstrap/scss/_media.scss">
+      <publishTime>12/02/2020 22:00:34</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/bootstrap/scss/_mixins.scss">
+      <publishTime>12/02/2020 22:00:34</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/bootstrap/scss/_modal.scss">
+      <publishTime>12/02/2020 22:00:34</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/bootstrap/scss/_nav.scss">
+      <publishTime>12/02/2020 22:00:34</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/bootstrap/scss/_navbar.scss">
+      <publishTime>12/02/2020 22:00:34</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/bootstrap/scss/_pagination.scss">
+      <publishTime>12/02/2020 22:00:34</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/bootstrap/scss/_popover.scss">
+      <publishTime>12/02/2020 22:00:34</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/bootstrap/scss/_print.scss">
+      <publishTime>12/02/2020 22:00:34</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/bootstrap/scss/_progress.scss">
+      <publishTime>12/02/2020 22:00:34</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/bootstrap/scss/_reboot.scss">
+      <publishTime>12/02/2020 22:00:34</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/bootstrap/scss/_root.scss">
+      <publishTime>12/02/2020 22:00:34</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/bootstrap/scss/_spinners.scss">
+      <publishTime>12/02/2020 22:00:34</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/bootstrap/scss/_tables.scss">
+      <publishTime>12/02/2020 22:00:34</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/bootstrap/scss/_toasts.scss">
+      <publishTime>12/02/2020 22:00:34</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/bootstrap/scss/_tooltip.scss">
+      <publishTime>12/02/2020 22:00:34</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/bootstrap/scss/_transitions.scss">
+      <publishTime>12/02/2020 22:00:34</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/bootstrap/scss/_type.scss">
+      <publishTime>12/02/2020 22:00:34</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/bootstrap/scss/_utilities.scss">
+      <publishTime>12/02/2020 22:00:34</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/bootstrap/scss/_variables.scss">
+      <publishTime>12/02/2020 22:00:34</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/chart.js/Chart.bundle.js">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/chart.js/Chart.bundle.min.js">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/chart.js/Chart.js">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/chart.js/Chart.min.js">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/datatables/dataTables.bootstrap4.css">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/datatables/dataTables.bootstrap4.js">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/datatables/dataTables.bootstrap4.min.css">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/datatables/dataTables.bootstrap4.min.js">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/datatables/jquery.dataTables.js">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/datatables/jquery.dataTables.min.js">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/attribution.js">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/css/all.css">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/css/all.min.css">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/css/brands.css">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/css/brands.min.css">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/css/fontawesome.css">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/css/fontawesome.min.css">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/css/regular.css">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/css/regular.min.css">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/css/solid.css">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/css/solid.min.css">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/css/svg-with-js.css">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/css/svg-with-js.min.css">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/css/v4-shims.css">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/css/v4-shims.min.css">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/js/all.js">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/js/all.min.js">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/js/brands.js">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/js/brands.min.js">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/js/conflict-detection.js">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/js/conflict-detection.min.js">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/js/fontawesome.js">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/js/fontawesome.min.js">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/js/regular.js">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/js/regular.min.js">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/js/solid.js">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/js/solid.min.js">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/js/v4-shims.js">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/js/v4-shims.min.js">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/less/brands.less">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/less/fontawesome.less">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/less/regular.less">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/less/solid.less">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/less/v4-shims.less">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/less/_animated.less">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/less/_bordered-pulled.less">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/less/_core.less">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/less/_fixed-width.less">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/less/_icons.less">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/less/_larger.less">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/less/_list.less">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/less/_mixins.less">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/less/_rotated-flipped.less">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/less/_screen-reader.less">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/less/_shims.less">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/less/_stacked.less">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/less/_variables.less">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/LICENSE.txt">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/metadata/categories.yml">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/metadata/icons.yml">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/metadata/shims.yml">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/metadata/sponsors.yml">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/package.json">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/scss/brands.scss">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/scss/fontawesome.scss">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/scss/regular.scss">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/scss/solid.scss">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/scss/v4-shims.scss">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/scss/_animated.scss">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/scss/_bordered-pulled.scss">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/scss/_core.scss">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/scss/_fixed-width.scss">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/scss/_icons.scss">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/scss/_larger.scss">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/scss/_list.scss">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/scss/_mixins.scss">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/scss/_rotated-flipped.scss">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/scss/_screen-reader.scss">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/scss/_shims.scss">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/scss/_stacked.scss">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/scss/_variables.scss">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/sprites/brands.svg">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/sprites/regular.svg">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/sprites/solid.svg">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/500px.svg">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/accessible-icon.svg">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/accusoft.svg">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/acquisitions-incorporated.svg">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/adn.svg">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/adversal.svg">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/affiliatetheme.svg">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/airbnb.svg">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/algolia.svg">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/alipay.svg">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/amazon-pay.svg">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/amazon.svg">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/amilia.svg">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/android.svg">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/angellist.svg">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/angrycreative.svg">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/angular.svg">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/app-store-ios.svg">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/app-store.svg">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/apper.svg">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/apple-pay.svg">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/apple.svg">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/artstation.svg">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/asymmetrik.svg">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/atlassian.svg">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/audible.svg">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/autoprefixer.svg">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/avianex.svg">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/aviato.svg">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/aws.svg">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/bandcamp.svg">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/battle-net.svg">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/behance-square.svg">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/behance.svg">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/bimobject.svg">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/bitbucket.svg">
+      <publishTime>12/02/2020 22:00:35</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/bitcoin.svg">
+      <publishTime>12/02/2020 22:00:36</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/bity.svg">
+      <publishTime>12/02/2020 22:00:36</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/black-tie.svg">
+      <publishTime>12/02/2020 22:00:36</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/blackberry.svg">
+      <publishTime>12/02/2020 22:00:36</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/blogger-b.svg">
+      <publishTime>12/02/2020 22:00:36</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/blogger.svg">
+      <publishTime>12/02/2020 22:00:36</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/bluetooth-b.svg">
+      <publishTime>12/02/2020 22:00:36</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/bluetooth.svg">
+      <publishTime>12/02/2020 22:00:36</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/bootstrap.svg">
+      <publishTime>12/02/2020 22:00:36</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/btc.svg">
+      <publishTime>12/02/2020 22:00:36</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/buffer.svg">
+      <publishTime>12/02/2020 22:00:36</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/buromobelexperte.svg">
+      <publishTime>12/02/2020 22:00:36</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/buy-n-large.svg">
+      <publishTime>12/02/2020 22:00:36</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/buysellads.svg">
+      <publishTime>12/02/2020 22:00:36</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/canadian-maple-leaf.svg">
+      <publishTime>12/02/2020 22:00:36</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/cc-amazon-pay.svg">
+      <publishTime>12/02/2020 22:00:36</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/cc-amex.svg">
+      <publishTime>12/02/2020 22:00:36</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/cc-apple-pay.svg">
+      <publishTime>12/02/2020 22:00:36</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/cc-diners-club.svg">
+      <publishTime>12/02/2020 22:00:36</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/cc-discover.svg">
+      <publishTime>12/02/2020 22:00:36</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/cc-jcb.svg">
+      <publishTime>12/02/2020 22:00:36</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/cc-mastercard.svg">
+      <publishTime>12/02/2020 22:00:36</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/cc-paypal.svg">
+      <publishTime>12/02/2020 22:00:36</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/cc-stripe.svg">
+      <publishTime>12/02/2020 22:00:36</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/cc-visa.svg">
+      <publishTime>12/02/2020 22:00:36</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/centercode.svg">
+      <publishTime>12/02/2020 22:00:36</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/centos.svg">
+      <publishTime>12/02/2020 22:00:36</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/chrome.svg">
+      <publishTime>12/02/2020 22:00:36</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/chromecast.svg">
+      <publishTime>12/02/2020 22:00:36</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/cloudflare.svg">
+      <publishTime>12/02/2020 22:00:36</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/cloudscale.svg">
+      <publishTime>12/02/2020 22:00:36</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/cloudsmith.svg">
+      <publishTime>12/02/2020 22:00:36</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/cloudversify.svg">
+      <publishTime>12/02/2020 22:00:36</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/codepen.svg">
+      <publishTime>12/02/2020 22:00:36</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/codiepie.svg">
+      <publishTime>12/02/2020 22:00:36</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/confluence.svg">
+      <publishTime>12/02/2020 22:00:36</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/connectdevelop.svg">
+      <publishTime>12/02/2020 22:00:36</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/contao.svg">
+      <publishTime>12/02/2020 22:00:36</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/cotton-bureau.svg">
+      <publishTime>12/02/2020 22:00:36</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/cpanel.svg">
+      <publishTime>12/02/2020 22:00:36</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/creative-commons-by.svg">
+      <publishTime>12/02/2020 22:00:36</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/creative-commons-nc-eu.svg">
+      <publishTime>12/02/2020 22:00:36</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/creative-commons-nc-jp.svg">
+      <publishTime>12/02/2020 22:00:36</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/creative-commons-nc.svg">
+      <publishTime>12/02/2020 22:00:36</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/creative-commons-nd.svg">
+      <publishTime>12/02/2020 22:00:36</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/creative-commons-pd-alt.svg">
+      <publishTime>12/02/2020 22:00:36</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/creative-commons-pd.svg">
+      <publishTime>12/02/2020 22:00:36</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/creative-commons-remix.svg">
+      <publishTime>12/02/2020 22:00:36</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/creative-commons-sa.svg">
+      <publishTime>12/02/2020 22:00:36</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/creative-commons-sampling-plus.svg">
+      <publishTime>12/02/2020 22:00:36</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/creative-commons-sampling.svg">
+      <publishTime>12/02/2020 22:00:36</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/creative-commons-share.svg">
+      <publishTime>12/02/2020 22:00:36</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/creative-commons-zero.svg">
+      <publishTime>12/02/2020 22:00:36</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/creative-commons.svg">
+      <publishTime>12/02/2020 22:00:36</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/critical-role.svg">
+      <publishTime>12/02/2020 22:00:36</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/css3-alt.svg">
+      <publishTime>12/02/2020 22:00:36</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/css3.svg">
+      <publishTime>12/02/2020 22:00:36</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/cuttlefish.svg">
+      <publishTime>12/02/2020 22:00:36</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/d-and-d-beyond.svg">
+      <publishTime>12/02/2020 22:00:36</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/d-and-d.svg">
+      <publishTime>12/02/2020 22:00:36</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/dailymotion.svg">
+      <publishTime>12/02/2020 22:00:36</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/dashcube.svg">
+      <publishTime>12/02/2020 22:00:36</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/deezer.svg">
+      <publishTime>12/02/2020 22:00:36</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/delicious.svg">
+      <publishTime>12/02/2020 22:00:36</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/deploydog.svg">
+      <publishTime>12/02/2020 22:00:36</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/deskpro.svg">
+      <publishTime>12/02/2020 22:00:36</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/dev.svg">
+      <publishTime>12/02/2020 22:00:36</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/deviantart.svg">
+      <publishTime>12/02/2020 22:00:36</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/dhl.svg">
+      <publishTime>12/02/2020 22:00:36</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/diaspora.svg">
+      <publishTime>12/02/2020 22:00:36</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/digg.svg">
+      <publishTime>12/02/2020 22:00:36</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/digital-ocean.svg">
+      <publishTime>12/02/2020 22:00:36</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/discord.svg">
+      <publishTime>12/02/2020 22:00:36</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/discourse.svg">
+      <publishTime>12/02/2020 22:00:36</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/dochub.svg">
+      <publishTime>12/02/2020 22:00:36</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/docker.svg">
+      <publishTime>12/02/2020 22:00:36</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/draft2digital.svg">
+      <publishTime>12/02/2020 22:00:36</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/dribbble-square.svg">
+      <publishTime>12/02/2020 22:00:36</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/dribbble.svg">
+      <publishTime>12/02/2020 22:00:36</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/dropbox.svg">
+      <publishTime>12/02/2020 22:00:36</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/drupal.svg">
+      <publishTime>12/02/2020 22:00:36</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/dyalog.svg">
+      <publishTime>12/02/2020 22:00:36</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/earlybirds.svg">
+      <publishTime>12/02/2020 22:00:36</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/ebay.svg">
+      <publishTime>12/02/2020 22:00:36</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/edge-legacy.svg">
+      <publishTime>12/02/2020 22:00:36</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/edge.svg">
+      <publishTime>12/02/2020 22:00:36</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/elementor.svg">
+      <publishTime>12/02/2020 22:00:36</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/ello.svg">
+      <publishTime>12/02/2020 22:00:36</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/ember.svg">
+      <publishTime>12/02/2020 22:00:36</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/empire.svg">
+      <publishTime>12/02/2020 22:00:36</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/envira.svg">
+      <publishTime>12/02/2020 22:00:36</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/erlang.svg">
+      <publishTime>12/02/2020 22:00:36</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/ethereum.svg">
+      <publishTime>12/02/2020 22:00:36</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/sticker-mule.svg">
+      <publishTime>12/02/2020 22:00:38</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/strava.svg">
+      <publishTime>12/02/2020 22:00:38</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/stripe-s.svg">
+      <publishTime>12/02/2020 22:00:38</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/stripe.svg">
+      <publishTime>12/02/2020 22:00:38</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/studiovinari.svg">
+      <publishTime>12/02/2020 22:00:38</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/stumbleupon-circle.svg">
+      <publishTime>12/02/2020 22:00:38</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/stumbleupon.svg">
+      <publishTime>12/02/2020 22:00:38</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/superpowers.svg">
+      <publishTime>12/02/2020 22:00:38</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/supple.svg">
+      <publishTime>12/02/2020 22:00:38</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/suse.svg">
+      <publishTime>12/02/2020 22:00:38</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/swift.svg">
+      <publishTime>12/02/2020 22:00:38</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/symfony.svg">
+      <publishTime>12/02/2020 22:00:38</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/teamspeak.svg">
+      <publishTime>12/02/2020 22:00:38</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/telegram-plane.svg">
+      <publishTime>12/02/2020 22:00:38</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/telegram.svg">
+      <publishTime>12/02/2020 22:00:38</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/tencent-weibo.svg">
+      <publishTime>12/02/2020 22:00:38</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/the-red-yeti.svg">
+      <publishTime>12/02/2020 22:00:38</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/themeco.svg">
+      <publishTime>12/02/2020 22:00:38</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/themeisle.svg">
+      <publishTime>12/02/2020 22:00:38</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/think-peaks.svg">
+      <publishTime>12/02/2020 22:00:38</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/tiktok.svg">
+      <publishTime>12/02/2020 22:00:38</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/trade-federation.svg">
+      <publishTime>12/02/2020 22:00:38</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/trello.svg">
+      <publishTime>12/02/2020 22:00:38</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/tripadvisor.svg">
+      <publishTime>12/02/2020 22:00:38</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/tumblr-square.svg">
+      <publishTime>12/02/2020 22:00:38</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/tumblr.svg">
+      <publishTime>12/02/2020 22:00:38</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/twitch.svg">
+      <publishTime>12/02/2020 22:00:38</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/twitter-square.svg">
+      <publishTime>12/02/2020 22:00:38</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/twitter.svg">
+      <publishTime>12/02/2020 22:00:38</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/typo3.svg">
+      <publishTime>12/02/2020 22:00:38</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/uber.svg">
+      <publishTime>12/02/2020 22:00:38</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/ubuntu.svg">
+      <publishTime>12/02/2020 22:00:38</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/uikit.svg">
+      <publishTime>12/02/2020 22:00:38</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/umbraco.svg">
+      <publishTime>12/02/2020 22:00:38</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/uncharted.svg">
+      <publishTime>12/02/2020 22:00:38</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/uniregistry.svg">
+      <publishTime>12/02/2020 22:00:38</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/unity.svg">
+      <publishTime>12/02/2020 22:00:38</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/unsplash.svg">
+      <publishTime>12/02/2020 22:00:39</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/untappd.svg">
+      <publishTime>12/02/2020 22:00:39</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/ups.svg">
+      <publishTime>12/02/2020 22:00:39</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/usb.svg">
+      <publishTime>12/02/2020 22:00:39</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/usps.svg">
+      <publishTime>12/02/2020 22:00:39</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/ussunnah.svg">
+      <publishTime>12/02/2020 22:00:39</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/vaadin.svg">
+      <publishTime>12/02/2020 22:00:39</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/viacoin.svg">
+      <publishTime>12/02/2020 22:00:39</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/viadeo-square.svg">
+      <publishTime>12/02/2020 22:00:39</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/viadeo.svg">
+      <publishTime>12/02/2020 22:00:39</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/viber.svg">
+      <publishTime>12/02/2020 22:00:39</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/vimeo-square.svg">
+      <publishTime>12/02/2020 22:00:39</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/vimeo-v.svg">
+      <publishTime>12/02/2020 22:00:39</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/vimeo.svg">
+      <publishTime>12/02/2020 22:00:39</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/vine.svg">
+      <publishTime>12/02/2020 22:00:39</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/vk.svg">
+      <publishTime>12/02/2020 22:00:39</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/vnv.svg">
+      <publishTime>12/02/2020 22:00:39</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/vuejs.svg">
+      <publishTime>12/02/2020 22:00:39</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/watchman-monitoring.svg">
+      <publishTime>12/02/2020 22:00:39</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/waze.svg">
+      <publishTime>12/02/2020 22:00:39</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/weebly.svg">
+      <publishTime>12/02/2020 22:00:39</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/weibo.svg">
+      <publishTime>12/02/2020 22:00:39</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/weixin.svg">
+      <publishTime>12/02/2020 22:00:39</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/whatsapp-square.svg">
+      <publishTime>12/02/2020 22:00:39</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/whatsapp.svg">
+      <publishTime>12/02/2020 22:00:39</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/whmcs.svg">
+      <publishTime>12/02/2020 22:00:39</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/wikipedia-w.svg">
+      <publishTime>12/02/2020 22:00:39</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/windows.svg">
+      <publishTime>12/02/2020 22:00:39</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/wix.svg">
+      <publishTime>12/02/2020 22:00:39</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/wizards-of-the-coast.svg">
+      <publishTime>12/02/2020 22:00:39</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/wodu.svg">
+      <publishTime>12/02/2020 22:00:39</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/wolf-pack-battalion.svg">
+      <publishTime>12/02/2020 22:00:39</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/wordpress-simple.svg">
+      <publishTime>12/02/2020 22:00:39</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/wordpress.svg">
+      <publishTime>12/02/2020 22:00:39</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/wpbeginner.svg">
+      <publishTime>12/02/2020 22:00:39</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/wpexplorer.svg">
+      <publishTime>12/02/2020 22:00:39</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/wpforms.svg">
+      <publishTime>12/02/2020 22:00:39</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/wpressr.svg">
+      <publishTime>12/02/2020 22:00:39</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/xbox.svg">
+      <publishTime>12/02/2020 22:00:39</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/xing-square.svg">
+      <publishTime>12/02/2020 22:00:39</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/xing.svg">
+      <publishTime>12/02/2020 22:00:39</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/y-combinator.svg">
+      <publishTime>12/02/2020 22:00:39</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/yahoo.svg">
+      <publishTime>12/02/2020 22:00:39</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/yammer.svg">
+      <publishTime>12/02/2020 22:00:39</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/yandex-international.svg">
+      <publishTime>12/02/2020 22:00:39</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/yandex.svg">
+      <publishTime>12/02/2020 22:00:39</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/yarn.svg">
+      <publishTime>12/02/2020 22:00:39</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/yelp.svg">
+      <publishTime>12/02/2020 22:00:39</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/yoast.svg">
+      <publishTime>12/02/2020 22:00:39</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/youtube-square.svg">
+      <publishTime>12/02/2020 22:00:39</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/youtube.svg">
+      <publishTime>12/02/2020 22:00:39</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/brands/zhihu.svg">
+      <publishTime>12/02/2020 22:00:39</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/address-book.svg">
+      <publishTime>12/02/2020 22:00:39</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/address-card.svg">
+      <publishTime>12/02/2020 22:00:39</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/angry.svg">
+      <publishTime>12/02/2020 22:00:39</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/arrow-alt-circle-down.svg">
+      <publishTime>12/02/2020 22:00:39</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/arrow-alt-circle-left.svg">
+      <publishTime>12/02/2020 22:00:39</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/arrow-alt-circle-right.svg">
+      <publishTime>12/02/2020 22:00:39</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/arrow-alt-circle-up.svg">
+      <publishTime>12/02/2020 22:00:39</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/bell-slash.svg">
+      <publishTime>12/02/2020 22:00:39</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/bell.svg">
+      <publishTime>12/02/2020 22:00:39</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/bookmark.svg">
+      <publishTime>12/02/2020 22:00:39</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/building.svg">
+      <publishTime>12/02/2020 22:00:39</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/calendar-alt.svg">
+      <publishTime>12/02/2020 22:00:39</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/calendar-check.svg">
+      <publishTime>12/02/2020 22:00:39</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/calendar-minus.svg">
+      <publishTime>12/02/2020 22:00:39</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/calendar-plus.svg">
+      <publishTime>12/02/2020 22:00:39</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/calendar-times.svg">
+      <publishTime>12/02/2020 22:00:39</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/calendar.svg">
+      <publishTime>12/02/2020 22:00:39</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/caret-square-down.svg">
+      <publishTime>12/02/2020 22:00:39</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/caret-square-left.svg">
+      <publishTime>12/02/2020 22:00:39</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/caret-square-right.svg">
+      <publishTime>12/02/2020 22:00:39</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/caret-square-up.svg">
+      <publishTime>12/02/2020 22:00:39</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/chart-bar.svg">
+      <publishTime>12/02/2020 22:00:39</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/check-circle.svg">
+      <publishTime>12/02/2020 22:00:39</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/check-square.svg">
+      <publishTime>12/02/2020 22:00:39</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/circle.svg">
+      <publishTime>12/02/2020 22:00:39</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/clipboard.svg">
+      <publishTime>12/02/2020 22:00:39</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/clock.svg">
+      <publishTime>12/02/2020 22:00:39</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/clone.svg">
+      <publishTime>12/02/2020 22:00:39</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/closed-captioning.svg">
+      <publishTime>12/02/2020 22:00:39</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/comment-alt.svg">
+      <publishTime>12/02/2020 22:00:39</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/comment-dots.svg">
+      <publishTime>12/02/2020 22:00:39</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/comment.svg">
+      <publishTime>12/02/2020 22:00:39</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/comments.svg">
+      <publishTime>12/02/2020 22:00:39</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/compass.svg">
+      <publishTime>12/02/2020 22:00:39</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/copy.svg">
+      <publishTime>12/02/2020 22:00:39</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/copyright.svg">
+      <publishTime>12/02/2020 22:00:39</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/credit-card.svg">
+      <publishTime>12/02/2020 22:00:39</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/dizzy.svg">
+      <publishTime>12/02/2020 22:00:39</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/dot-circle.svg">
+      <publishTime>12/02/2020 22:00:39</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/edit.svg">
+      <publishTime>12/02/2020 22:00:39</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/envelope-open.svg">
+      <publishTime>12/02/2020 22:00:39</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/envelope.svg">
+      <publishTime>12/02/2020 22:00:39</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/eye-slash.svg">
+      <publishTime>12/02/2020 22:00:39</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/eye.svg">
+      <publishTime>12/02/2020 22:00:39</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/file-alt.svg">
+      <publishTime>12/02/2020 22:00:39</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/file-archive.svg">
+      <publishTime>12/02/2020 22:00:39</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/file-audio.svg">
+      <publishTime>12/02/2020 22:00:39</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/file-code.svg">
+      <publishTime>12/02/2020 22:00:39</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/file-excel.svg">
+      <publishTime>12/02/2020 22:00:39</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/file-image.svg">
+      <publishTime>12/02/2020 22:00:39</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/file-pdf.svg">
+      <publishTime>12/02/2020 22:00:39</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/file-powerpoint.svg">
+      <publishTime>12/02/2020 22:00:39</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/file-video.svg">
+      <publishTime>12/02/2020 22:00:39</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/file-word.svg">
+      <publishTime>12/02/2020 22:00:39</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/file.svg">
+      <publishTime>12/02/2020 22:00:39</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/flag.svg">
+      <publishTime>12/02/2020 22:00:39</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/flushed.svg">
+      <publishTime>12/02/2020 22:00:39</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/folder-open.svg">
+      <publishTime>12/02/2020 22:00:39</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/folder.svg">
+      <publishTime>12/02/2020 22:00:39</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/font-awesome-logo-full.svg">
+      <publishTime>12/02/2020 22:00:39</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/frown-open.svg">
+      <publishTime>12/02/2020 22:00:39</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/frown.svg">
+      <publishTime>12/02/2020 22:00:39</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/futbol.svg">
+      <publishTime>12/02/2020 22:00:39</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/gem.svg">
+      <publishTime>12/02/2020 22:00:39</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/grimace.svg">
+      <publishTime>12/02/2020 22:00:39</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/grin-alt.svg">
+      <publishTime>12/02/2020 22:00:39</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/grin-beam-sweat.svg">
+      <publishTime>12/02/2020 22:00:39</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/grin-beam.svg">
+      <publishTime>12/02/2020 22:00:39</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/grin-hearts.svg">
+      <publishTime>12/02/2020 22:00:39</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/grin-squint-tears.svg">
+      <publishTime>12/02/2020 22:00:39</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/grin-squint.svg">
+      <publishTime>12/02/2020 22:00:39</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/grin-stars.svg">
+      <publishTime>12/02/2020 22:00:39</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/grin-tears.svg">
+      <publishTime>12/02/2020 22:00:39</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/grin-tongue-squint.svg">
+      <publishTime>12/02/2020 22:00:39</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/grin-tongue-wink.svg">
+      <publishTime>12/02/2020 22:00:40</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/grin-tongue.svg">
+      <publishTime>12/02/2020 22:00:40</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/grin-wink.svg">
+      <publishTime>12/02/2020 22:00:40</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/grin.svg">
+      <publishTime>12/02/2020 22:00:40</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/hand-lizard.svg">
+      <publishTime>12/02/2020 22:00:40</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/hand-paper.svg">
+      <publishTime>12/02/2020 22:00:40</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/hand-peace.svg">
+      <publishTime>12/02/2020 22:00:40</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/hand-point-down.svg">
+      <publishTime>12/02/2020 22:00:40</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/hand-point-left.svg">
+      <publishTime>12/02/2020 22:00:40</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/hand-point-right.svg">
+      <publishTime>12/02/2020 22:00:40</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/hand-point-up.svg">
+      <publishTime>12/02/2020 22:00:40</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/hand-pointer.svg">
+      <publishTime>12/02/2020 22:00:40</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/hand-rock.svg">
+      <publishTime>12/02/2020 22:00:40</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/hand-scissors.svg">
+      <publishTime>12/02/2020 22:00:40</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/hand-spock.svg">
+      <publishTime>12/02/2020 22:00:40</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/handshake.svg">
+      <publishTime>12/02/2020 22:00:40</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/hdd.svg">
+      <publishTime>12/02/2020 22:00:40</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/heart.svg">
+      <publishTime>12/02/2020 22:00:40</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/hospital.svg">
+      <publishTime>12/02/2020 22:00:40</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/hourglass.svg">
+      <publishTime>12/02/2020 22:00:40</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/id-badge.svg">
+      <publishTime>12/02/2020 22:00:40</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/id-card.svg">
+      <publishTime>12/02/2020 22:00:40</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/image.svg">
+      <publishTime>12/02/2020 22:00:40</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/images.svg">
+      <publishTime>12/02/2020 22:00:40</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/keyboard.svg">
+      <publishTime>12/02/2020 22:00:40</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/kiss-beam.svg">
+      <publishTime>12/02/2020 22:00:40</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/kiss-wink-heart.svg">
+      <publishTime>12/02/2020 22:00:40</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/kiss.svg">
+      <publishTime>12/02/2020 22:00:40</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/laugh-beam.svg">
+      <publishTime>12/02/2020 22:00:40</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/laugh-squint.svg">
+      <publishTime>12/02/2020 22:00:40</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/laugh-wink.svg">
+      <publishTime>12/02/2020 22:00:40</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/laugh.svg">
+      <publishTime>12/02/2020 22:00:40</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/lemon.svg">
+      <publishTime>12/02/2020 22:00:40</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/life-ring.svg">
+      <publishTime>12/02/2020 22:00:40</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/lightbulb.svg">
+      <publishTime>12/02/2020 22:00:40</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/list-alt.svg">
+      <publishTime>12/02/2020 22:00:40</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/map.svg">
+      <publishTime>12/02/2020 22:00:40</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/meh-blank.svg">
+      <publishTime>12/02/2020 22:00:40</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/meh-rolling-eyes.svg">
+      <publishTime>12/02/2020 22:00:40</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/meh.svg">
+      <publishTime>12/02/2020 22:00:40</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/minus-square.svg">
+      <publishTime>12/02/2020 22:00:40</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/money-bill-alt.svg">
+      <publishTime>12/02/2020 22:00:40</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/moon.svg">
+      <publishTime>12/02/2020 22:00:40</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/newspaper.svg">
+      <publishTime>12/02/2020 22:00:40</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/object-group.svg">
+      <publishTime>12/02/2020 22:00:40</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/object-ungroup.svg">
+      <publishTime>12/02/2020 22:00:40</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/paper-plane.svg">
+      <publishTime>12/02/2020 22:00:40</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/pause-circle.svg">
+      <publishTime>12/02/2020 22:00:40</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/play-circle.svg">
+      <publishTime>12/02/2020 22:00:40</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/plus-square.svg">
+      <publishTime>12/02/2020 22:00:40</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/question-circle.svg">
+      <publishTime>12/02/2020 22:00:40</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/registered.svg">
+      <publishTime>12/02/2020 22:00:40</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/sad-cry.svg">
+      <publishTime>12/02/2020 22:00:40</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/sad-tear.svg">
+      <publishTime>12/02/2020 22:00:40</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/save.svg">
+      <publishTime>12/02/2020 22:00:40</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/share-square.svg">
+      <publishTime>12/02/2020 22:00:40</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/smile-beam.svg">
+      <publishTime>12/02/2020 22:00:40</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/smile-wink.svg">
+      <publishTime>12/02/2020 22:00:40</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/smile.svg">
+      <publishTime>12/02/2020 22:00:40</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/snowflake.svg">
+      <publishTime>12/02/2020 22:00:40</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/square.svg">
+      <publishTime>12/02/2020 22:00:40</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/star-half.svg">
+      <publishTime>12/02/2020 22:00:40</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/star.svg">
+      <publishTime>12/02/2020 22:00:40</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/sticky-note.svg">
+      <publishTime>12/02/2020 22:00:40</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/stop-circle.svg">
+      <publishTime>12/02/2020 22:00:40</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/sun.svg">
+      <publishTime>12/02/2020 22:00:40</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/surprise.svg">
+      <publishTime>12/02/2020 22:00:40</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/thumbs-down.svg">
+      <publishTime>12/02/2020 22:00:40</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/thumbs-up.svg">
+      <publishTime>12/02/2020 22:00:40</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/times-circle.svg">
+      <publishTime>12/02/2020 22:00:40</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/tired.svg">
+      <publishTime>12/02/2020 22:00:40</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/trash-alt.svg">
+      <publishTime>12/02/2020 22:00:40</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/user-circle.svg">
+      <publishTime>12/02/2020 22:00:40</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/user.svg">
+      <publishTime>12/02/2020 22:00:40</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/window-close.svg">
+      <publishTime>12/02/2020 22:00:40</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/window-maximize.svg">
+      <publishTime>12/02/2020 22:00:40</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/window-minimize.svg">
+      <publishTime>12/02/2020 22:00:40</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/regular/window-restore.svg">
+      <publishTime>12/02/2020 22:00:40</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/solid/ad.svg">
+      <publishTime>12/02/2020 22:00:40</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/solid/address-book.svg">
+      <publishTime>12/02/2020 22:00:40</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/solid/address-card.svg">
+      <publishTime>12/02/2020 22:00:40</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/solid/adjust.svg">
+      <publishTime>12/02/2020 22:00:40</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/solid/air-freshener.svg">
+      <publishTime>12/02/2020 22:00:40</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/solid/align-center.svg">
+      <publishTime>12/02/2020 22:00:40</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/solid/align-justify.svg">
+      <publishTime>12/02/2020 22:00:40</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/solid/align-left.svg">
+      <publishTime>12/02/2020 22:00:40</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/solid/align-right.svg">
+      <publishTime>12/02/2020 22:00:40</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/solid/allergies.svg">
+      <publishTime>12/02/2020 22:00:40</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/solid/ambulance.svg">
+      <publishTime>12/02/2020 22:00:40</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/solid/american-sign-language-interpreting.svg">
+      <publishTime>12/02/2020 22:00:40</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/solid/anchor.svg">
+      <publishTime>12/02/2020 22:00:40</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/solid/angle-double-down.svg">
+      <publishTime>12/02/2020 22:00:40</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/solid/angle-double-left.svg">
+      <publishTime>12/02/2020 22:00:40</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/solid/angle-double-right.svg">
+      <publishTime>12/02/2020 22:00:40</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/solid/angle-double-up.svg">
+      <publishTime>12/02/2020 22:00:40</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/solid/angle-down.svg">
+      <publishTime>12/02/2020 22:00:40</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/solid/angle-left.svg">
+      <publishTime>12/02/2020 22:00:40</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/solid/angle-right.svg">
+      <publishTime>12/02/2020 22:00:40</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/solid/angle-up.svg">
+      <publishTime>12/02/2020 22:00:40</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/solid/angry.svg">
+      <publishTime>12/02/2020 22:00:40</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/solid/ankh.svg">
+      <publishTime>12/02/2020 22:00:40</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/solid/apple-alt.svg">
+      <publishTime>12/02/2020 22:00:40</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/solid/archive.svg">
+      <publishTime>12/02/2020 22:00:40</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/solid/archway.svg">
+      <publishTime>12/02/2020 22:00:40</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/solid/arrow-alt-circle-down.svg">
+      <publishTime>12/02/2020 22:00:40</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/solid/arrow-alt-circle-left.svg">
+      <publishTime>12/02/2020 22:00:40</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/solid/arrow-alt-circle-right.svg">
+      <publishTime>12/02/2020 22:00:40</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/solid/arrow-alt-circle-up.svg">
+      <publishTime>12/02/2020 22:00:40</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/solid/arrow-circle-down.svg">
+      <publishTime>12/02/2020 22:00:40</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/solid/arrow-circle-left.svg">
+      <publishTime>12/02/2020 22:00:40</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/solid/arrow-circle-right.svg">
+      <publishTime>12/02/2020 22:00:40</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/solid/arrow-circle-up.svg">
+      <publishTime>12/02/2020 22:00:40</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/solid/arrow-down.svg">
+      <publishTime>12/02/2020 22:00:40</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/solid/arrow-left.svg">
+      <publishTime>12/02/2020 22:00:40</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/solid/arrow-right.svg">
+      <publishTime>12/02/2020 22:00:40</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/solid/arrow-up.svg">
+      <publishTime>12/02/2020 22:00:41</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/solid/arrows-alt-h.svg">
+      <publishTime>12/02/2020 22:00:41</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/solid/arrows-alt-v.svg">
+      <publishTime>12/02/2020 22:00:41</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/solid/arrows-alt.svg">
+      <publishTime>12/02/2020 22:00:41</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/solid/assistive-listening-systems.svg">
+      <publishTime>12/02/2020 22:00:41</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/solid/asterisk.svg">
+      <publishTime>12/02/2020 22:00:41</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/solid/at.svg">
+      <publishTime>12/02/2020 22:00:41</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/solid/atlas.svg">
+      <publishTime>12/02/2020 22:00:41</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/solid/atom.svg">
+      <publishTime>12/02/2020 22:00:41</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/solid/audio-description.svg">
+      <publishTime>12/02/2020 22:00:41</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/solid/award.svg">
+      <publishTime>12/02/2020 22:00:41</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/solid/baby-carriage.svg">
+      <publishTime>12/02/2020 22:00:41</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/solid/baby.svg">
+      <publishTime>12/02/2020 22:00:41</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/solid/backspace.svg">
+      <publishTime>12/02/2020 22:00:41</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/solid/backward.svg">
+      <publishTime>12/02/2020 22:00:41</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/solid/bacon.svg">
+      <publishTime>12/02/2020 22:00:41</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/solid/bacteria.svg">
+      <publishTime>12/02/2020 22:00:41</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/solid/bacterium.svg">
+      <publishTime>12/02/2020 22:00:41</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/solid/bahai.svg">
+      <publishTime>12/02/2020 22:00:41</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/solid/balance-scale-left.svg">
+      <publishTime>12/02/2020 22:00:41</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/solid/balance-scale-right.svg">
+      <publishTime>12/02/2020 22:00:41</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/solid/balance-scale.svg">
+      <publishTime>12/02/2020 22:00:41</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/solid/ban.svg">
+      <publishTime>12/02/2020 22:00:41</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/solid/band-aid.svg">
+      <publishTime>12/02/2020 22:00:41</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/solid/barcode.svg">
+      <publishTime>12/02/2020 22:00:41</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/solid/bars.svg">
+      <publishTime>12/02/2020 22:00:41</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/solid/baseball-ball.svg">
+      <publishTime>12/02/2020 22:00:41</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/solid/basketball-ball.svg">
+      <publishTime>12/02/2020 22:00:41</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/solid/bath.svg">
+      <publishTime>12/02/2020 22:00:41</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/solid/battery-empty.svg">
+      <publishTime>12/02/2020 22:00:41</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/solid/battery-full.svg">
+      <publishTime>12/02/2020 22:00:41</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/solid/battery-half.svg">
+      <publishTime>12/02/2020 22:00:41</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/solid/battery-quarter.svg">
+      <publishTime>12/02/2020 22:00:41</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/solid/battery-three-quarters.svg">
+      <publishTime>12/02/2020 22:00:41</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/solid/bed.svg">
+      <publishTime>12/02/2020 22:00:41</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/solid/beer.svg">
+      <publishTime>12/02/2020 22:00:41</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/solid/bell-slash.svg">
+      <publishTime>12/02/2020 22:00:41</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/solid/bell.svg">
+      <publishTime>12/02/2020 22:00:41</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/solid/bezier-curve.svg">
+      <publishTime>12/02/2020 22:00:41</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/solid/bible.svg">
+      <publishTime>12/02/2020 22:00:41</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/solid/bicycle.svg">
+      <publishTime>12/02/2020 22:00:41</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/solid/biking.svg">
+      <publishTime>12/02/2020 22:00:41</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/solid/binoculars.svg">
+      <publishTime>12/02/2020 22:00:41</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/solid/biohazard.svg">
+      <publishTime>12/02/2020 22:00:41</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/solid/birthday-cake.svg">
+      <publishTime>12/02/2020 22:00:41</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/solid/broom.svg">
+      <publishTime>12/02/2020 22:00:41</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/solid/brush.svg">
+      <publishTime>12/02/2020 22:00:41</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/solid/bug.svg">
+      <publishTime>12/02/2020 22:00:41</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/solid/building.svg">
+      <publishTime>12/02/2020 22:00:41</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/solid/file-export.svg">
+      <publishTime>12/02/2020 22:00:43</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/solid/file-image.svg">
+      <publishTime>12/02/2020 22:00:43</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/solid/file-import.svg">
+      <publishTime>12/02/2020 22:00:43</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/solid/file-medical.svg">
+      <publishTime>12/02/2020 22:00:43</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/solid/file-signature.svg">
+      <publishTime>12/02/2020 22:00:43</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/solid/hand-point-down.svg">
+      <publishTime>12/02/2020 22:00:44</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/solid/long-arrow-alt-left.svg">
+      <publishTime>12/02/2020 22:00:45</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/solid/minus-circle.svg">
+      <publishTime>12/02/2020 22:00:45</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/solid/minus-square.svg">
+      <publishTime>12/02/2020 22:00:45</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/solid/minus.svg">
+      <publishTime>12/02/2020 22:00:45</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/solid/person-booth.svg">
+      <publishTime>12/02/2020 22:00:46</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/solid/phone-alt.svg">
+      <publishTime>12/02/2020 22:00:46</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/solid/phone-slash.svg">
+      <publishTime>12/02/2020 22:00:46</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/solid/phone-square-alt.svg">
+      <publishTime>12/02/2020 22:00:46</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/solid/phone-square.svg">
+      <publishTime>12/02/2020 22:00:46</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/solid/phone.svg">
+      <publishTime>12/02/2020 22:00:46</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/solid/photo-video.svg">
+      <publishTime>12/02/2020 22:00:46</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/solid/pizza-slice.svg">
+      <publishTime>12/02/2020 22:00:46</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/solid/place-of-worship.svg">
+      <publishTime>12/02/2020 22:00:46</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/solid/plane-arrival.svg">
+      <publishTime>12/02/2020 22:00:46</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/solid/plane-departure.svg">
+      <publishTime>12/02/2020 22:00:46</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/solid/plane-slash.svg">
+      <publishTime>12/02/2020 22:00:46</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/solid/rocket.svg">
+      <publishTime>12/02/2020 22:00:47</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/solid/route.svg">
+      <publishTime>12/02/2020 22:00:47</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/solid/rss-square.svg">
+      <publishTime>12/02/2020 22:00:47</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/solid/rss.svg">
+      <publishTime>12/02/2020 22:00:47</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/solid/ruble-sign.svg">
+      <publishTime>12/02/2020 22:00:47</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/solid/ruler-vertical.svg">
+      <publishTime>12/02/2020 22:00:47</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/solid/ruler.svg">
+      <publishTime>12/02/2020 22:00:47</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/solid/running.svg">
+      <publishTime>12/02/2020 22:00:47</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/solid/rupee-sign.svg">
+      <publishTime>12/02/2020 22:00:47</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/solid/shopping-basket.svg">
+      <publishTime>12/02/2020 22:00:47</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/solid/shopping-cart.svg">
+      <publishTime>12/02/2020 22:00:47</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/solid/sim-card.svg">
+      <publishTime>12/02/2020 22:00:47</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/solid/sink.svg">
+      <publishTime>12/02/2020 22:00:47</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/solid/sitemap.svg">
+      <publishTime>12/02/2020 22:00:47</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/solid/skating.svg">
+      <publishTime>12/02/2020 22:00:47</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/solid/sort-amount-up-alt.svg">
+      <publishTime>12/02/2020 22:00:47</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/solid/sort-amount-up.svg">
+      <publishTime>12/02/2020 22:00:47</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/solid/sort-down.svg">
+      <publishTime>12/02/2020 22:00:47</publishTime>
+    </File>
+    <File Include="wwwroot/Adminpanel/vendor/fontawesome-free/svgs/solid/volume-up.svg">
+      <publishTime>12/02/2020 22:00:49</publishTime>
+    </File>
+    <File Include="wwwroot/favicon.ico">
+      <publishTime>10/29/2020 12:45:18</publishTime>
+    </File>
+    <File Include="zh-Hans/Microsoft.CodeAnalysis.CSharp.resources.dll">
+      <publishTime>11/12/2020 00:15:14</publishTime>
+    </File>
+    <File Include="zh-Hans/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll">
+      <publishTime>11/12/2020 04:20:06</publishTime>
+    </File>
+    <File Include="zh-Hant/Microsoft.CodeAnalysis.CSharp.resources.dll">
+      <publishTime>11/12/2020 00:15:14</publishTime>
+    </File>
+    <File Include="zh-Hant/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll">
+      <publishTime>11/12/2020 04:20:06</publishTime>
+    </File>
+    <File Include="zh-Hant/Microsoft.CodeAnalysis.resources.dll">
+      <publishTime>11/12/2020 00:14:42</publishTime>
+    </File>
+    <File Include="zh-Hant/Microsoft.CodeAnalysis.Workspaces.resources.dll">
+      <publishTime>11/12/2020 04:16:28</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

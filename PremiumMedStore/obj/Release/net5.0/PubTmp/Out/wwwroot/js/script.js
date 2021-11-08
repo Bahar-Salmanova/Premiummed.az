@@ -50,7 +50,16 @@ $('#galery .karusele-row').owlCarousel({
       }
   }
 });
+if ($('.mobile-nav-toggler').length) {
+    $('.mobile-nav-toggler').click(function () {
 
+        $(document.body).addClass('mobile-menu-visible');
+    });
+
+    $(".mobile-menu .close-btn").click(function () {
+        $(document.body).removeClass('mobile-menu-visible');
+    });
+};
 // Example starter JavaScript for disabling form submissions if there are invalid fields
 (function () {
     'use strict'

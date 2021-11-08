@@ -324,6 +324,11 @@
         "runtime": {
           "PremiumMedStore.dll": {}
         },
+        "resources": {
+          "az-Latn-az/PremiumMedStore.resources.dll": {
+            "locale": "az-Latn-az"
+          }
+        },
         "compile": {
           "PremiumMedStore.dll": {}
         }

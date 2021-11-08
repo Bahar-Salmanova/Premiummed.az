@@ -1940,6 +1940,9 @@ C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\Pu
 C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\Adminpanel\vendor\jquery\jquery.slim.js
 C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\Adminpanel\vendor\jquery\jquery.slim.min.js
 C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\Adminpanel\vendor\jquery\jquery.slim.min.map
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\css\responsive.css
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\css\responsive.css.map
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\css\responsive.scss
 C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\css\style.css
 C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\css\style.css.map
 C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\css\style.scss
@@ -2052,6 +2055,22 @@ C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\Pu
 C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\2021092920415218.pdf
 C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\2021092922012954.pdf
 C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\2021093021563418.pdf
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\2021100112402474.png
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\2021100112405111.png
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\2021100112412014.png
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\2021100112415255.png
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\2021100113405453.png
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\2021100113413196.png
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\2021100113421747.png
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\2021100113430660.png
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\2021100113433380.jpg
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\2021100113440826.png
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\2021100113444400.png
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\2021100113452097.png
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\2021100113455230.png
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\2021100113455598.png
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\2021100113463845.png
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\2021100117554440.pdf
 C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\3...png
 C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\4...png
 C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\5...png
@@ -2170,9 +2189,114 @@ C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\Pu
 C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\637686353491816811.pdf
 C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\637686355104480662.pdf
 C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\637686356007052780.pdf
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\637686929699904389.png
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\637686929699924077.png
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\637686929699937750.png
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\637686929699953141.jpg
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\637686929699962858.jpg
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\637686930767854066.png
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\637686930767905099.png
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\637686930767930246.png
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\637686930767960313.png
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\637686930767977642.png
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\637686935322701317.png
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\637686935322714595.png
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\637686935322721750.png
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\637686935322739280.png
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\637686935322754215.png
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\637686936391785516.png
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\637686936391797293.png
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\637686936391811383.png
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\637686936391826348.jpg
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\637686936391840285.jpg
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\637686938464749756.png
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\637686938464763545.png
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\637686938464770433.png
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\637686938464779606.jpg
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\637686938464788103.jpg
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\637686939754694458.png
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\637686939754707209.jpg
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\637686939754716005.png
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\637686939754724659.png
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\637686939754735099.png
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\637686940729575502.png
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\637686940729587097.png
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\637686940729600864.png
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\637686940729612371.png
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\637686940729622734.png
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\637686942176486976.png
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\637686942176499507.png
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\637686942176507652.jpg
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\637686942176518261.png
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\637686942176537590.png
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\637686945033570379.png
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\637686945033585525.png
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\637686945033602776.png
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\637686945033614492.jpg
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\637686945033629358.jpg
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\637686956918627116.png
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\637686956918636945.png
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\637686956918646846.png
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\637686958591611518.png
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\637686958591618909.png
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\637686958591626110.png
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\637686959007557509.png
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\637686959007566217.png
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\637686959007569504.png
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\637697513020679865.png
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\637697513020740916.png
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\637697513020764743.png
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\637697513020780192.png
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\637697513020802634.png
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\637697515317017773.png
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\637697515317035537.png
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\637697515317044933.png
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\637697515317055259.png
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\637697517546737743.png
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\637697517546828443.png
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\637697517546851612.png
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\637697517546869800.png
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\637697517931873503.png
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\637697517931958579.png
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\637697517931975358.png
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\637697517931990316.png
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\637697517932015982.pdf
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\637697648183454014.png
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\637697648183470523.png
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\637697648183478201.png
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\637697648183503884.png
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\637697656300323347.png
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\637697656300345204.png
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\637697656300372866.png
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\637697661541540745.png
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\637697661541563073.pdf
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\637697661541578094.png
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\637697661541611035.png
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\637697661541619752.png
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\637697672470698021.png
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\637697672470734402.png
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\637697672470767799.png
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\637697672470798223.png
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\637698402924150149.png
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\637698402924177137.png
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\637698405065143939.png
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\637698405065170246.png
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\637698405065207188.png
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\637698411455771201.png
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\637698411455793302.png
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\637698411455807548.png
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\637698411455820034.png
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\637698411865219654.png
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\637698411865228011.png
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\637698411865241052.png
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\637698420593919151.png
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\637698420593964466.png
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\637698420594072835.png
 C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\7...png
 C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\8...png
 C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\find 1.svg
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\Frame.jpg
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\Frame.svg
 C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\fusion-medical-animation-EAgGqOiDDMg-unsplash 1.png
 C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\Group 500.png
 C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\ichroma1 (1).png
@@ -2185,10 +2309,13 @@ C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\Pu
 C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\image 30.png
 C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\image 31.png
 C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\image 32.png
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\image 34.png
 C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\image 35 (1).png
 C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\image 35.png
 C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\image 36.png
 C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\image 37.png
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\image 38.png
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\image 39.png
 C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\image 5 (1).png
 C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\image 5 (2).png
 C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\image 5 (3).png
@@ -2199,16 +2326,21 @@ C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\Pu
 C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\image 5.png
 C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\image.7.png
 C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\Logo.png
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\Logo.svg
 C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\long-arrow-right.svg
 C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\main-news.png
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\new-banners-v2-RIQAS--scaled.jpg
 C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\pdf
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\QCMD-1-1024x231.png
 C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\Rectangle 90 (1).png
 C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\Rectangle 90 (4).png
 C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\Rectangle 90.png
 C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\reload 1.svg
 C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\team.png
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\testalize-me-0jE8ynV4mis-unsplash 1.jpg
 C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\transfusion 1.svg
 C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\virus 1.svg
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\wwwroot\uploads\WhatsApp Image 2021-10-09 at 16.58.57.jpeg
 C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\appsettings.Development.json
 C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\appsettings.json
 C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PubTmp\Out\PremiumMedStore.dll

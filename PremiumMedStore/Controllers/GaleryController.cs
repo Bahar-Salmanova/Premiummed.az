@@ -30,6 +30,7 @@ namespace PremiumMedStore.Controllers
                     Links = "Qalereya"
                 }
             };
+            ViewBag.Title = "Qalereya";
             ViewBag.Active = "Qalereya";
             ViewBag.ProductCategories = _context.ProductCategories.ToList();
             return View(model);

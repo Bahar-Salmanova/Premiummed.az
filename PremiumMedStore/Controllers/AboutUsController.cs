@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Localization;
 using PremiumMedStore.Data;
 using PremiumMedStore.ViewModel;
 using System;
@@ -12,10 +13,12 @@ namespace PremiumMedStore.Controllers
     {
 
         private readonly PremiumDbContext _context;
+        private readonly IStringLocalizer<HomeController> _sharedLocalizer;
 
-        public AboutUsController(PremiumDbContext context)
+        public AboutUsController(PremiumDbContext context,IStringLocalizer<HomeController> sharedLocalizer)
         {
             _context = context;
+            _sharedLocalizer = sharedLocalizer;
 
         }
         public IActionResult Index()
@@ -29,7 +32,9 @@ namespace PremiumMedStore.Controllers
 
                 }
             };
+            ViewBag.Title = "Haqqımızda";
             ViewBag.Active = "Haqqimizda";
+            ViewBag.TranslatedInfo = _sharedLocalizer;
             ViewBag.ProductCategories = _context.ProductCategories.ToList();
             return View(model);
         }
@@ -44,7 +49,9 @@ namespace PremiumMedStore.Controllers
 
                 }
             };
+            ViewBag.Title = "Haqqımızda";
             ViewBag.Active = "Haqqimizda";
+            ViewBag.TranslatedInfo = _sharedLocalizer;
             ViewBag.ProductCategories = _context.ProductCategories.ToList();
             return View(model);
         }
@@ -59,7 +66,9 @@ namespace PremiumMedStore.Controllers
 
                 }
             };
+            ViewBag.Title = "Haqqımızda";
             ViewBag.Active = "Haqqimizda";
+            ViewBag.TranslatedInfo = _sharedLocalizer;
             ViewBag.ProductCategories = _context.ProductCategories.ToList();
             return View(model);
         }
@@ -74,7 +83,9 @@ namespace PremiumMedStore.Controllers
 
                 }
             };
+            ViewBag.Title = "Haqqımızda";
             ViewBag.Active = "Haqqimizda";
+            ViewBag.TranslatedInfo = _sharedLocalizer;
             ViewBag.ProductCategories = _context.ProductCategories.ToList();
             return View(model);
         }

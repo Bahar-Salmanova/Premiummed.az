@@ -1,0 +1,223 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="24/7" xml:space="preserve">
+    <value>We are at your service 24/7!</value>
+  </data>
+  <data name="About" xml:space="preserve">
+    <value>About</value>
+  </data>
+  <data name="Adres" xml:space="preserve">
+    <value>Baku city, Sabunchu district, Zabrat 1 settlement, Vagif street 7, m.9A</value>
+  </data>
+  <data name="Career" xml:space="preserve">
+    <value>Career</value>
+  </data>
+  <data name="CompaniAbout" xml:space="preserve">
+    <value>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam tempore corporis cupiditate blanditiis quaerat non omnis suscipit consectetur ut quae. Nobis tempore distinctio sed.</value>
+  </data>
+  <data name="Companies" xml:space="preserve">
+    <value>Companies we are distributors</value>
+  </data>
+  <data name="Contact" xml:space="preserve">
+    <value>Contact</value>
+  </data>
+  <data name="Do you have a question?" xml:space="preserve">
+    <value>Do you have a question?</value>
+  </data>
+  <data name="Events" xml:space="preserve">
+    <value>Events</value>
+  </data>
+  <data name="FooterPremium" xml:space="preserve">
+    <value>PremiumMed LLC is an exporter of world-famous brands to the Azerbaijani market of the largest manufacturers of medical laboratory equipment, reagents and consumables.</value>
+  </data>
+  <data name="Gallery" xml:space="preserve">
+    <value>Gallery</value>
+  </data>
+  <data name="Get support!" xml:space="preserve">
+    <value>Get support!</value>
+  </data>
+  <data name="HeaderTitle" xml:space="preserve">
+    <value>Thinking of you in quality and service!</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="Mission" xml:space="preserve">
+    <value>Mission</value>
+  </data>
+  <data name="MissionDesc" xml:space="preserve">
+    <value>By analyzing the dynamics of the medical sector in the best possible way, to ensure long-term, unconditional customer satisfaction under the most favorable commercial conditions, to create loyal customers to our brands by equipping Azerbaijani laboratories with quality products that meet international standards in the world market. to provide our medical laboratories with the necessary equipment and products that will serve to improve the quality of life. To provide the best service to our valued customers, given that our past references are our commitment to our future work.</value>
+  </data>
+  <data name="News" xml:space="preserve">
+    <value>News</value>
+  </data>
+  <data name="NotDifficult" xml:space="preserve">
+    <value>It is not difficult to get our products!</value>
+  </data>
+  <data name="Order" xml:space="preserve">
+    <value>Order</value>
+  </data>
+  <data name="Order now!" xml:space="preserve">
+    <value>Order now!</value>
+  </data>
+  <data name="Pages" xml:space="preserve">
+    <value>Pages</value>
+  </data>
+  <data name="Products" xml:space="preserve">
+    <value>Products</value>
+  </data>
+  <data name="Quality Policy" xml:space="preserve">
+    <value>Quality Policy</value>
+  </data>
+  <data name="QualityDesc" xml:space="preserve">
+    <value>• Continuously improve the service in accordance with the requirements of our customers and the rules adopted by our health system in the sector in which we operate; To act in accordance with national and international laws, standards and regulatory requirements,
+• Ensuring sustainability and development, believing that quality can only be achieved through teamwork, working with partner clients in a team spirit and common sense approach,
+• To meet the current and future needs of our customers by investing in innovations in this area, to provide quality service with quality and safe products, to ensure unconditional customer satisfaction for the first time and every time,
+• Renew and develop itself to implement and improve the quality systems we have established, to ensure sustainability by investing in human resources. To ensure sustainable development of personnel in this field, to organize trainings,
+• Constantly monitor innovations in the health sector, increase market share and product range, ensure optimal efficiency and profitability, be among the sector leaders and be ahead of our competitors,
+• To provide a healthy and safe work environment for the company's employees, to strengthen the sense of corporate belonging by increasing training, communication and motivation opportunities,
+• Assess the factors and conditions that affect the health and safety of all people affected by the activities of our company (employees, temporary workers, subcontractors, visitors, customers and anyone in the workplace) and take the necessary measures,
+• To raise awareness about the environment, to contribute to its protection and development.</value>
+  </data>
+  <data name="Read them all" xml:space="preserve">
+    <value>Read them all</value>
+  </data>
+  <data name="Reserved" xml:space="preserve">
+    <value>All rights reserved.</value>
+  </data>
+  <data name="Vision" xml:space="preserve">
+    <value>Vision</value>
+  </data>
+  <data name="VisionDesc" xml:space="preserve">
+    <value>Adhering to the principles of quality, reliability, human health, prestige, customer satisfaction, to serve customers in accordance with world standards, diversifying and improving service. Become a consumer of medical laboratory products that offer the widest range of products in their field, with the highest market share with professional investments and a professional, dynamic team.</value>
+  </data>
+  <data name="we who?" xml:space="preserve">
+    <value>PremiumMed LLC, a medical laboratory established in Baku in March 2016
+                        the largest manufacturers of equipment, reagents and consumables,
+                        is an exporter of world-famous brands to the Azerbaijani market. Proven in this area
+                        using technology and innovation, dynamic and, despite its young age
+                        is a young and independent company full of wonderful ideas. The most important and significant of the company - the key
+                        activities, sales of laboratory products and services, project activities,
+                        Perfect implementation of methodological and service support of clinics.</value>
+  </data>
+  <data name="who" xml:space="preserve">
+    <value>who are we?</value>
+  </data>
+</root>

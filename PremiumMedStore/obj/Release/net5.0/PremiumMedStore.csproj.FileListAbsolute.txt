@@ -116,7 +116,6 @@ C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\bin\Release\net5.0\ru
 C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\bin\Release\net5.0\runtimes\win-arm64\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
 C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\bin\Release\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\bin\Release\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PremiumMedStore.csproj.AssemblyReference.cache
 C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PremiumMedStore.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PremiumMedStore.AssemblyInfoInputs.cache
 C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PremiumMedStore.AssemblyInfo.cs
@@ -229,3 +228,15 @@ C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\Pr
 C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\ref\PremiumMedStore.dll
 C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PremiumMedStore.pdb
 C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PremiumMedStore.genruntimeconfig.cache
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PremiumMedStore.csproj.AssemblyReference.cache
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\bin\Release\net5.0\az-Latn-az\PremiumMedStore.resources.dll
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PremiumMedStore.SharedResource.az-Latn-az.resources
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PremiumMedStore.csproj.GenerateResource.cache
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\az-Latn-az\PremiumMedStore.resources.dll
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\bin\Release\net5.0\en-US\PremiumMedStore.resources.dll
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\bin\Release\net5.0\ru-RU\PremiumMedStore.resources.dll
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PremiumMedStore.Resource.Controllers.HomeController.az-Latn-az.resources
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PremiumMedStore.Resource.Controllers.HomeController.en-US.resources
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\PremiumMedStore.Resource.Controllers.HomeController.ru-RU.resources
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\en-US\PremiumMedStore.resources.dll
+C:\Users\User\source\repos\PremiumMedStore\PremiumMedStore\obj\Release\net5.0\ru-RU\PremiumMedStore.resources.dll

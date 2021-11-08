@@ -4,41 +4,41 @@
     ViewData["Title"] = "Details";
 }
 
-<h1>Details</h1>
 
-<div>
+
+<div class="ml-3">
     <h1>Detallar</h1>
 
     <h4>Tədbirlər</h4>
     <hr />
     <dl class="row">
         <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Title)
+           Başlıq
         </dt>
         <dd class="col-sm-10">
             @Html.DisplayFor(model => model.Title)
         </dd>
         <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Date)
+           Tarix
         </dt>
         <dd class="col-sm-10">
             @Html.DisplayFor(model => model.Date)
         </dd>
         <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Desc)
+           Qısa Mövzu
         </dt>
         <dd class="col-sm-10">
             @Html.DisplayFor(model => model.Desc)
         </dd>
         <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.FullDesc)
+           Tam Mövzu
         </dt>
         <dd class="col-sm-10">
             @Html.DisplayFor(model => model.FullDesc)
         </dd>
     </dl>
 </div>
-<div>
+<div class="ml-3">
     <a asp-action="Edit" asp-route-id="@Model.Id">Dəyisdir</a> |
     <a asp-action="Index">Geri</a>
 </div>
